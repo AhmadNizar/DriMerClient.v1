@@ -6,4 +6,4 @@ let store = createStore(rootReducer, applyMiddleware(thunk))
 
 export default store
 
-//sensor
+//development
