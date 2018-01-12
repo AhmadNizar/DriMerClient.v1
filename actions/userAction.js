@@ -34,6 +34,7 @@ export const signInAction = (dataUser) => {
       password: dataUser.password
     })
       .then((resultDataUser) => {
+        console.log(resultDataUser.data)
         dispatch(getDataLogin(resultDataUser.data))
       })
       .catch((reason) => {
@@ -59,5 +60,11 @@ const getFailedLogin = () => {
 export const changeVisible = () => {
   return {
     type: 'change_visible_user'
+  }
+}
+
+export const changeLogout = () => {
+  return {
+    type: 'change_logout'
   }
 }

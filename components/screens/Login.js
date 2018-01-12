@@ -49,7 +49,7 @@ class Login extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     this.setState({isLoading: false})
-    console.log(nextProps.isLoginSuccess)
+    
     if(nextProps.isLoginSuccess) {
       Alert.alert(
         'Success',

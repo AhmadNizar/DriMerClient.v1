@@ -20,6 +20,8 @@ import {
 import store from './store'
 import { Provider } from 'react-redux'
 import {connect} from 'react-redux'
+import {changeLogout} from './actions/userAction'
+import {changeVisible} from './actions/userAction'
 
 import Quisioner from './components/screens/Quisioner';
 import Register from './components/screens/Register';
@@ -49,15 +51,23 @@ class App extends Component<{}> {
   }
 
   componentDidMount() {
-    AsyncStorage.getItem('drimerToken').then((value) => this.setState({ token: value }))
+    AsyncStorage.getItem('drimerToken').then((value) => {
+      console.log('yeah kena di app')
+      console.log(value)
+      if(value) {
+        this.props.changeVisible()
+      }
+    })
+    .catch((err) => {
+      console.log(err)
+    })
   }
 
   render() {
-    console.log(this.state.token)
-    if(this.props.userLoginRegisterVisible != '' || this.state.token == null) {
-      return [<NavigationBase />] 
+    if(this.props.userLoginRegisterVisible != '') {
+      return [<NavigationTab key={Math.random()} />] 
     } else {
-      return [<NavigationTab />] 
+      return [<NavigationBase key={Math.random()}/>]
     }
   }
 }
@@ -76,9 +86,17 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = (state) => {
+  console.log(state)
   return {
     userLoginRegisterVisible: state.userReducer.userLoginRegisterVisible
   }
 }
 
-export default connect(mapStateToProps, null)(App)
+const mapActionsToProps = (dispatch) => {
+  return {
+    changeLogout: () => dispatch(changeLogout()),
+    changeVisible: () => dispatch(changeVisible())    
+  }
+} 
+
+export default connect(mapStateToProps, mapActionsToProps)(App)
