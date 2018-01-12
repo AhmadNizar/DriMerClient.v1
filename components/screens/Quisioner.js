@@ -20,7 +20,11 @@ class Quisioner extends React.Component {
     }
   }
 
-  getQuisioner() {
+  componentDidMount() {
+    console.log(this.props.token)
+  }
+
+  getQuisioner = async () => {
 
     let activityNeed = 0
     let smokerWaterNeed = 0
@@ -53,8 +57,7 @@ class Quisioner extends React.Component {
 
     this.props.calculateWater(waterNeeds)
     this.props.changeVisible()
-    AsyncStorage.setItem('drimerToken', this.props.token)
-    // this.props.navigation.navigate('Suggestion')
+    await AsyncStorage.setItem('drimerToken', this.props.token)
   }
 
   render() {
@@ -123,7 +126,7 @@ class Quisioner extends React.Component {
               onValueChange={(value) => this.setState({ sportTime: value })} />
           </View>
         </View>
-        <Button title="Submit" onPress={() => this.getQuisioner()} />
+        <Button title="Submits" onPress={() => this.getQuisioner()} />
 
       </View>
     );
