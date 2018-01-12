@@ -58,6 +58,11 @@ class Profile extends React.Component {
   componentWillUnmount() {
     console.log('unmount')
     this.stopRecording()
+    SensorManager.stopStepCounter();
+    SensorManager.stopLightSensor();
+    SensorManager.stopAccelerometer();
+    SensorManager.stopGyroscope();
+    SensorManager.stopProximity();
   }
 
   startSensor () {
