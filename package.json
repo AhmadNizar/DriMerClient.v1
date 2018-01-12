@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
+    "jwt-decode": "^2.2.0",
     "react": "16.2.0",
     "react-native": "0.52.0",
     "react-native-elements": "^0.18.5",

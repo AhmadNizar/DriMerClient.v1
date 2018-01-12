@@ -45,13 +45,14 @@ class Quisioner extends React.Component {
       smokerWaterNeed = 0.03
     }
 
-    let waterNeeds = {
-      sportTime: activityNeed,
-      isSmoker: smokerWaterNeed,
-      weight: Number(this.state.weight)
-    }
+    let calculateWater = ((activityNeed + smokerWaterNeed) / 2) * (Number(this.state.weight))
+    // let waterNeeds = {
+    //   sportTime: activityNeed,
+    //   isSmoker: smokerWaterNeed,
+    //   weight: Number(this.state.weight)
+    // }
 
-    this.props.calculateWater(waterNeeds)
+    this.props.calculateWater(calculateWater, this.props.token)
     this.props.changeVisible()
     AsyncStorage.setItem('drimerToken', this.props.token)
     // this.props.navigation.navigate('Suggestion')
@@ -168,7 +169,7 @@ const mapStateToProps = (state) => {
 
 const mapActionToProps = (dispatch) => {
   return {
-    calculateWater: (waterNeeds) => dispatch(calculateWaterAction(waterNeeds)),
+    calculateWater: (waterNeeds, token) => dispatch(calculateWaterAction(waterNeeds, token)),
     changeVisible: () => dispatch(changeVisible())
   }
 }
