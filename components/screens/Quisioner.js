@@ -3,7 +3,7 @@ import { AsyncStorage, StyleSheet, Text, View, Image, TextInput, Button, Touchab
 import { Slider, CheckBox } from 'react-native-elements';
 import { connect } from 'react-redux'
 import { calculateWaterAction } from '../../actions/quisionerAction'
-import {changeVisible} from '../../actions/userAction'
+import { changeVisible } from '../../actions/userAction'
 
 class Quisioner extends React.Component {
   static navigationOptions = {
@@ -54,12 +54,15 @@ class Quisioner extends React.Component {
     this.props.calculateWater(waterNeeds)
     this.props.changeVisible()
     AsyncStorage.setItem('drimerToken', this.props.token)
-    this.props.navigation.navigate('Suggestion')
+    // this.props.navigation.navigate('Suggestion')
   }
 
   render() {
     return (
       <View style={styles.container}>
+        <View style={styles.viewTitle}>
+          <Text style={styles.title}>Quesionnaire</Text>
+        </View>
         <View style={styles.textInput}>
           <View style={styles.quisioner}>
             <Text style={{ fontWeight: 'bold' }}>How much is your weight? </Text>
@@ -105,7 +108,7 @@ class Quisioner extends React.Component {
             />
           </View>
           <View style={styles.quisioner}>
-            <Text style={{ fontWeight: 'bold' }}>How much do you do sport?</Text>
+            <Text style={{ fontWeight: 'bold' }}>How much is your activity level?</Text>
             <View style={styles.slider}>
               <Text>Low</Text>
               <Text>Medium</Text>
@@ -145,6 +148,13 @@ const styles = StyleSheet.create({
     marginTop: 10
   },
   quisioner: {
+    marginBottom: 20
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  viewTitle: {
     marginBottom: 20
   }
 

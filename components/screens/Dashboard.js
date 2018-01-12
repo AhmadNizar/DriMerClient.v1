@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity, AsyncStorage } from "react-native";
+import { StyleSheet, ScrollView, Text, View, Image, TextInput, Button, TouchableOpacity, Dimensions, AsyncStorage } from "react-native";
+import Navbar from '../Navbar'
 
 export default class Dashboard extends React.Component {
   static navigationOptions = {
@@ -14,23 +15,33 @@ export default class Dashboard extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text> Dashboard </Text>
-        <Button
-        title="Logout"
-        onPress={() => {
-         this.logout()
-        }}
-         />
+        <ScrollView>
+          <Text> Dashboard </Text>
+          <Button
+            title="Logout"
+            onPress={() => {
+              this.logout()
+            }}
+          />
+        </ScrollView>
+        <View style={styles.navbar}>
+          <Navbar />
+        </View>
       </View>
     );
   }
 }
 
+const fullWidth = Dimensions.get('window').width
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F5FCFF',
+    justifyContent: 'space-around',
     alignItems: 'center',
-    paddingTop: 30
+    paddingTop: 30,
+  },
+  navbar: {
+    width: fullWidth
   }
 })

@@ -19,7 +19,7 @@ import {
 
 import store from './store'
 import { Provider } from 'react-redux'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 
 import Quisioner from './components/screens/Quisioner';
 import Register from './components/screens/Register';
@@ -35,7 +35,7 @@ const NavigationBase = StackNavigator({
 })
 
 const NavigationTab = TabNavigator({
-  Suggestion: {screen: Suggestion},
+  Suggestion: { screen: Suggestion },
   Dashboard: { screen: Dashboard }
 })
 
@@ -54,10 +54,10 @@ class App extends Component<{}> {
 
   render() {
     console.log(this.state.token)
-    if(this.props.userLoginRegisterVisible != '' || this.state.token == null) {
-      return [<NavigationBase />] 
+    if (this.props.userLoginRegisterVisible != '' || this.state.token == null) {
+      return [<NavigationBase key={Math.random()} />]
     } else {
-      return [<NavigationTab />] 
+      return [<NavigationTab key={Math.random()} />]
     }
   }
 }
