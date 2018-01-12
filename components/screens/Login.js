@@ -48,9 +48,9 @@ class Login extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({isLoading: false})
-
-    if(nextProps.isLoginSuccess) {
+    this.setState({ isLoading: false })
+    console.log(nextProps.isLoginSuccess)
+    if (nextProps.isLoginSuccess) {
       Alert.alert(
         'Success',
         'Login success',
