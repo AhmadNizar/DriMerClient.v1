@@ -93,10 +93,3 @@ buck-out
 /ReactAndroid/src/main/jni/prebuilt/lib/armeabi-v7a/
 /ReactAndroid/src/main/jni/prebuilt/lib/x86/
 /ReactAndroid/src/main/gen
-
-# Android
-.idea
-.gradle
-local.properties
-*.iml
-/android/
