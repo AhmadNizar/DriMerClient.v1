@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "outputFile": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-land-v4/values-xlarge-land-v4.xml",
+=======
+        "outputFile": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-land-v4/values-xlarge-land-v4.xml",
+>>>>>>> sensor
         "map": [
             {
                 "to": {
@@ -11,6 +15,7 @@
                     "endOffset": 114
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-xlarge-land/values-xlarge-land.xml",
                     "position": {
                         "startLine": 4,
@@ -18,6 +23,15 @@
                         "startOffset": 288,
                         "endColumn": 63,
                         "endOffset": 347
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-xlarge-land/values-xlarge-land.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 295,
+                        "endColumn": 63,
+                        "endOffset": 354
+>>>>>>> sensor
                     }
                 }
             }
@@ -48,7 +62,11 @@
         ]
     },
     {
+<<<<<<< HEAD
         "outputFile": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-land-v4/values-xlarge-land-v4.xml",
+=======
+        "outputFile": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-land-v4/values-xlarge-land-v4.xml",
+>>>>>>> sensor
         "map": [
             {
                 "to": {
@@ -59,6 +77,7 @@
                     "endOffset": 114
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-xlarge-land/values-xlarge-land.xml",
                     "position": {
                         "startLine": 4,
@@ -90,6 +109,15 @@
                         "startOffset": 288,
                         "endColumn": 63,
                         "endOffset": 347
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-xlarge-land/values-xlarge-land.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 295,
+                        "endColumn": 63,
+                        "endOffset": 354
+>>>>>>> sensor
                     }
                 }
             }

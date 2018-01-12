@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "outputFile": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
+=======
+        "outputFile": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
+>>>>>>> sensor
         "map": [
             {
                 "to": {
@@ -11,6 +15,7 @@
                     "endOffset": 170
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 4,
@@ -18,6 +23,15 @@
                         "startOffset": 284,
                         "endColumn": 119,
                         "endOffset": 399
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 119,
+                        "endOffset": 406
+>>>>>>> sensor
                     }
                 }
             },
@@ -30,6 +44,7 @@
                     "endOffset": 278
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 5,
@@ -37,6 +52,15 @@
                         "startOffset": 404,
                         "endColumn": 107,
                         "endOffset": 507
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 411,
+                        "endColumn": 107,
+                        "endOffset": 514
+>>>>>>> sensor
                     }
                 }
             },
@@ -49,6 +73,7 @@
                     "endOffset": 401
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 6,
@@ -56,6 +81,15 @@
                         "startOffset": 512,
                         "endColumn": 122,
                         "endOffset": 630
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 519,
+                        "endColumn": 122,
+                        "endOffset": 637
+>>>>>>> sensor
                     }
                 }
             },
@@ -68,6 +102,7 @@
                     "endOffset": 507
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 7,
@@ -75,6 +110,15 @@
                         "startOffset": 635,
                         "endColumn": 105,
                         "endOffset": 736
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 642,
+                        "endColumn": 105,
+                        "endOffset": 743
+>>>>>>> sensor
                     }
                 }
             },
@@ -87,6 +131,7 @@
                     "endOffset": 614
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 8,
@@ -94,6 +139,15 @@
                         "startOffset": 741,
                         "endColumn": 106,
                         "endOffset": 843
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 748,
+                        "endColumn": 106,
+                        "endOffset": 850
+>>>>>>> sensor
                     }
                 }
             },
@@ -106,6 +160,7 @@
                     "endOffset": 703
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 9,
@@ -113,6 +168,15 @@
                         "startOffset": 848,
                         "endColumn": 88,
                         "endOffset": 932
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 855,
+                        "endColumn": 88,
+                        "endOffset": 939
+>>>>>>> sensor
                     }
                 }
             },
@@ -125,6 +189,7 @@
                     "endOffset": 804
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 10,
@@ -132,6 +197,15 @@
                         "startOffset": 937,
                         "endColumn": 100,
                         "endOffset": 1033
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 944,
+                        "endColumn": 100,
+                        "endOffset": 1040
+>>>>>>> sensor
                     }
                 }
             },
@@ -144,6 +218,7 @@
                     "endOffset": 928
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 11,
@@ -151,6 +226,15 @@
                         "startOffset": 1038,
                         "endColumn": 123,
                         "endOffset": 1157
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1045,
+                        "endColumn": 123,
+                        "endOffset": 1164
+>>>>>>> sensor
                     }
                 }
             },
@@ -159,6 +243,7 @@
                     "startLine": 10,
                     "startColumn": 4,
                     "startOffset": 933,
+<<<<<<< HEAD
                     "endColumn": 86,
                     "endOffset": 1015
                 },
@@ -170,6 +255,19 @@
                         "startOffset": 1162,
                         "endColumn": 86,
                         "endOffset": 1244
+=======
+                    "endColumn": 83,
+                    "endOffset": 1012
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1169,
+                        "endColumn": 83,
+                        "endOffset": 1248
+>>>>>>> sensor
                     }
                 }
             },
@@ -177,6 +275,7 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1020,
                     "endColumn": 106,
                     "endOffset": 1122
@@ -189,6 +288,20 @@
                         "startOffset": 1249,
                         "endColumn": 106,
                         "endOffset": 1351
+=======
+                    "startOffset": 1017,
+                    "endColumn": 80,
+                    "endOffset": 1093
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1253,
+                        "endColumn": 80,
+                        "endOffset": 1329
+>>>>>>> sensor
                     }
                 }
             },
@@ -196,6 +309,7 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1127,
                     "endColumn": 111,
                     "endOffset": 1234
@@ -208,6 +322,20 @@
                         "startOffset": 1356,
                         "endColumn": 111,
                         "endOffset": 1463
+=======
+                    "startOffset": 1098,
+                    "endColumn": 86,
+                    "endOffset": 1180
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1334,
+                        "endColumn": 86,
+                        "endOffset": 1416
+>>>>>>> sensor
                     }
                 }
             },
@@ -215,6 +343,7 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1239,
                     "endColumn": 101,
                     "endOffset": 1336
@@ -227,6 +356,20 @@
                         "startOffset": 1468,
                         "endColumn": 101,
                         "endOffset": 1565
+=======
+                    "startOffset": 1185,
+                    "endColumn": 106,
+                    "endOffset": 1287
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1421,
+                        "endColumn": 106,
+                        "endOffset": 1523
+>>>>>>> sensor
                     }
                 }
             },
@@ -234,6 +377,7 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1341,
                     "endColumn": 107,
                     "endOffset": 1444
@@ -246,6 +390,20 @@
                         "startOffset": 1570,
                         "endColumn": 107,
                         "endOffset": 1673
+=======
+                    "startOffset": 1292,
+                    "endColumn": 111,
+                    "endOffset": 1399
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1528,
+                        "endColumn": 111,
+                        "endOffset": 1635
+>>>>>>> sensor
                     }
                 }
             },
@@ -253,6 +411,7 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1449,
                     "endColumn": 106,
                     "endOffset": 1551
@@ -265,6 +424,20 @@
                         "startOffset": 1678,
                         "endColumn": 106,
                         "endOffset": 1780
+=======
+                    "startOffset": 1404,
+                    "endColumn": 101,
+                    "endOffset": 1501
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1640,
+                        "endColumn": 101,
+                        "endOffset": 1737
+>>>>>>> sensor
                     }
                 }
             },
@@ -272,6 +445,7 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1556,
                     "endColumn": 106,
                     "endOffset": 1658
@@ -284,6 +458,20 @@
                         "startOffset": 1785,
                         "endColumn": 106,
                         "endOffset": 1887
+=======
+                    "startOffset": 1506,
+                    "endColumn": 107,
+                    "endOffset": 1609
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1742,
+                        "endColumn": 107,
+                        "endOffset": 1845
+>>>>>>> sensor
                     }
                 }
             },
@@ -291,6 +479,7 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1663,
                     "endColumn": 121,
                     "endOffset": 1780
@@ -303,6 +492,20 @@
                         "startOffset": 1892,
                         "endColumn": 121,
                         "endOffset": 2009
+=======
+                    "startOffset": 1614,
+                    "endColumn": 106,
+                    "endOffset": 1716
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1850,
+                        "endColumn": 106,
+                        "endOffset": 1952
+>>>>>>> sensor
                     }
                 }
             },
@@ -310,6 +513,7 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1785,
                     "endColumn": 98,
                     "endOffset": 1879
@@ -322,6 +526,20 @@
                         "startOffset": 2014,
                         "endColumn": 98,
                         "endOffset": 2108
+=======
+                    "startOffset": 1721,
+                    "endColumn": 106,
+                    "endOffset": 1823
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1957,
+                        "endColumn": 106,
+                        "endOffset": 2059
+>>>>>>> sensor
                     }
                 }
             },
@@ -329,6 +547,7 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1884,
                     "endColumn": 100,
                     "endOffset": 1980
@@ -341,13 +560,69 @@
                         "startOffset": 2113,
                         "endColumn": 100,
                         "endOffset": 2209
+=======
+                    "startOffset": 1828,
+                    "endColumn": 121,
+                    "endOffset": 1945
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2064,
+                        "endColumn": 121,
+                        "endOffset": 2181
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1950,
+                    "endColumn": 98,
+                    "endOffset": 2044
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2186,
+                        "endColumn": 98,
+                        "endOffset": 2280
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2049,
+                    "endColumn": 100,
+                    "endOffset": 2145
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 2285,
+                        "endColumn": 100,
+                        "endOffset": 2381
+>>>>>>> sensor
                     }
                 }
             }
         ]
     },
     {
+<<<<<<< HEAD
         "outputFile": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
+=======
+        "outputFile": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
+>>>>>>> sensor
         "map": [
             {
                 "to": {
@@ -358,6 +633,7 @@
                     "endOffset": 170
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 4,
@@ -365,6 +641,15 @@
                         "startOffset": 284,
                         "endColumn": 119,
                         "endOffset": 399
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 119,
+                        "endOffset": 406
+>>>>>>> sensor
                     }
                 }
             },
@@ -377,6 +662,7 @@
                     "endOffset": 278
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 5,
@@ -384,6 +670,15 @@
                         "startOffset": 404,
                         "endColumn": 107,
                         "endOffset": 507
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 411,
+                        "endColumn": 107,
+                        "endOffset": 514
+>>>>>>> sensor
                     }
                 }
             },
@@ -396,6 +691,7 @@
                     "endOffset": 401
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 6,
@@ -403,6 +699,15 @@
                         "startOffset": 512,
                         "endColumn": 122,
                         "endOffset": 630
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 519,
+                        "endColumn": 122,
+                        "endOffset": 637
+>>>>>>> sensor
                     }
                 }
             },
@@ -415,6 +720,7 @@
                     "endOffset": 507
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 7,
@@ -422,6 +728,15 @@
                         "startOffset": 635,
                         "endColumn": 105,
                         "endOffset": 736
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 642,
+                        "endColumn": 105,
+                        "endOffset": 743
+>>>>>>> sensor
                     }
                 }
             },
@@ -434,6 +749,7 @@
                     "endOffset": 614
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 8,
@@ -441,6 +757,15 @@
                         "startOffset": 741,
                         "endColumn": 106,
                         "endOffset": 843
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 748,
+                        "endColumn": 106,
+                        "endOffset": 850
+>>>>>>> sensor
                     }
                 }
             },
@@ -453,6 +778,7 @@
                     "endOffset": 703
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 9,
@@ -460,6 +786,15 @@
                         "startOffset": 848,
                         "endColumn": 88,
                         "endOffset": 932
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 855,
+                        "endColumn": 88,
+                        "endOffset": 939
+>>>>>>> sensor
                     }
                 }
             },
@@ -472,6 +807,7 @@
                     "endOffset": 804
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 10,
@@ -479,6 +815,15 @@
                         "startOffset": 937,
                         "endColumn": 100,
                         "endOffset": 1033
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 944,
+                        "endColumn": 100,
+                        "endOffset": 1040
+>>>>>>> sensor
                     }
                 }
             },
@@ -491,6 +836,7 @@
                     "endOffset": 928
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt-rPT/values-pt-rPT.xml",
                     "position": {
                         "startLine": 11,
@@ -498,6 +844,15 @@
                         "startOffset": 1038,
                         "endColumn": 123,
                         "endOffset": 1157
+=======
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1045,
+                        "endColumn": 123,
+                        "endOffset": 1164
+>>>>>>> sensor
                     }
                 }
             },
@@ -506,6 +861,7 @@
                     "startLine": 10,
                     "startColumn": 4,
                     "startOffset": 933,
+<<<<<<< HEAD
                     "endColumn": 86,
                     "endOffset": 1015
                 },
@@ -517,6 +873,19 @@
                         "startOffset": 1162,
                         "endColumn": 86,
                         "endOffset": 1244
+=======
+                    "endColumn": 83,
+                    "endOffset": 1012
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1169,
+                        "endColumn": 83,
+                        "endOffset": 1248
+>>>>>>> sensor
                     }
                 }
             },
@@ -524,6 +893,7 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1020,
                     "endColumn": 106,
                     "endOffset": 1122
@@ -536,6 +906,20 @@
                         "startOffset": 1249,
                         "endColumn": 106,
                         "endOffset": 1351
+=======
+                    "startOffset": 1017,
+                    "endColumn": 80,
+                    "endOffset": 1093
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1253,
+                        "endColumn": 80,
+                        "endOffset": 1329
+>>>>>>> sensor
                     }
                 }
             },
@@ -543,6 +927,7 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1127,
                     "endColumn": 111,
                     "endOffset": 1234
@@ -555,6 +940,20 @@
                         "startOffset": 1356,
                         "endColumn": 111,
                         "endOffset": 1463
+=======
+                    "startOffset": 1098,
+                    "endColumn": 86,
+                    "endOffset": 1180
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1334,
+                        "endColumn": 86,
+                        "endOffset": 1416
+>>>>>>> sensor
                     }
                 }
             },
@@ -562,6 +961,7 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1239,
                     "endColumn": 101,
                     "endOffset": 1336
@@ -574,6 +974,20 @@
                         "startOffset": 1468,
                         "endColumn": 101,
                         "endOffset": 1565
+=======
+                    "startOffset": 1185,
+                    "endColumn": 106,
+                    "endOffset": 1287
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1421,
+                        "endColumn": 106,
+                        "endOffset": 1523
+>>>>>>> sensor
                     }
                 }
             },
@@ -581,6 +995,7 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1341,
                     "endColumn": 107,
                     "endOffset": 1444
@@ -593,6 +1008,20 @@
                         "startOffset": 1570,
                         "endColumn": 107,
                         "endOffset": 1673
+=======
+                    "startOffset": 1292,
+                    "endColumn": 111,
+                    "endOffset": 1399
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1528,
+                        "endColumn": 111,
+                        "endOffset": 1635
+>>>>>>> sensor
                     }
                 }
             },
@@ -600,6 +1029,7 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1449,
                     "endColumn": 106,
                     "endOffset": 1551
@@ -612,6 +1042,20 @@
                         "startOffset": 1678,
                         "endColumn": 106,
                         "endOffset": 1780
+=======
+                    "startOffset": 1404,
+                    "endColumn": 101,
+                    "endOffset": 1501
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1640,
+                        "endColumn": 101,
+                        "endOffset": 1737
+>>>>>>> sensor
                     }
                 }
             },
@@ -619,6 +1063,7 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1556,
                     "endColumn": 106,
                     "endOffset": 1658
@@ -631,6 +1076,20 @@
                         "startOffset": 1785,
                         "endColumn": 106,
                         "endOffset": 1887
+=======
+                    "startOffset": 1506,
+                    "endColumn": 107,
+                    "endOffset": 1609
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1742,
+                        "endColumn": 107,
+                        "endOffset": 1845
+>>>>>>> sensor
                     }
                 }
             },
@@ -638,6 +1097,7 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1663,
                     "endColumn": 121,
                     "endOffset": 1780
@@ -650,6 +1110,20 @@
                         "startOffset": 1892,
                         "endColumn": 121,
                         "endOffset": 2009
+=======
+                    "startOffset": 1614,
+                    "endColumn": 106,
+                    "endOffset": 1716
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1850,
+                        "endColumn": 106,
+                        "endOffset": 1952
+>>>>>>> sensor
                     }
                 }
             },
@@ -657,6 +1131,7 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1785,
                     "endColumn": 98,
                     "endOffset": 1879
@@ -669,6 +1144,20 @@
                         "startOffset": 2014,
                         "endColumn": 98,
                         "endOffset": 2108
+=======
+                    "startOffset": 1721,
+                    "endColumn": 106,
+                    "endOffset": 1823
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1957,
+                        "endColumn": 106,
+                        "endOffset": 2059
+>>>>>>> sensor
                     }
                 }
             },
@@ -676,6 +1165,7 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
+<<<<<<< HEAD
                     "startOffset": 1884,
                     "endColumn": 100,
                     "endOffset": 1980
@@ -688,6 +1178,58 @@
                         "startOffset": 2113,
                         "endColumn": 100,
                         "endOffset": 2209
+=======
+                    "startOffset": 1828,
+                    "endColumn": 121,
+                    "endOffset": 1945
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2064,
+                        "endColumn": 121,
+                        "endOffset": 2181
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1950,
+                    "endColumn": 98,
+                    "endOffset": 2044
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2186,
+                        "endColumn": 98,
+                        "endOffset": 2280
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2049,
+                    "endColumn": 100,
+                    "endOffset": 2145
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 2285,
+                        "endColumn": 100,
+                        "endOffset": 2381
+>>>>>>> sensor
                     }
                 }
             }

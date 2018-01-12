@@ -28,12 +28,15 @@ import Register from './components/screens/Register';
 import Login from './components/screens/Login';
 import Dashboard from './components/screens/Dashboard';
 import Suggestion from './components/screens/Suggestion';
+import Profile from './components/screens/Profile';
 
 
 const NavigationBase = StackNavigator({
   Login: { screen: Login },
   Register: { screen: Register },
-  Quisioner: { screen: Quisioner }
+  Quisioner: { screen: Quisioner },
+  Suggestion: { screen: Suggestion },
+  Profile: { screen: Profile }
 })
 
 const NavigationTab = TabNavigator({
@@ -64,18 +67,10 @@ class App extends Component<{}> {
   }
 
   render() {
-<<<<<<< HEAD
-    console.log(this.state.token)
-    if (this.props.userLoginRegisterVisible != '' || this.state.token == null) {
-      return [<NavigationBase key={Math.random()} />]
-    } else {
-      return [<NavigationTab key={Math.random()} />]
-=======
     if(this.props.userLoginRegisterVisible != '') {
       return [<NavigationTab key={Math.random()} />]
     } else {
       return [<NavigationBase key={Math.random()}/>]
->>>>>>> login
     }
   }
 }

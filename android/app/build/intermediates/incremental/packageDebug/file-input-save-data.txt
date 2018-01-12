@@ -129,6 +129,7 @@
 142.set=ANDROID_RESOURCE
 248.set=ANDROID_RESOURCE
 189.set=ANDROID_RESOURCE
+353.set=ANDROID_RESOURCE
 294.set=ANDROID_RESOURCE
 35.base=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_
 103.set=ANDROID_RESOURCE
@@ -141,6 +142,7 @@
 314.set=ANDROID_RESOURCE
 41.file=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/assets/debug/fonts/Foundation.ttf
 255.set=ANDROID_RESOURCE
+347.file=/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png
 196.set=ANDROID_RESOURCE
 116.file=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
 93.file=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/libimagepipeline.so
@@ -332,6 +334,7 @@
 253.base=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_
 176.base=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
 130.set=ANDROID_RESOURCE
+351.file=/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
 236.set=ANDROID_RESOURCE
 177.set=ANDROID_RESOURCE
 3.file=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png
@@ -420,6 +423,7 @@
 100.base=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_
 305.set=ANDROID_RESOURCE
 140.set=ANDROID_RESOURCE
+352.file=/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_/res/layout/redbox_item_title.xml
 246.set=ANDROID_RESOURCE
 187.set=ANDROID_RESOURCE
 4.file=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png
@@ -457,6 +461,7 @@
 168.set=ANDROID_RESOURCE
 221.set=ANDROID_RESOURCE
 25.set=ANDROID_RESOURCE
+379.set=NATIVE_RESOURCE
 129.set=ANDROID_RESOURCE
 71.set=ASSET
 58.file=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
@@ -518,7 +523,7 @@
 180.base=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/assets/debug
 111.set=ANDROID_RESOURCE
 217.set=ANDROID_RESOURCE
-322.set=ANDROID_RESOURCE
+322.set=ASSET
 263.set=ANDROID_RESOURCE
 26.base=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_
 67.set=ANDROID_RESOURCE
@@ -600,7 +605,7 @@
 179.base=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_
 102.base=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_
 325.set=ANDROID_RESOURCE
-160.set=ANDROID_RESOURCE
+160.set=ASSET
 266.set=ANDROID_RESOURCE
 231.base=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_
 154.base=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_
@@ -788,6 +793,7 @@ count=341
 141.set=ANDROID_RESOURCE
 247.set=ANDROID_RESOURCE
 188.set=ANDROID_RESOURCE
+352.set=ANDROID_RESOURCE
 293.set=ANDROID_RESOURCE
 29.base=/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/newDrimer/DriMerClient.v1/android/app/build/intermediates/res/resources-debug.ap_
 102.set=ANDROID_RESOURCE
