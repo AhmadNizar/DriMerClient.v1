@@ -7,8 +7,9 @@ import {
   DeviceEventEmitter,
   Platform
 } from 'react-native'
-import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
 import { connect } from 'react-redux'
+import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
+import { AudioRecorder, AudioUtils } from 'react-native-audio';
 import { SensorManager } from 'NativeModules';
 
 const initialLayout = {
@@ -31,7 +32,7 @@ class Profile extends React.Component {
       ],
       helloState: 'hello state',
       status: 'unknown',
-      step: 0,
+      step: -1,
       gyroX: 0.00,
       gyroY: 0.00,
       gyroZ: 0.00,
@@ -48,7 +49,7 @@ class Profile extends React.Component {
 
     this.startSensor = this.startSensor.bind(this)
     this.checkStatus = this.checkStatus.bind(this)
-    // this.startRecording = this.startRecording.bind(this)
+    this.startRecording = this.startRecording.bind(this)
   }
 
   componentDidMount() {
@@ -129,28 +130,28 @@ class Profile extends React.Component {
   }
 
   startRecording() {
-    // let audioPath = AudioUtils.DocumentDirectoryPath + '/test.aac';
-    //
-    // AudioRecorder.prepareRecordingAtPath(audioPath, {
-    //   SampleRate: 22050,
-    //   Channels: 1,
-    //   AudioQuality: "Low",
-    //   AudioEncoding: "aac",
-    //   MeteringEnabled: true
-    // });
-    // AudioRecorder.startRecording()
-    // .then((data) => {
-    //   AudioRecorder.onProgress = data => {
-    //     let decibels = Math.floor(data.currentMetering);
-    //     this.setState({
-    //       decible: decibels
-    //     })
-    //   };
-    // });
+    let audioPath = AudioUtils.DocumentDirectoryPath + '/test.aac';
+
+    AudioRecorder.prepareRecordingAtPath(audioPath, {
+      SampleRate: 22050,
+      Channels: 1,
+      AudioQuality: "Low",
+      AudioEncoding: "aac",
+      MeteringEnabled: true
+    });
+    AudioRecorder.startRecording()
+    .then((data) => {
+      AudioRecorder.onProgress = data => {
+        let decibels = Math.floor(data.currentMetering);
+        this.setState({
+          decible: decibels
+        })
+      };
+    });
   }
 
   stopRecording() {
-    // AudioRecorder.stopRecording();
+    AudioRecorder.stopRecording();
   }
 
   youTodayRoute = () => {
@@ -188,7 +189,7 @@ class Profile extends React.Component {
       <View style = { styles.container }>
         <Text style = { styles.fontSizeContainer }>Status: 🚶 { this.state.status }</Text>
         <Text style = { styles.fontSizeContainer }>Steps Count: { this.state.step }/6000*</Text>
-        
+        <Text style = { styles.fontSizeContainer }>Decible: { this.state.decible }</Text>
         <TabViewAnimated
           style={styles.container}
           navigationState={this.state}

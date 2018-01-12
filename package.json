@@ -10,6 +10,7 @@
     "axios": "^0.17.1",
     "react": "16.2.0",
     "react-native": "0.52.0",
+    "react-native-audio": "git+ssh://git@github.com:M0N3/react-native-audio.git",
     "react-native-elements": "^0.18.5",
     "react-native-gesture-handler": "^1.0.0-alpha.39",
     "react-native-modal-datetime-picker": "^4.13.0",

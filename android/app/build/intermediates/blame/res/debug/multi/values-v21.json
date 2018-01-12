@@ -1688,13 +1688,13 @@
                     "endOffset": 141
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 290,
+                        "startOffset": 297,
                         "endColumn": 90,
-                        "endOffset": 376
+                        "endOffset": 383
                     }
                 }
             },
@@ -1707,13 +1707,13 @@
                     "endOffset": 244
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 381,
+                        "startOffset": 388,
                         "endColumn": 102,
-                        "endOffset": 479
+                        "endOffset": 486
                     }
                 }
             },
@@ -1726,13 +1726,13 @@
                     "endOffset": 347
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 484,
+                        "startOffset": 491,
                         "endColumn": 102,
-                        "endOffset": 582
+                        "endOffset": 589
                     }
                 }
             },
@@ -1745,13 +1745,13 @@
                     "endOffset": 452
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 587,
+                        "startOffset": 594,
                         "endColumn": 104,
-                        "endOffset": 687
+                        "endOffset": 694
                     }
                 }
             },
@@ -1764,13 +1764,13 @@
                     "endOffset": 559
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 692,
+                        "startOffset": 699,
                         "endColumn": 106,
-                        "endOffset": 794
+                        "endOffset": 801
                     }
                 }
             },
@@ -1783,13 +1783,13 @@
                     "endOffset": 668
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 799,
+                        "startOffset": 806,
                         "endColumn": 108,
-                        "endOffset": 903
+                        "endOffset": 910
                     }
                 }
             },
@@ -1802,13 +1802,13 @@
                     "endOffset": 777
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 908,
+                        "startOffset": 915,
                         "endColumn": 108,
-                        "endOffset": 1012
+                        "endOffset": 1019
                     }
                 }
             },
@@ -1821,13 +1821,13 @@
                     "endOffset": 886
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1017,
+                        "startOffset": 1024,
                         "endColumn": 108,
-                        "endOffset": 1121
+                        "endOffset": 1128
                     }
                 }
             },
@@ -1840,13 +1840,13 @@
                     "endOffset": 995
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1126,
+                        "startOffset": 1133,
                         "endColumn": 108,
-                        "endOffset": 1230
+                        "endOffset": 1237
                     }
                 }
             },
@@ -1859,13 +1859,13 @@
                     "endOffset": 1104
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1235,
+                        "startOffset": 1242,
                         "endColumn": 108,
-                        "endOffset": 1339
+                        "endOffset": 1346
                     }
                 }
             },
@@ -1878,13 +1878,13 @@
                     "endOffset": 1211
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1344,
+                        "startOffset": 1351,
                         "endColumn": 106,
-                        "endOffset": 1446
+                        "endOffset": 1453
                     }
                 }
             },
@@ -1897,13 +1897,13 @@
                     "endOffset": 1314
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1451,
+                        "startOffset": 1458,
                         "endColumn": 102,
-                        "endOffset": 1549
+                        "endOffset": 1556
                     }
                 }
             },
@@ -1916,13 +1916,13 @@
                     "endOffset": 1433
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1554,
+                        "startOffset": 1561,
                         "endColumn": 118,
-                        "endOffset": 1668
+                        "endOffset": 1675
                     }
                 }
             },
@@ -1936,14 +1936,14 @@
                     "endOffset": 1588
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1903,
+                        "startOffset": 1917,
                         "endLine": 20,
                         "endColumn": 12,
-                        "endOffset": 2053
+                        "endOffset": 2067
                     }
                 }
             },
@@ -1957,14 +1957,14 @@
                     "endOffset": 1743
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 2058,
+                        "startOffset": 2072,
                         "endLine": 22,
                         "endColumn": 12,
-                        "endOffset": 2208
+                        "endOffset": 2222
                     }
                 }
             },
@@ -1977,13 +1977,13 @@
                     "endOffset": 1848
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
-                        "startOffset": 2448,
+                        "startOffset": 2469,
                         "endColumn": 104,
-                        "endOffset": 2548
+                        "endOffset": 2569
                     }
                 }
             },
@@ -1996,13 +1996,13 @@
                     "endOffset": 1969
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 2553,
+                        "startOffset": 2574,
                         "endColumn": 120,
-                        "endOffset": 2669
+                        "endOffset": 2690
                     }
                 }
             },
@@ -2015,13 +2015,13 @@
                     "endOffset": 2070
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 2674,
+                        "startOffset": 2695,
                         "endColumn": 100,
-                        "endOffset": 2770
+                        "endOffset": 2791
                     }
                 }
             },
@@ -2035,14 +2035,14 @@
                     "endOffset": 2217
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 3005,
+                        "startOffset": 3033,
                         "endLine": 31,
                         "endColumn": 12,
-                        "endOffset": 3147
+                        "endOffset": 3175
                     }
                 }
             },
@@ -2056,14 +2056,14 @@
                     "endOffset": 2358
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
-                        "startOffset": 3152,
+                        "startOffset": 3180,
                         "endLine": 33,
                         "endColumn": 12,
-                        "endOffset": 3288
+                        "endOffset": 3316
                     }
                 }
             },
@@ -2076,13 +2076,13 @@
                     "endOffset": 2461
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 4,
-                        "startOffset": 3528,
+                        "startOffset": 3563,
                         "endColumn": 102,
-                        "endOffset": 3626
+                        "endOffset": 3661
                     }
                 }
             },
@@ -2095,13 +2095,13 @@
                     "endOffset": 2580
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 37,
                         "startColumn": 4,
-                        "startOffset": 3631,
+                        "startOffset": 3666,
                         "endColumn": 118,
-                        "endOffset": 3745
+                        "endOffset": 3780
                     }
                 }
             },
@@ -2114,13 +2114,13 @@
                     "endOffset": 2687
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
-                        "startOffset": 3750,
+                        "startOffset": 3785,
                         "endColumn": 106,
-                        "endOffset": 3852
+                        "endOffset": 3887
                     }
                 }
             },
@@ -2133,13 +2133,13 @@
                     "endOffset": 2790
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
-                        "startOffset": 3857,
+                        "startOffset": 3892,
                         "endColumn": 102,
-                        "endOffset": 3955
+                        "endOffset": 3990
                     }
                 }
             },
@@ -2153,14 +2153,14 @@
                     "endOffset": 2937
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
-                        "startOffset": 4190,
+                        "startOffset": 4232,
                         "endLine": 43,
                         "endColumn": 12,
-                        "endOffset": 4332
+                        "endOffset": 4374
                     }
                 }
             },
@@ -2174,14 +2174,14 @@
                     "endOffset": 3092
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 44,
                         "startColumn": 4,
-                        "startOffset": 4337,
+                        "startOffset": 4379,
                         "endLine": 45,
                         "endColumn": 12,
-                        "endOffset": 4487
+                        "endOffset": 4529
                     }
                 }
             },
@@ -2195,14 +2195,14 @@
                     "endOffset": 3263
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
-                        "startOffset": 4492,
+                        "startOffset": 4534,
                         "endLine": 47,
                         "endColumn": 12,
-                        "endOffset": 4658
+                        "endOffset": 4700
                     }
                 }
             },
@@ -2216,14 +2216,14 @@
                     "endOffset": 3412
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 48,
                         "startColumn": 4,
-                        "startOffset": 4663,
+                        "startOffset": 4705,
                         "endLine": 49,
                         "endColumn": 12,
-                        "endOffset": 4807
+                        "endOffset": 4849
                     }
                 }
             },
@@ -2237,14 +2237,14 @@
                     "endOffset": 3577
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 50,
                         "startColumn": 4,
-                        "startOffset": 4812,
+                        "startOffset": 4854,
                         "endLine": 51,
                         "endColumn": 12,
-                        "endOffset": 4972
+                        "endOffset": 5014
                     }
                 }
             },
@@ -2258,14 +2258,14 @@
                     "endOffset": 3734
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 52,
                         "startColumn": 4,
-                        "startOffset": 4977,
+                        "startOffset": 5019,
                         "endLine": 53,
                         "endColumn": 12,
-                        "endOffset": 5129
+                        "endOffset": 5171
                     }
                 }
             },
@@ -2279,14 +2279,14 @@
                     "endOffset": 3885
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 54,
                         "startColumn": 4,
-                        "startOffset": 5134,
+                        "startOffset": 5176,
                         "endLine": 55,
                         "endColumn": 12,
-                        "endOffset": 5280
+                        "endOffset": 5322
                     }
                 }
             },
@@ -2299,13 +2299,13 @@
                     "endOffset": 4004
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
-                        "startOffset": 5520,
+                        "startOffset": 5569,
                         "endColumn": 118,
-                        "endOffset": 5634
+                        "endOffset": 5683
                     }
                 }
             },
@@ -2319,14 +2319,14 @@
                     "endOffset": 4153
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 4,
-                        "startOffset": 5869,
+                        "startOffset": 5925,
                         "endLine": 62,
                         "endColumn": 12,
-                        "endOffset": 6013
+                        "endOffset": 6069
                     }
                 }
             },
@@ -2340,14 +2340,14 @@
                     "endOffset": 4302
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 63,
                         "startColumn": 4,
-                        "startOffset": 6018,
+                        "startOffset": 6074,
                         "endLine": 64,
                         "endColumn": 12,
-                        "endOffset": 6162
+                        "endOffset": 6218
                     }
                 }
             },
@@ -2360,13 +2360,13 @@
                     "endOffset": 4414
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 67,
                         "startColumn": 4,
-                        "startOffset": 6402,
+                        "startOffset": 6465,
                         "endColumn": 111,
-                        "endOffset": 6509
+                        "endOffset": 6572
                     }
                 }
             },
@@ -2379,13 +2379,13 @@
                     "endOffset": 4561
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 70,
                         "startColumn": 4,
-                        "startOffset": 6744,
+                        "startOffset": 6814,
                         "endColumn": 146,
-                        "endOffset": 6886
+                        "endOffset": 6956
                     }
                 }
             },
@@ -2399,14 +2399,14 @@
                     "endOffset": 4714
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 71,
                         "startColumn": 4,
-                        "startOffset": 6891,
+                        "startOffset": 6961,
                         "endLine": 72,
                         "endColumn": 12,
-                        "endOffset": 7039
+                        "endOffset": 7109
                     }
                 }
             },
@@ -2420,14 +2420,14 @@
                     "endOffset": 4861
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 73,
                         "startColumn": 4,
-                        "startOffset": 7044,
+                        "startOffset": 7114,
                         "endLine": 74,
                         "endColumn": 12,
-                        "endOffset": 7186
+                        "endOffset": 7256
                     }
                 }
             },
@@ -2440,13 +2440,13 @@
                     "endOffset": 4936
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 77,
                         "startColumn": 4,
-                        "startOffset": 7421,
+                        "startOffset": 7498,
                         "endColumn": 74,
-                        "endOffset": 7491
+                        "endOffset": 7568
                     }
                 }
             },
@@ -2459,13 +2459,13 @@
                     "endOffset": 5025
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 78,
                         "startColumn": 4,
-                        "startOffset": 7496,
+                        "startOffset": 7573,
                         "endColumn": 88,
-                        "endOffset": 7580
+                        "endOffset": 7657
                     }
                 }
             },
@@ -2478,13 +2478,13 @@
                     "endOffset": 5112
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 79,
                         "startColumn": 4,
-                        "startOffset": 7585,
+                        "startOffset": 7662,
                         "endColumn": 86,
-                        "endOffset": 7667
+                        "endOffset": 7744
                     }
                 }
             },
@@ -2497,13 +2497,13 @@
                     "endOffset": 5213
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 80,
                         "startColumn": 4,
-                        "startOffset": 7672,
+                        "startOffset": 7749,
                         "endColumn": 100,
-                        "endOffset": 7768
+                        "endOffset": 7845
                     }
                 }
             },
@@ -2512,82 +2512,124 @@
                     "startLine": 59,
                     "startColumn": 4,
                     "startOffset": 5218,
-                    "endLine": 106,
+                    "endLine": 104,
                     "endColumn": 12,
-                    "endOffset": 8619
+                    "endOffset": 8455
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 81,
                         "startColumn": 4,
-                        "startOffset": 7773,
-                        "endLine": 128,
+                        "startOffset": 7850,
+                        "endLine": 126,
                         "endColumn": 12,
-                        "endOffset": 11174
+                        "endOffset": 11087
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 107,
+                    "startLine": 105,
                     "startColumn": 4,
-                    "startOffset": 8624,
-                    "endLine": 109,
+                    "startOffset": 8460,
+                    "endLine": 107,
                     "endColumn": 12,
-                    "endOffset": 8805
+                    "endOffset": 8641
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 129,
+                        "startLine": 127,
                         "startColumn": 4,
-                        "startOffset": 11179,
-                        "endLine": 131,
+                        "startOffset": 11092,
+                        "endLine": 129,
                         "endColumn": 12,
-                        "endOffset": 11360
+                        "endOffset": 11273
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 110,
+                    "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 8810,
-                    "endLine": 157,
+                    "startOffset": 8646,
+                    "endLine": 153,
                     "endColumn": 12,
-                    "endOffset": 12223
+                    "endOffset": 11895
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 132,
+                        "startLine": 130,
                         "startColumn": 4,
-                        "startOffset": 11365,
-                        "endLine": 179,
+                        "startOffset": 11278,
+                        "endLine": 175,
                         "endColumn": 12,
-                        "endOffset": 14778
+                        "endOffset": 14527
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 158,
+                    "startLine": 154,
                     "startColumn": 4,
-                    "startOffset": 12228,
-                    "endLine": 160,
+                    "startOffset": 11900,
+                    "endLine": 156,
                     "endColumn": 12,
-                    "endOffset": 12421
+                    "endOffset": 12093
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 180,
+                        "startLine": 176,
                         "startColumn": 4,
-                        "startOffset": 14783,
+                        "startOffset": 14532,
+                        "endLine": 178,
+                        "endColumn": 12,
+                        "endOffset": 14725
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 157,
+                    "startColumn": 4,
+                    "startOffset": 12098,
+                    "endLine": 158,
+                    "endColumn": 12,
+                    "endOffset": 12216
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 181,
+                        "startColumn": 4,
+                        "startOffset": 14967,
                         "endLine": 182,
                         "endColumn": 12,
-                        "endOffset": 14976
+                        "endOffset": 15085
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 159,
+                    "startColumn": 4,
+                    "startOffset": 12221,
+                    "endLine": 160,
+                    "endColumn": 12,
+                    "endOffset": 12339
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 183,
+                        "startColumn": 4,
+                        "startOffset": 15090,
+                        "endLine": 184,
+                        "endColumn": 12,
+                        "endOffset": 15208
                     }
                 }
             },
@@ -2595,20 +2637,20 @@
                 "to": {
                     "startLine": 161,
                     "startColumn": 4,
-                    "startOffset": 12426,
+                    "startOffset": 12344,
                     "endLine": 162,
                     "endColumn": 12,
-                    "endOffset": 12544
+                    "endOffset": 12452
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 185,
                         "startColumn": 4,
-                        "startOffset": 15211,
+                        "startOffset": 15213,
                         "endLine": 186,
                         "endColumn": 12,
-                        "endOffset": 15329
+                        "endOffset": 15321
                     }
                 }
             },
@@ -2616,83 +2658,81 @@
                 "to": {
                     "startLine": 163,
                     "startColumn": 4,
-                    "startOffset": 12549,
-                    "endLine": 164,
+                    "startOffset": 12457,
+                    "endLine": 165,
                     "endColumn": 12,
-                    "endOffset": 12667
+                    "endOffset": 12635
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 187,
                         "startColumn": 4,
-                        "startOffset": 15334,
-                        "endLine": 188,
+                        "startOffset": 15326,
+                        "endLine": 189,
                         "endColumn": 12,
-                        "endOffset": 15452
+                        "endOffset": 15504
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 165,
+                    "startLine": 166,
                     "startColumn": 4,
-                    "startOffset": 12672,
-                    "endLine": 166,
+                    "startOffset": 12640,
+                    "endLine": 167,
                     "endColumn": 12,
-                    "endOffset": 12780
+                    "endOffset": 12766
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 189,
+                        "startLine": 190,
                         "startColumn": 4,
-                        "startOffset": 15457,
-                        "endLine": 190,
+                        "startOffset": 15509,
+                        "endLine": 191,
                         "endColumn": 12,
-                        "endOffset": 15565
+                        "endOffset": 15635
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 167,
+                    "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 12785,
-                    "endLine": 169,
+                    "startOffset": 12771,
+                    "endLine": 170,
                     "endColumn": 12,
-                    "endOffset": 12963
+                    "endOffset": 12967
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 191,
+                        "startLine": 192,
                         "startColumn": 4,
-                        "startOffset": 15570,
-                        "endLine": 193,
+                        "startOffset": 15640,
+                        "endLine": 194,
                         "endColumn": 12,
-                        "endOffset": 15748
+                        "endOffset": 15836
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 170,
+                    "startLine": 171,
                     "startColumn": 4,
-                    "startOffset": 12968,
-                    "endLine": 171,
-                    "endColumn": 12,
-                    "endOffset": 13094
+                    "startOffset": 12972,
+                    "endColumn": 88,
+                    "endOffset": 13056
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 194,
+                        "startLine": 195,
                         "startColumn": 4,
-                        "startOffset": 15753,
-                        "endLine": 195,
-                        "endColumn": 12,
-                        "endOffset": 15879
+                        "startOffset": 15841,
+                        "endColumn": 88,
+                        "endOffset": 15925
                     }
                 }
             },
@@ -2700,18 +2740,18 @@
                 "to": {
                     "startLine": 172,
                     "startColumn": 4,
-                    "startOffset": 13099,
-                    "endColumn": 116,
-                    "endOffset": 13211
+                    "startOffset": 13061,
+                    "endColumn": 110,
+                    "endOffset": 13167
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 196,
                         "startColumn": 4,
-                        "startOffset": 15884,
-                        "endColumn": 116,
-                        "endOffset": 15996
+                        "startOffset": 15930,
+                        "endColumn": 110,
+                        "endOffset": 16036
                     }
                 }
             },
@@ -2719,18 +2759,18 @@
                 "to": {
                     "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 13216,
-                    "endColumn": 88,
-                    "endOffset": 13300
+                    "startOffset": 13172,
+                    "endColumn": 126,
+                    "endOffset": 13294
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 197,
                         "startColumn": 4,
-                        "startOffset": 16001,
-                        "endColumn": 88,
-                        "endOffset": 16085
+                        "startOffset": 16041,
+                        "endColumn": 126,
+                        "endOffset": 16163
                     }
                 }
             },
@@ -2738,18 +2778,18 @@
                 "to": {
                     "startLine": 174,
                     "startColumn": 4,
-                    "startOffset": 13305,
-                    "endColumn": 110,
-                    "endOffset": 13411
+                    "startOffset": 13299,
+                    "endColumn": 100,
+                    "endOffset": 13395
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 198,
                         "startColumn": 4,
-                        "startOffset": 16090,
-                        "endColumn": 110,
-                        "endOffset": 16196
+                        "startOffset": 16168,
+                        "endColumn": 100,
+                        "endOffset": 16264
                     }
                 }
             },
@@ -2757,18 +2797,18 @@
                 "to": {
                     "startLine": 175,
                     "startColumn": 4,
-                    "startOffset": 13416,
-                    "endColumn": 126,
-                    "endOffset": 13538
+                    "startOffset": 13400,
+                    "endColumn": 94,
+                    "endOffset": 13490
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 199,
                         "startColumn": 4,
-                        "startOffset": 16201,
-                        "endColumn": 126,
-                        "endOffset": 16323
+                        "startOffset": 16269,
+                        "endColumn": 94,
+                        "endOffset": 16359
                     }
                 }
             },
@@ -2776,18 +2816,18 @@
                 "to": {
                     "startLine": 176,
                     "startColumn": 4,
-                    "startOffset": 13543,
-                    "endColumn": 100,
-                    "endOffset": 13639
+                    "startOffset": 13495,
+                    "endColumn": 122,
+                    "endOffset": 13613
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 200,
                         "startColumn": 4,
-                        "startOffset": 16328,
-                        "endColumn": 100,
-                        "endOffset": 16424
+                        "startOffset": 16364,
+                        "endColumn": 122,
+                        "endOffset": 16482
                     }
                 }
             },
@@ -2795,18 +2835,18 @@
                 "to": {
                     "startLine": 177,
                     "startColumn": 4,
-                    "startOffset": 13644,
-                    "endColumn": 94,
-                    "endOffset": 13734
+                    "startOffset": 13618,
+                    "endColumn": 128,
+                    "endOffset": 13742
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 201,
                         "startColumn": 4,
-                        "startOffset": 16429,
-                        "endColumn": 94,
-                        "endOffset": 16519
+                        "startOffset": 16487,
+                        "endColumn": 128,
+                        "endOffset": 16611
                     }
                 }
             },
@@ -2814,18 +2854,18 @@
                 "to": {
                     "startLine": 178,
                     "startColumn": 4,
-                    "startOffset": 13739,
-                    "endColumn": 122,
-                    "endOffset": 13857
+                    "startOffset": 13747,
+                    "endColumn": 116,
+                    "endOffset": 13859
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 202,
                         "startColumn": 4,
-                        "startOffset": 16524,
-                        "endColumn": 122,
-                        "endOffset": 16642
+                        "startOffset": 16616,
+                        "endColumn": 116,
+                        "endOffset": 16728
                     }
                 }
             },
@@ -2833,56 +2873,20 @@
                 "to": {
                     "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 13862,
-                    "endColumn": 128,
-                    "endOffset": 13986
+                    "startOffset": 13864,
+                    "endLine": 181,
+                    "endColumn": 12,
+                    "endOffset": 14036
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 203,
                         "startColumn": 4,
-                        "startOffset": 16647,
-                        "endColumn": 128,
-                        "endOffset": 16771
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 180,
-                    "startColumn": 4,
-                    "startOffset": 13991,
-                    "endColumn": 116,
-                    "endOffset": 14103
-                },
-                "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 204,
-                        "startColumn": 4,
-                        "startOffset": 16776,
-                        "endColumn": 116,
-                        "endOffset": 16888
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 181,
-                    "startColumn": 4,
-                    "startOffset": 14108,
-                    "endColumn": 92,
-                    "endOffset": 14196
-                },
-                "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 205,
-                        "startColumn": 4,
-                        "startOffset": 16893,
-                        "endColumn": 92,
-                        "endOffset": 16981
+                        "startOffset": 16733,
+                        "endLine": 205,
+                        "endColumn": 12,
+                        "endOffset": 16905
                     }
                 }
             },
@@ -2890,144 +2894,144 @@
                 "to": {
                     "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 14201,
-                    "endLine": 183,
-                    "endColumn": 12,
-                    "endOffset": 14331
+                    "startOffset": 14041,
+                    "endColumn": 98,
+                    "endOffset": 14135
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 206,
                         "startColumn": 4,
-                        "startOffset": 16986,
-                        "endLine": 207,
-                        "endColumn": 12,
-                        "endOffset": 17116
+                        "startOffset": 16910,
+                        "endColumn": 98,
+                        "endOffset": 17004
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 184,
+                    "startLine": 183,
                     "startColumn": 4,
-                    "startOffset": 14336,
-                    "endLine": 185,
+                    "startOffset": 14140,
+                    "endLine": 184,
                     "endColumn": 12,
-                    "endOffset": 14474
+                    "endOffset": 14270
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 208,
+                        "startLine": 207,
                         "startColumn": 4,
-                        "startOffset": 17121,
-                        "endLine": 209,
+                        "startOffset": 17009,
+                        "endLine": 208,
                         "endColumn": 12,
-                        "endOffset": 17259
+                        "endOffset": 17139
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 186,
+                    "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 14479,
-                    "endLine": 187,
+                    "startOffset": 14275,
+                    "endLine": 186,
                     "endColumn": 12,
-                    "endOffset": 14609
+                    "endOffset": 14413
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 210,
+                        "startLine": 209,
                         "startColumn": 4,
-                        "startOffset": 17264,
-                        "endLine": 211,
+                        "startOffset": 17144,
+                        "endLine": 210,
                         "endColumn": 12,
-                        "endOffset": 17394
+                        "endOffset": 17282
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 188,
+                    "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 14614,
-                    "endLine": 189,
+                    "startOffset": 14418,
+                    "endLine": 188,
                     "endColumn": 12,
-                    "endOffset": 14728
+                    "endOffset": 14548
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 212,
+                        "startLine": 211,
                         "startColumn": 4,
-                        "startOffset": 17399,
-                        "endLine": 213,
+                        "startOffset": 17287,
+                        "endLine": 212,
                         "endColumn": 12,
-                        "endOffset": 17513
+                        "endOffset": 17417
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 190,
+                    "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 14733,
-                    "endLine": 193,
+                    "startOffset": 14553,
+                    "endLine": 190,
                     "endColumn": 12,
-                    "endOffset": 14929
+                    "endOffset": 14667
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 214,
+                        "startLine": 213,
                         "startColumn": 4,
-                        "startOffset": 17518,
-                        "endLine": 217,
+                        "startOffset": 17422,
+                        "endLine": 214,
                         "endColumn": 12,
-                        "endOffset": 17714
+                        "endOffset": 17536
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 194,
+                    "startLine": 191,
                     "startColumn": 4,
-                    "startOffset": 14934,
-                    "endLine": 195,
+                    "startOffset": 14672,
+                    "endLine": 194,
                     "endColumn": 12,
-                    "endOffset": 15048
+                    "endOffset": 14868
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 218,
+                        "startLine": 215,
                         "startColumn": 4,
-                        "startOffset": 17719,
-                        "endLine": 219,
+                        "startOffset": 17541,
+                        "endLine": 218,
                         "endColumn": 12,
-                        "endOffset": 17833
+                        "endOffset": 17737
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 196,
+                    "startLine": 195,
                     "startColumn": 4,
-                    "startOffset": 15053,
-                    "endColumn": 92,
-                    "endOffset": 15141
+                    "startOffset": 14873,
+                    "endLine": 196,
+                    "endColumn": 12,
+                    "endOffset": 14987
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 220,
+                        "startLine": 219,
                         "startColumn": 4,
-                        "startOffset": 17838,
-                        "endColumn": 92,
-                        "endOffset": 17926
+                        "startOffset": 17742,
+                        "endLine": 220,
+                        "endColumn": 12,
+                        "endOffset": 17856
                     }
                 }
             },
@@ -3035,18 +3039,18 @@
                 "to": {
                     "startLine": 197,
                     "startColumn": 4,
-                    "startOffset": 15146,
-                    "endColumn": 110,
-                    "endOffset": 15252
+                    "startOffset": 14992,
+                    "endColumn": 92,
+                    "endOffset": 15080
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 221,
                         "startColumn": 4,
-                        "startOffset": 17931,
-                        "endColumn": 110,
-                        "endOffset": 18037
+                        "startOffset": 17861,
+                        "endColumn": 92,
+                        "endOffset": 17949
                     }
                 }
             },
@@ -3054,18 +3058,18 @@
                 "to": {
                     "startLine": 198,
                     "startColumn": 4,
-                    "startOffset": 15257,
-                    "endColumn": 55,
-                    "endOffset": 15308
+                    "startOffset": 15085,
+                    "endColumn": 110,
+                    "endOffset": 15191
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 222,
                         "startColumn": 4,
-                        "startOffset": 18042,
-                        "endColumn": 55,
-                        "endOffset": 18093
+                        "startOffset": 17954,
+                        "endColumn": 110,
+                        "endOffset": 18060
                     }
                 }
             },
@@ -3073,102 +3077,102 @@
                 "to": {
                     "startLine": 199,
                     "startColumn": 4,
-                    "startOffset": 15313,
-                    "endLine": 200,
-                    "endColumn": 12,
-                    "endOffset": 15415
+                    "startOffset": 15196,
+                    "endColumn": 55,
+                    "endOffset": 15247
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 223,
                         "startColumn": 4,
-                        "startOffset": 18098,
-                        "endLine": 224,
-                        "endColumn": 12,
-                        "endOffset": 18200
+                        "startOffset": 18065,
+                        "endColumn": 55,
+                        "endOffset": 18116
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 201,
+                    "startLine": 200,
                     "startColumn": 4,
-                    "startOffset": 15420,
-                    "endLine": 204,
+                    "startOffset": 15252,
+                    "endLine": 201,
                     "endColumn": 12,
-                    "endOffset": 15610
+                    "endOffset": 15354
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 225,
+                        "startLine": 224,
                         "startColumn": 4,
-                        "startOffset": 18205,
-                        "endLine": 228,
+                        "startOffset": 18121,
+                        "endLine": 225,
                         "endColumn": 12,
-                        "endOffset": 18395
+                        "endOffset": 18223
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 205,
+                    "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 15615,
-                    "endLine": 206,
+                    "startOffset": 15359,
+                    "endLine": 205,
                     "endColumn": 12,
-                    "endOffset": 15721
+                    "endOffset": 15549
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 229,
+                        "startLine": 226,
                         "startColumn": 4,
-                        "startOffset": 18400,
-                        "endLine": 230,
+                        "startOffset": 18228,
+                        "endLine": 229,
                         "endColumn": 12,
-                        "endOffset": 18506
+                        "endOffset": 18418
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 207,
+                    "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 15726,
-                    "endLine": 208,
+                    "startOffset": 15554,
+                    "endLine": 207,
                     "endColumn": 12,
-                    "endOffset": 15854
+                    "endOffset": 15660
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 231,
+                        "startLine": 230,
                         "startColumn": 4,
-                        "startOffset": 18511,
-                        "endLine": 232,
+                        "startOffset": 18423,
+                        "endLine": 231,
                         "endColumn": 12,
-                        "endOffset": 18639
+                        "endOffset": 18529
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 209,
+                    "startLine": 208,
                     "startColumn": 4,
-                    "startOffset": 15859,
-                    "endColumn": 94,
-                    "endOffset": 15949
+                    "startOffset": 15665,
+                    "endLine": 209,
+                    "endColumn": 12,
+                    "endOffset": 15793
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 233,
+                        "startLine": 232,
                         "startColumn": 4,
-                        "startOffset": 18644,
-                        "endColumn": 94,
-                        "endOffset": 18734
+                        "startOffset": 18534,
+                        "endLine": 233,
+                        "endColumn": 12,
+                        "endOffset": 18662
                     }
                 }
             },
@@ -3176,18 +3180,18 @@
                 "to": {
                     "startLine": 210,
                     "startColumn": 4,
-                    "startOffset": 15954,
-                    "endColumn": 90,
-                    "endOffset": 16040
+                    "startOffset": 15798,
+                    "endColumn": 94,
+                    "endOffset": 15888
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 234,
                         "startColumn": 4,
-                        "startOffset": 18739,
-                        "endColumn": 90,
-                        "endOffset": 18825
+                        "startOffset": 18667,
+                        "endColumn": 94,
+                        "endOffset": 18757
                     }
                 }
             },
@@ -3195,18 +3199,18 @@
                 "to": {
                     "startLine": 211,
                     "startColumn": 4,
-                    "startOffset": 16045,
-                    "endColumn": 112,
-                    "endOffset": 16153
+                    "startOffset": 15893,
+                    "endColumn": 90,
+                    "endOffset": 15979
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 235,
                         "startColumn": 4,
-                        "startOffset": 18830,
-                        "endColumn": 112,
-                        "endOffset": 18938
+                        "startOffset": 18762,
+                        "endColumn": 90,
+                        "endOffset": 18848
                     }
                 }
             },
@@ -3214,18 +3218,18 @@
                 "to": {
                     "startLine": 212,
                     "startColumn": 4,
-                    "startOffset": 16158,
-                    "endColumn": 116,
-                    "endOffset": 16270
+                    "startOffset": 15984,
+                    "endColumn": 90,
+                    "endOffset": 16070
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 236,
                         "startColumn": 4,
-                        "startOffset": 18943,
-                        "endColumn": 116,
-                        "endOffset": 19055
+                        "startOffset": 18853,
+                        "endColumn": 90,
+                        "endOffset": 18939
                     }
                 }
             },
@@ -3233,102 +3237,102 @@
                 "to": {
                     "startLine": 213,
                     "startColumn": 4,
-                    "startOffset": 16275,
-                    "endLine": 214,
-                    "endColumn": 12,
-                    "endOffset": 16409
+                    "startOffset": 16075,
+                    "endColumn": 116,
+                    "endOffset": 16187
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 237,
                         "startColumn": 4,
-                        "startOffset": 19060,
-                        "endLine": 238,
-                        "endColumn": 12,
-                        "endOffset": 19194
+                        "startOffset": 18944,
+                        "endColumn": 116,
+                        "endOffset": 19056
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 215,
+                    "startLine": 214,
                     "startColumn": 4,
-                    "startOffset": 16414,
-                    "endLine": 221,
+                    "startOffset": 16192,
+                    "endLine": 215,
                     "endColumn": 12,
-                    "endOffset": 16762
+                    "endOffset": 16326
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 241,
+                        "startLine": 238,
                         "startColumn": 4,
-                        "startOffset": 19429,
-                        "endLine": 247,
+                        "startOffset": 19061,
+                        "endLine": 239,
                         "endColumn": 12,
-                        "endOffset": 19777
+                        "endOffset": 19195
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 222,
+                    "startLine": 216,
                     "startColumn": 4,
-                    "startOffset": 16767,
-                    "endLine": 228,
+                    "startOffset": 16331,
+                    "endLine": 222,
                     "endColumn": 12,
-                    "endOffset": 17127
+                    "endOffset": 16679
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 248,
+                        "startLine": 242,
                         "startColumn": 4,
-                        "startOffset": 19782,
-                        "endLine": 254,
+                        "startOffset": 19437,
+                        "endLine": 248,
                         "endColumn": 12,
-                        "endOffset": 20142
+                        "endOffset": 19785
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 229,
+                    "startLine": 223,
                     "startColumn": 4,
-                    "startOffset": 17132,
-                    "endLine": 238,
+                    "startOffset": 16684,
+                    "endLine": 229,
                     "endColumn": 12,
-                    "endOffset": 17807
+                    "endOffset": 17044
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 255,
+                        "startLine": 249,
                         "startColumn": 4,
-                        "startOffset": 20147,
-                        "endLine": 264,
+                        "startOffset": 19790,
+                        "endLine": 255,
                         "endColumn": 12,
-                        "endOffset": 20822
+                        "endOffset": 20150
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 239,
+                    "startLine": 230,
                     "startColumn": 4,
-                    "startOffset": 17812,
-                    "endColumn": 56,
-                    "endOffset": 17864
+                    "startOffset": 17049,
+                    "endLine": 239,
+                    "endColumn": 12,
+                    "endOffset": 17724
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
-                        "startLine": 265,
+                        "startLine": 256,
                         "startColumn": 4,
-                        "startOffset": 20827,
-                        "endColumn": 56,
-                        "endOffset": 20879
+                        "startOffset": 20155,
+                        "endLine": 265,
+                        "endColumn": 12,
+                        "endOffset": 20830
                     }
                 }
             },
@@ -3336,18 +3340,37 @@
                 "to": {
                     "startLine": 240,
                     "startColumn": 4,
-                    "startOffset": 17869,
-                    "endColumn": 57,
-                    "endOffset": 17922
+                    "startOffset": 17729,
+                    "endColumn": 56,
+                    "endOffset": 17781
                 },
                 "from": {
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml",
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
                     "position": {
                         "startLine": 266,
                         "startColumn": 4,
-                        "startOffset": 20884,
+                        "startOffset": 20835,
+                        "endColumn": 56,
+                        "endOffset": 20887
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 241,
+                    "startColumn": 4,
+                    "startOffset": 17786,
+                    "endColumn": 57,
+                    "endOffset": 17839
+                },
+                "from": {
+                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 267,
+                        "startColumn": 4,
+                        "startOffset": 20892,
                         "endColumn": 57,
-                        "endOffset": 20937
+                        "endOffset": 20945
                     }
                 }
             }
