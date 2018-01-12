@@ -1,26 +1,32 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, Button, TouchableOpacity, ScrollView, Dimensions, KeyboardAvoidingView, TextInput } from 'react-native';
-import NavBar, { NavGroup, NavButton, NavButtonText, NavTitle } from 'react-native-nav'
+import NavBar, { NavGroup, NavButton, NavButtonText, NavTitle } from 'react-native-nav';
+import { Icon } from 'react-native-elements';
 
 export default class Navbar extends React.Component {
   render() {
     return (
       <NavBar style={styles}>
-
         <NavButton>
-          <NavButtonText style={styles.buttonText}>
-            {"Setting"}
-          </NavButtonText>
+          <Icon
+            name='cog'
+            type="font-awesome"
+            color="white"
+          />
         </NavButton>
         <NavButton>
-          <NavButtonText style={styles.buttonText}>
-            {"Tap Bottle"}
-          </NavButtonText>
+          <Icon
+            name='plus-circle'
+            type="font-awesome"
+            color="white"
+          />
         </NavButton>
         <NavButton>
-          <NavButtonText style={styles.buttonText}>
-            {"Profile"}
-          </NavButtonText>
+          <Icon
+            name='user-circle'
+            type="font-awesome"
+            color="white"
+          />
         </NavButton>
       </NavBar>
     );

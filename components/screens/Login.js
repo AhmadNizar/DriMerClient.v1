@@ -19,27 +19,27 @@ class Login extends React.Component {
   }
 
   signin = () => {
-    if(this.state.email && this.state.password) {
+    if (this.state.email && this.state.password) {
       this.setState({
         isLoading: true
       })
-  
+
       let dataUser = {
         email: this.state.email,
         password: this.state.password
       }
       this.props.signin(dataUser)
-    } else {     
+    } else {
       Alert.alert(
         'Alert',
         'Email dan Password must be filled',
         [
-          {text: 'OK'},
+          { text: 'OK' },
         ],
         { cancelable: false }
-      )      
+      )
     }
-    
+
     // this.props.navigation.navigate('Quisioner')
   }
 
@@ -48,14 +48,14 @@ class Login extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({isLoading: false})
+    this.setState({ isLoading: false })
     console.log(nextProps.isLoginSuccess)
-    if(nextProps.isLoginSuccess) {
+    if (nextProps.isLoginSuccess) {
       Alert.alert(
         'Success',
         'Login success',
         [
-          {text: 'OK', onPress: () => this.props.navigation.navigate('Quisioner')},
+          { text: 'OK', onPress: () => this.props.navigation.navigate('Quisioner') },
         ],
         { cancelable: false }
       )
@@ -64,18 +64,18 @@ class Login extends React.Component {
         'Failed',
         'Your email or password is wrong',
         [
-          {text: 'OK'},
+          { text: 'OK' },
         ],
         { cancelable: false }
       )
     }
-  }  
+  }
 
   render() {
     const { navigate } = this.props.navigation
 
     var tunggu = <Text>Tunggu</Text>
-    if(this.state.isLoading == false) {
+    if (this.state.isLoading == false) {
       tunggu = <Text></Text>
     } else {
       tunggu = <ActivityIndicator />
@@ -94,7 +94,7 @@ class Login extends React.Component {
           </View>
           <View>
             <SocialIcon
-              title='Sign In With Facebook' 
+              title='Sign In With Facebook'
               button
               type='facebook'
               onPress={this.loginFacebook}
