@@ -8,7 +8,6 @@ import {
   Platform
 } from 'react-native'
 import { connect } from 'react-redux'
-import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
 import { AudioRecorder, AudioUtils } from 'react-native-audio';
 import { SensorManager } from 'NativeModules';
 
@@ -25,14 +24,9 @@ class Profile extends React.Component {
   constructor() {
     super()
     this.state = {
-      index: 0,
-      routes: [
-        { key: 'youToday', title: 'You Today' },
-        { key: 'history', title: 'History' },
-      ],
-      helloState: 'hello state',
       status: 'unknown',
-      step: -1,
+      emoji: '',
+      step: 0,
       gyroX: 0.00,
       gyroY: 0.00,
       gyroZ: 0.00,
@@ -61,6 +55,11 @@ class Profile extends React.Component {
     this.startSensor()
   }
 
+  componentWillUnmount() {
+    console.log('unmount')
+    this.stopRecording()
+  }
+
   startSensor () {
     console.log('start Sensor')
     DeviceEventEmitter.addListener('LightSensor', (data) => {
@@ -72,6 +71,7 @@ class Profile extends React.Component {
       this.setState({
         step: this.state.step + 1,
         status: 'walk/run',
+        emoji: '🚶',
         countForGetStatus: 0
       })
     });
@@ -86,7 +86,6 @@ class Profile extends React.Component {
       if(this.state.countForGetStatus == 5) {
         console.log(this.state.countForGetStatus)
         this.checkStatus()
-        this.stopRecording()
       } else if (this.state.countForGetStatus == 1) {
         this.startRecording()
       }
@@ -109,17 +108,22 @@ class Profile extends React.Component {
   checkStatus() {
     console.log('checkStatus')
     let accelXstatus = this.state.accelX < 1.5 && this.state.accelX > -1.5
+    let accelYstatus = this.state.accelY < 1.5 && this.state.accelY > -1.5
+    let accelZstatus = this.state.accelZ < 1.5 && this.state.accelZ > -1.5
     let lightStatus = this.state.lightSensor < 10
     let micStatus = this.state.decible < -45
+    console.log(this.state.decible)
     console.log(accelXstatus, lightStatus, micStatus)
     if(lightStatus && accelXstatus && micStatus){
       this.setState({
         status: 'rest/sleep',
+        emoji: '🛌',
         countForGetStatus: 0
       })
     } else if (accelXstatus) {
       this.setState({
         status: 'rest/sit',
+        emoji: '💺',
         countForGetStatus: 0
       })
     } else {
@@ -130,8 +134,8 @@ class Profile extends React.Component {
   }
 
   startRecording() {
+    this.stopRecording()
     let audioPath = AudioUtils.DocumentDirectoryPath + '/test.aac';
-
     AudioRecorder.prepareRecordingAtPath(audioPath, {
       SampleRate: 22050,
       Channels: 1,
@@ -151,53 +155,39 @@ class Profile extends React.Component {
   }
 
   stopRecording() {
-    AudioRecorder.stopRecording();
+    AudioRecorder.stopRecording()
+    .then(() => {
+      console.log('audio stop record')
+    })
+    .catch(err => {
+      console.log('cannot stop record', err)
+    })
   }
-
-  youTodayRoute = () => {
-    console.log('here')
-    return (
-      <View style={ styles.tabContainer }>
-        <Text style = { styles.fontSizeContainer }>Status: 🚶 { this.state.status }</Text>
-        <Text style = { styles.fontSizeContainer }>Steps Count: { this.state.step }/6000*</Text>
-        <Text style = { styles.fontSizeContainer }>Drink Count: 0.2/2.1 liters</Text>
-        <Text style = { styles.fontSizeContainer }>{ this.state.helloState }</Text>
-      </View>
-    )
-  };
-
-  historyRoute = () => {
-    return (
-      <View style={ styles.tabContainer }>
-        <Text style = { styles.fontSizeContainer }>Steps per day: 666</Text>
-        <Text style = { styles.fontSizeContainer }>Drink per day: 2.0 liters</Text>
-      </View>
-    )
-  };
-
-  _handleIndexChange = index => this.setState({ index });
-
-  _renderHeader = props => <TabBar {...props} />;
-
-  _renderScene = SceneMap({
-    youToday: this.youTodayRoute,
-    history: this.historyRoute,
-  });
 
   render() {
     return (
       <View style = { styles.container }>
-        <Text style = { styles.fontSizeContainer }>Status: 🚶 { this.state.status }</Text>
-        <Text style = { styles.fontSizeContainer }>Steps Count: { this.state.step }/6000*</Text>
-        <Text style = { styles.fontSizeContainer }>Decible: { this.state.decible }</Text>
-        <TabViewAnimated
-          style={styles.container}
-          navigationState={this.state}
-          renderScene={this._renderScene}
-          renderHeader={this._renderHeader}
-          onIndexChange={this._handleIndexChange}
-          initialLayout={initialLayout}
-        />
+        <View style = { styles.tabContainer }>
+          <View>
+            <Text style = {{ fontSize: 50 }}>{ this.state.emoji } { this.state.status }</Text>
+          </View>
+          <View style = {{ flexDirection: 'row' }}>
+            <View>
+              <Text style = {{ fontSize: 50 }}>{ this.state.step }</Text>
+            </View>
+            <View>
+              <Text style = {{ fontSize: 50 }}> steps</Text>
+            </View>
+          </View>
+          <View style = {{ flexDirection: 'row' }}>
+            <View>
+              <Text style = {{ fontSize: 50 }}>🥛</Text>
+            </View>
+            <View>
+              <Text style = {{ fontSize: 50 }}>0.2/2.1 l</Text>
+            </View>
+          </View>
+        </View>
       </View>
     )
   }
