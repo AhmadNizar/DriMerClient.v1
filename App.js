@@ -6,6 +6,7 @@
 
 import React, { Component } from 'react';
 import {
+  AsyncStorage,
   Platform,
   StyleSheet,
   Text,
@@ -18,6 +19,7 @@ import {
 
 import store from './store'
 import { Provider } from 'react-redux'
+import {connect} from 'react-redux'
 
 import Quisioner from './components/screens/Quisioner';
 import Register from './components/screens/Register';
@@ -29,23 +31,34 @@ import Suggestion from './components/screens/Suggestion';
 const NavigationBase = StackNavigator({
   Login: { screen: Login },
   Register: { screen: Register },
-  Quisioner: { screen: Quisioner },
-  Suggestion: { screen: Suggestion }
+  Quisioner: { screen: Quisioner }
 })
 
 const NavigationTab = TabNavigator({
+  Suggestion: {screen: Suggestion},
   Dashboard: { screen: Dashboard }
 })
 
-export default class App extends Component<{}> {
-  render() {
-    return (
-      <Provider store={store} >
-        <NavigationBase />
-        {/* // <NavigationTab /> */}
+class App extends Component<{}> {
 
-      </Provider>
-    );
+  constructor() {
+    super()
+    this.state = {
+      token: ''
+    }
+  }
+
+  componentDidMount() {
+    AsyncStorage.getItem('drimerToken').then((value) => this.setState({ token: value }))
+  }
+
+  render() {
+    console.log(this.state.token)
+    if(this.props.userLoginRegisterVisible != '' || this.state.token == null) {
+      return [<NavigationBase />] 
+    } else {
+      return [<NavigationTab />] 
+    }
   }
 }
 
@@ -61,3 +74,11 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+const mapStateToProps = (state) => {
+  return {
+    userLoginRegisterVisible: state.userReducer.userLoginRegisterVisible
+  }
+}
+
+export default connect(mapStateToProps, null)(App)

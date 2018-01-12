@@ -1,8 +1,9 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity } from "react-native";
+import { AsyncStorage, StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity } from "react-native";
 import { Slider, CheckBox } from 'react-native-elements';
 import { connect } from 'react-redux'
 import { calculateWaterAction } from '../../actions/quisionerAction'
+import {changeVisible} from '../../actions/userAction'
 
 class Quisioner extends React.Component {
   static navigationOptions = {
@@ -15,7 +16,7 @@ class Quisioner extends React.Component {
       weight: '',
       sportTime: 0,
       isSmoker: false,
-      isNonSmoker: false
+      isNonSmoker: true
     }
   }
 
@@ -51,6 +52,8 @@ class Quisioner extends React.Component {
     }
 
     this.props.calculateWater(waterNeeds)
+    this.props.changeVisible()
+    AsyncStorage.setItem('drimerToken', this.props.token)
     this.props.navigation.navigate('Suggestion')
   }
 
@@ -71,11 +74,13 @@ class Quisioner extends React.Component {
               onPress={() => {
                 if (this.state.isSmoker) {
                   this.setState({
-                    isSmoker: false
+                    isSmoker: false,
+                    isNonSmoker: true
                   })
                 } else {
                   this.setState({
-                    isSmoker: true
+                    isSmoker: true,
+                    isNonSmoker: false
                   })
                 }
               }}
@@ -85,13 +90,15 @@ class Quisioner extends React.Component {
               checkedColor="#1ab2ff"
               checked={this.state.isNonSmoker}
               onPress={() => {
-                if (this.state.isNonSmoker) {
+                if (this.state.isSmoker) {
                   this.setState({
-                    isNonSmoker: false
+                    isSmoker: false,
+                    isNonSmoker: true
                   })
                 } else {
                   this.setState({
-                    isNonSmoker: true
+                    isSmoker: true,
+                    isNonSmoker: false
                   })
                 }
               }}
@@ -143,10 +150,17 @@ const styles = StyleSheet.create({
 
 })
 
-const mapActionToProps = (dispatch) => {
+const mapStateToProps = (state) => {
   return {
-    calculateWater: (waterNeeds) => dispatch(calculateWaterAction(waterNeeds))
+    token: state.userReducer.token
   }
 }
 
-export default connect(null, mapActionToProps)(Quisioner)
+const mapActionToProps = (dispatch) => {
+  return {
+    calculateWater: (waterNeeds) => dispatch(calculateWaterAction(waterNeeds)),
+    changeVisible: () => dispatch(changeVisible())
+  }
+}
+
+export default connect(mapStateToProps, mapActionToProps)(Quisioner)

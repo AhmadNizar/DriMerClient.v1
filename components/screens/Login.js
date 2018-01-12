@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity } from "react-native";
+import { AsyncStorage, Alert, ActivityIndicator, StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity } from "react-native";
 import { SocialIcon } from 'react-native-elements'
 import { signInAction } from '../../actions/userAction'
 import { connect } from 'react-redux'
@@ -13,39 +13,88 @@ class Login extends React.Component {
 
     this.state = {
       email: '',
-      password: ''
+      password: '',
+      isLoading: false
     }
   }
 
   signin = () => {
-    let dataUser = {
-      email: this.state.email,
-      password: this.state.password
+    if(this.state.email && this.state.password) {
+      this.setState({
+        isLoading: true
+      })
+  
+      let dataUser = {
+        email: this.state.email,
+        password: this.state.password
+      }
+      this.props.signin(dataUser)
+    } else {     
+      Alert.alert(
+        'Alert',
+        'Email dan Password must be filled',
+        [
+          {text: 'OK'},
+        ],
+        { cancelable: false }
+      )      
     }
-    this.props.signin(dataUser)
     
-    this.props.navigation.navigate('Quisioner')
+    // this.props.navigation.navigate('Quisioner')
   }
 
   loginFacebook() {
     alert("Login Fb")
   }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({isLoading: false})
+    console.log(nextProps.isLoginSuccess)
+    if(nextProps.isLoginSuccess) {
+      Alert.alert(
+        'Success',
+        'Login success',
+        [
+          {text: 'OK', onPress: () => this.props.navigation.navigate('Quisioner')},
+        ],
+        { cancelable: false }
+      )
+    } else {
+      Alert.alert(
+        'Failed',
+        'Your email or password is wrong',
+        [
+          {text: 'OK'},
+        ],
+        { cancelable: false }
+      )
+    }
+  }  
+
   render() {
     const { navigate } = this.props.navigation
+
+    var tunggu = <Text>Tunggu</Text>
+    if(this.state.isLoading == false) {
+      tunggu = <Text></Text>
+    } else {
+      tunggu = <ActivityIndicator />
+    }
     return (
       <View style={styles.container}>
         <View style={{ width: 300 }}>
           <View style={styles.viewImg}>
+            {tunggu}
             <Image style={styles.img} source={{ uri: 'https://i.pinimg.com/736x/95/bb/5b/95bb5be4f09440448f990752e0aa62e6--plumbing-logo-logo-water.jpg' }} />
           </View>
           <View>
             <TextInput placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
-            <TextInput placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
+            <TextInput secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
             <Button color="#0099e6" title="Signin" onPress={() => this.signin()} />
           </View>
           <View>
             <SocialIcon
-              title='Sign In With Facebook'
+              title='Sign In With Facebook' 
               button
               type='facebook'
               onPress={this.loginFacebook}
@@ -91,10 +140,17 @@ const styles = StyleSheet.create({
   }
 })
 
+const mapStateToProps = (state) => {
+  return {
+    isLoginSuccess: state.userReducer.isLoginSuccess,
+    token: state.userReducer.token
+  }
+}
+
 const mapActionToProps = (dispatch) => {
   return {
     signin: (dataUser) => dispatch(signInAction(dataUser))
   }
 }
 
-export default connect(null, mapActionToProps)(Login)
+export default connect(mapStateToProps, mapActionToProps)(Login)

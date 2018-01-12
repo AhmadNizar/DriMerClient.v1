@@ -2,6 +2,7 @@ import React from "react";
 import { ActivityIndicator, StyleSheet, Text, View, Image, TextInput, Button, ScrollView, TouchableOpacity, Picker, Alert } from "react-native";
 import { connect } from 'react-redux'
 import { actionRegister } from '../../actions/userAction'
+
 class Register extends React.Component {
   static navigationOptions = {
     headerStyle: {

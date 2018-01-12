@@ -37,7 +37,7 @@ export const signInAction = (dataUser) => {
         dispatch(getDataLogin(resultDataUser.data))
       })
       .catch((reason) => {
-        console.log(reason)
+        dispatch(getFailedLogin())
       })
   }
 }
@@ -46,5 +46,18 @@ const getDataLogin = (dataUser) => {
   return {
     type: 'get_token_user',
     payload: dataUser
+  }
+}
+
+const getFailedLogin = () => {
+  return {
+    type: 'get_failed_login',
+    payload: false    
+  }
+}
+
+export const changeVisible = () => {
+  return {
+    type: 'change_visible_user'
   }
 }

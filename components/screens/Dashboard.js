@@ -1,9 +1,13 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity, AsyncStorage } from "react-native";
 
 export default class Dashboard extends React.Component {
   static navigationOptions = {
     title: "Dashboard"
+  }
+
+  logout = async () => {
+    await AsyncStorage.removeItem('drimerToken')
   }
 
 
@@ -11,6 +15,12 @@ export default class Dashboard extends React.Component {
     return (
       <View style={styles.container}>
         <Text> Dashboard </Text>
+        <Button
+        title="Logout"
+        onPress={() => {
+         this.logout()
+        }}
+         />
       </View>
     );
   }
