@@ -2,5 +2,9 @@
     {
         "merged": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/DriMerClient/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
         "source": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/DriMerClient/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     }
 ]

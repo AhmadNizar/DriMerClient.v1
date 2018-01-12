@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/xml/preferences.xml"
+    },
+    {
         "merged": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/DriMerClient/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
         "source": "/home/ameliarahman/Hacktiv8/Fase3-mastery/DriMer/DriMerClient/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/xml/preferences.xml"
     }
