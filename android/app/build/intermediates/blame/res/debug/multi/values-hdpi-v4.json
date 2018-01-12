@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "outputFile": "/home/wisnu/project/DriMerClient/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
-=======
-        "outputFile": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
->>>>>>> sensor
         "map": [
             {
                 "to": {
@@ -16,7 +12,6 @@
                     "endOffset": 327
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "/home/wisnu/project/DriMerClient/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-hdpi/values-hdpi.xml",
                     "position": {
                         "startLine": 4,
@@ -51,16 +46,6 @@
                         "endLine": 8,
                         "endColumn": 13,
                         "endOffset": 558
-=======
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-hdpi/values-hdpi.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 293,
-                        "endLine": 8,
-                        "endColumn": 13,
-                        "endOffset": 565
->>>>>>> sensor
                     }
                 }
             }
@@ -93,11 +78,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "outputFile": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
-=======
-        "outputFile": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
->>>>>>> sensor
         "map": [
             {
                 "to": {
@@ -109,7 +90,6 @@
                     "endOffset": 327
                 },
                 "from": {
-<<<<<<< HEAD
                     "file": "/home/wisnu/project/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-hdpi/values-hdpi.xml",
                     "position": {
                         "startLine": 4,
@@ -118,16 +98,6 @@
                         "endLine": 8,
                         "endColumn": 13,
                         "endOffset": 558
-=======
-                    "file": "/media/fariswd/FOX/HACKTIV8/FinalProject/apps/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-hdpi/values-hdpi.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 293,
-                        "endLine": 8,
-                        "endColumn": 13,
-                        "endOffset": 565
->>>>>>> sensor
                     }
                 }
             }

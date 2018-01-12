@@ -8,16 +8,10 @@ class Suggestion extends React.Component {
   }
 
   render() {
-    const { navigate } = this.props.navigation
     return (
       <View style={styles.container}>
         <Text>Suggestion</Text>
         <Text>{this.props.waterNeed}</Text>
-        <Button
-          onPress={ () => navigate('Profile')}
-          title="To Profile"
-          color="#841584"
-        />
       </View>
     );
   }
