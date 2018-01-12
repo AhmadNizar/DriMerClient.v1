@@ -13,25 +13,6 @@ const initialLayout = {
   width: Dimensions.get('window').width,
 };
 
-const youTodayRoute = () => {
-  return (
-    <View style={ styles.tabContainer }>
-      <Text style = {{ fontSize: 20 }}>Status: 🚶 walk/run</Text>
-      <Text style = {{ fontSize: 20 }}>Steps Count: 42/6000*</Text>
-      <Text style = {{ fontSize: 20 }}>Drink Count: 0.2/2.1 liters</Text>
-    </View>
-  )
-};
-
-const historyRoute = () => {
-  return (
-    <View style={ styles.tabContainer }>
-      <Text style = {{ fontSize: 20 }}>Steps per day: 666</Text>
-      <Text style = {{ fontSize: 20 }}>Drink per day: 2.0 liters</Text>
-    </View>
-  )
-};
-
 class Profile extends React.Component {
   static navigationOptions = {
     title: "Profile"
@@ -45,19 +26,41 @@ class Profile extends React.Component {
         { key: 'youToday', title: 'You Today' },
         { key: 'history', title: 'History' },
       ],
+      helloState: 'hello state',
     }
   }
+
+  youTodayRoute = () => {
+    return (
+      <View style={ styles.tabContainer }>
+        <Text style = { styles.fontSizeContainer }>Status: 🚶 walk/run</Text>
+        <Text style = { styles.fontSizeContainer }>Steps Count: 42/6000*</Text>
+        <Text style = { styles.fontSizeContainer }>Drink Count: 0.2/2.1 liters</Text>
+        <Text style = { styles.fontSizeContainer }>{ this.state.helloState }</Text>
+      </View>
+    )
+  };
+
+  historyRoute = () => {
+    return (
+      <View style={ styles.tabContainer }>
+        <Text style = { styles.fontSizeContainer }>Steps per day: 666</Text>
+        <Text style = { styles.fontSizeContainer }>Drink per day: 2.0 liters</Text>
+      </View>
+    )
+  };
 
   _handleIndexChange = index => this.setState({ index });
 
   _renderHeader = props => <TabBar {...props} />;
 
   _renderScene = SceneMap({
-    youToday: youTodayRoute,
-    history: historyRoute,
+    youToday: this.youTodayRoute,
+    history: this.historyRoute,
   });
 
   render() {
+    console.log(this.state)
     return (
       <View style = { styles.container }>
         <TabViewAnimated
@@ -83,6 +86,9 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginTop: 20,
     marginBottom: 20,
+  },
+  fontSizeContainer: {
+    fontSize: 20
   }
 })
 
