@@ -13,6 +13,7 @@ export default class Dashboard extends React.Component {
 
 
   render() {
+    const { navigate } = this.props.navigation
     return (
       <View style={styles.container}>
         <ScrollView>
@@ -25,7 +26,7 @@ export default class Dashboard extends React.Component {
           />
         </ScrollView>
         <View style={styles.navbar}>
-          <Navbar />
+          <Navbar navigate = { navigate }/>
         </View>
       </View>
     );

@@ -4,6 +4,10 @@ import NavBar, { NavGroup, NavButton, NavButtonText, NavTitle } from 'react-nati
 import { Icon } from 'react-native-elements';
 
 export default class Navbar extends React.Component {
+  constructor(){
+    super()
+  }
+
   render() {
     return (
       <NavBar style={styles}>
@@ -21,7 +25,9 @@ export default class Navbar extends React.Component {
             color="white"
           />
         </NavButton>
-        <NavButton>
+        <NavButton
+          onPress={() => this.props.navigate('Profile')}
+        >
           <Icon
             name='user-circle'
             type="font-awesome"
