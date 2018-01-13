@@ -5,13 +5,14 @@ import {
   Button,
   AsyncStorage
 } from 'react-native'
-import { BarChart, XAxis } from 'react-native-svg-charts'
+import { BarChart, XAxis, YAxis } from 'react-native-svg-charts'
 
 class History extends React.Component {
   constructor(){
     super()
     this.state = {
-      historyUser: ''
+      historyUser: [],
+      dataUser: []
     }
 
     this.setAsync = this.setAsync.bind(this)
@@ -35,8 +36,18 @@ class History extends React.Component {
         // We have data!!
         // console.log(historyUserRaw);
         const historyUser = JSON.parse(historyUserRaw)
+        const newDataUser = []
+        const lastStep = 0
+        historyUser.map((dataUser, index) => {
+          if(index < 25) {
+            newDataUser.push(dataUser.step - lastStep)
+            lastStep = dataUser.step
+          }
+        })
+        console.log(newDataUser)
         this.setState({
-          historyUser: historyUser
+          historyUser: historyUser,
+          dataUser: newDataUser
         })
       }
     } catch (error) {
@@ -46,40 +57,47 @@ class History extends React.Component {
   }
 
   render(){
-    const data    = [ 14, -1, 100, -95, -94, -24, -8, 85, -91, 35, -53, 53, -78, 66, 96, 33, -26, -32, 73, 8 ]
-      const barData = [
-        {
-          values: data,
-          positive: {
-              fill: 'rgb(134, 65, 244)',
-          },
-          negative: {
-              fill: 'rgba(134, 65, 244, 0.2)',
-          },
+    const barData = [
+      {
+        values: this.state.dataUser,
+        positive: {
+            fill: 'rgb(134, 65, 244)',
         },
-      ]
+        negative: {
+            fill: 'rgba(134, 65, 244, 0.2)',
+        },
+      },
+    ]
+    const contentInset = { top: 20, bottom: 20 }
     return (
-      <View>
-        <View style={ { height: 200 } }>
+      <View style={{ marginTop: 10, marginLeft: 10, marginLeft: 10, marginBottom: 10 }}>
+        <View style={ { height: 300, width: 330 } }>
+          <YAxis
+            style={ { marginBottom: -2, position: 'absolute', top: 0, bottom: 0, transform: [ { translateY: -5 } ] } }
+            dataPoints={ this.state.dataUser }
+            contentInset={ { top: 10, bottom: 10 } }
+          />
           <BarChart
             style={ { flex: 1 } }
             data={ barData }
           />
           <XAxis
-            style={ { paddingVertical: 16 } }
-            values={ data }
-            formatLabel={ (value, index) => index }
+            style={ { paddingVertical: 0 } }
+            values={ this.state.dataUser }
+            formatLabel={ (value, index) => {
+              if(index == 0 ||index % 2 !== 0) {
+                return ' '
+              } else {
+                return index
+              }
+            } }
             chartType={ XAxis.Type.BAR }
             labelStyle={ { color: 'grey' } }
           />
         </View>
-        <Text>{ JSON.stringify(this.state.historyUser) }</Text>
-        <Button
-          onPress={this.setAsync}
-          title="set AsyncStorage"
-          color="#841584"
-          accessibilityLabel="Learn more about this purple button"
-        />
+        <Text>
+          Step / Hour(s)
+        </Text>
         <Button
           onPress={this.getAsync}
           title="get AsyncStorage"

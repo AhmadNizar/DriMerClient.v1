@@ -155,7 +155,7 @@ class Profile extends React.Component {
       this.startRecording()
     }
 
-    if(this.props.getUserStatus.updateHistoryCount == 300) {
+    if(this.props.getUserStatus.updateHistoryCount == 5) {
       this.setHistory()
       this.props.clearHistoryCount()
     } else {
