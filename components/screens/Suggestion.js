@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity, AsyncStorage } from "react-native";
 import { connect } from 'react-redux'
 
 class Suggestion extends React.Component {

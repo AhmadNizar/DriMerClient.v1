@@ -52,12 +52,18 @@ const getDataLogin = (dataUser) => {
 const getFailedLogin = () => {
   return {
     type: 'get_failed_login',
-    payload: false    
+    payload: false
   }
 }
 
 export const changeVisible = () => {
   return {
     type: 'change_visible_user'
+  }
+}
+
+export const changeLogout = () => {
+  return {
+    type: 'change_logout'
   }
 }
