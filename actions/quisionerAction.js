@@ -16,7 +16,7 @@ export const calculateWaterAction = (waterNeeds, token) => {
         }
       })
       .then((dataUser) => {
-        dispatch(getResultCalculateWater(dataUser))
+        dispatch(getResultCalculateWater(dataUser.data.sugest))
       })
       .catch((reason) => {
         console.log("hasil data reason...", reason)
@@ -24,9 +24,10 @@ export const calculateWaterAction = (waterNeeds, token) => {
   }
 }
 
-const getResultCalculateWater = (dataUser) => {
-  console.log(dataUser, "=======")
-  return {
+const getResultCalculateWater = (waterNeeds) => {
 
+  return {
+    type: 'get_data_water',
+    payload: waterNeeds
   }
 }
