@@ -12,9 +12,11 @@ const userReducer = (state = initialState, action) => {
     case 'get_token_user':
       return { ...state, token: action.payload.userToken, isLoginSuccess: true }
     case 'get_failed_login':
-      return {...state, isLoginSuccess: false}
+      return { ...state, isLoginSuccess: false }
     case 'change_visible_user':
-      return {...state, userLoginRegisterVisible: true}
+      return { ...state, userLoginRegisterVisible: true }
+    case 'change_logout':
+      return { ...state, userLoginRegisterVisible: '' }
     default:
       return state
   }
