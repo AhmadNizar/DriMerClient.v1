@@ -2,28 +2,42 @@ import React from "react";
 import { StyleSheet, ScrollView, Text, View, Image, TextInput, Button, TouchableOpacity, Dimensions, AsyncStorage } from "react-native";
 import Navbar from '../Navbar'
 import { connect } from 'react-redux'
+import { Icon } from 'react-native-elements'
 import { changeLogout } from '../../actions/userAction'
 import { changeVisible } from '../../actions/userAction'
 
 class Dashboard extends React.Component {
   static navigationOptions = {
-    title: "Dashboard"
+    tabBarLabel: 'Dashboard',
+    // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    tabBarIcon: ({ tintColor }) => (
+      <Icon
+        name='user'
+        type="font-awesome"
+        color='#06a887' />
+    ),
   }
 
   logout = () => {
     AsyncStorage.removeItem('drimerToken').then(() => {
       this.props.changeLogout()
     })
-    .catch((err) => {
-      console.log(err)
-    })
+      .catch((err) => {
+        console.log(err)
+      })
 
     AsyncStorage.removeItem('air').then(() => {
       console.log('hapus air')
     })
-    .catch((err) => {
-      console.log(err)
+      .catch((err) => {
+        console.log(err)
+      })
+    AsyncStorage.removeItem('persen').then(() => {
+      console.log('hapus persen')
     })
+      .catch((err) => {
+        console.log(err)
+      })
   }
 
   componentDidMount() {
