@@ -28,7 +28,6 @@ import Register from './components/screens/Register';
 import Login from './components/screens/Login';
 import Dashboard from './components/screens/Dashboard';
 import Suggestion from './components/screens/Suggestion';
-import Profile from './components/screens/Profile';
 
 const NavigationBase = StackNavigator({
   Login: { screen: Login },
@@ -38,9 +37,23 @@ const NavigationBase = StackNavigator({
 
 const NavigationTab = TabNavigator({
   Suggestion: { screen: Suggestion },
-  Dashboard: { screen: Dashboard },
-  Profile: { screen: Profile}
-})
+  Dashboard: { screen: Dashboard }
+}, {
+  tabBarPosition: 'bottom',
+  animationEnabled: true,
+  tabBarOptions: {
+    backBehavior: 'none',
+    showIcon: true,
+    showLabel: true,
+    labelStyle: {
+      fontSize: 12,
+      color: '#06a887'
+    },
+    style: {
+      backgroundColor: '#ffffff',
+      height: 60
+    }
+  }})
 
 class App extends Component<{}> {
 

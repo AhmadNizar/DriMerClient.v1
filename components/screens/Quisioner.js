@@ -25,7 +25,7 @@ class Quisioner extends React.Component {
     let activityNeed = 0
     let smokerWaterNeed = 0
 
-    switch (activityNeed) {
+    switch (this.state.sportTime) {
       case 0:
         activityNeed = 0.03
         break;

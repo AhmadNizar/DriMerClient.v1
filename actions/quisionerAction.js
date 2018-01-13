@@ -31,3 +31,24 @@ const getResultCalculateWater = (waterNeeds) => {
     payload: waterNeeds
   }
 }
+
+const getResultSuggestion = (data) => {
+  return {
+    type: 'get_suggestion',
+    payload: data
+  }
+}
+
+export const getSuggestion = (token) => {
+  let idUser = jwtDecode(token).userData._id
+  return dispatch => {
+    axios.get('http://drimer-191803.appspot.com/user/' + idUser, {headers: {
+      token: token
+    }}).then((result) => {
+      dispatch(getResultSuggestion(result.data))
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+  }
+}

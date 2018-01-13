@@ -36,9 +36,6 @@ class Dashboard extends React.Component {
             }}
           />
         </ScrollView>
-        <View style={styles.navbar}>
-          <Navbar navigate = { navigate }/>
-        </View>
       </View>
     );
   }
