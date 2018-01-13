@@ -3632,9 +3632,9 @@ react-native-animatable@^1.2.3:
   dependencies:
     prop-types "^15.5.10"
 
-"react-native-audio@git+ssh://git@github.com:M0N3/react-native-audio.git":
+"react-native-audio@git+https://github.com/M0N3/react-native-audio.git":
   version "3.2.2"
-  resolved "git+ssh://git@github.com:M0N3/react-native-audio.git#441c44e6337d3f87add947dd69df5b4eef015f75"
+  resolved "git+https://github.com/M0N3/react-native-audio.git#441c44e6337d3f87add947dd69df5b4eef015f75"
 
 react-native-dismiss-keyboard@1.0.0:
   version "1.0.0"
