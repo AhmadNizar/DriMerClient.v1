@@ -8,6 +8,10 @@ import {
 import { BarChart, XAxis, YAxis } from 'react-native-svg-charts'
 
 class History extends React.Component {
+  static navigationOptions = {
+    title: "History"
+  }
+
   constructor(){
     super()
     this.state = {
@@ -56,6 +60,10 @@ class History extends React.Component {
     }
   }
 
+  componentDidMount () {
+    this.getAsync()
+  }
+
   render(){
     const barData = [
       {
@@ -71,7 +79,10 @@ class History extends React.Component {
     const contentInset = { top: 20, bottom: 20 }
     return (
       <View style={{ marginTop: 10, marginLeft: 10, marginLeft: 10, marginBottom: 10 }}>
-        <View style={ { height: 300, width: 330 } }>
+        <Text>
+          Step / Hour(s)
+        </Text>
+        <View style={ { height: 200, width: 330, marginTop: 10 } }>
           <YAxis
             style={ { marginBottom: -2, position: 'absolute', top: 0, bottom: 0, transform: [ { translateY: -5 } ] } }
             dataPoints={ this.state.dataUser }
@@ -95,12 +106,9 @@ class History extends React.Component {
             labelStyle={ { color: 'grey' } }
           />
         </View>
-        <Text>
-          Step / Hour(s)
-        </Text>
         <Button
           onPress={this.getAsync}
-          title="get AsyncStorage"
+          title="get step data"
           color="#841584"
           accessibilityLabel="Learn more about this purple button"
         />
