@@ -2,6 +2,7 @@ import React from "react";
 import { ActivityIndicator, StyleSheet, Text, View, Image, TextInput, Button, ScrollView, TouchableOpacity, Picker, Alert } from "react-native";
 import { connect } from 'react-redux'
 import { actionRegister } from '../../actions/userAction'
+import { SocialIcon } from 'react-native-elements'
 
 class Register extends React.Component {
   static navigationOptions = {
@@ -37,12 +38,12 @@ class Register extends React.Component {
     this.props.register(dataUser)
   }
   componentWillReceiveProps(nextProps) {
-    if(nextProps.isSuccess) {
+    if (nextProps.isSuccess) {
       Alert.alert(
         'Success',
         'Register success',
         [
-          {text: 'OK', onPress: () => this.props.navigation.navigate('Login')},
+          { text: 'OK', onPress: () => this.props.navigation.navigate('Login') },
         ],
         { cancelable: false }
       )
@@ -51,9 +52,9 @@ class Register extends React.Component {
   render() {
     console.log(this.props.isSuccess)
     var tunggu = <Text>Tunggu</Text>
-    if(this.state.isLoading == false) {
+    if (this.state.isLoading == false) {
       tunggu = <Text></Text>
-    } else if(this.state.isSuccess == true) {
+    } else if (this.state.isSuccess == true) {
       tunggu = <Text></Text>
     } else {
       tunggu = <ActivityIndicator />
@@ -63,9 +64,15 @@ class Register extends React.Component {
         <Text>{this.state.err}</Text>
         {tunggu}
         <View style={{ width: 300 }}>
-          <TextInput placeholder="Name" onChangeText={(text) => this.setState({ name: text })} />
-          <TextInput placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
-          <TextInput placeholder="Age" onChangeText={(text) => this.setState({ age: text })} />
+          <View style={styles.input}>
+            <TextInput underlineColorAndroid='rgba(0,0,0,0)' placeholder="Name" onChangeText={(text) => this.setState({ name: text })} />
+          </View>
+          <View style={styles.input}>
+            <TextInput underlineColorAndroid='rgba(0,0,0,0)' placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
+          </View>
+          <View style={styles.input}>
+            <TextInput underlineColorAndroid='rgba(0,0,0,0)' placeholder="Age" onChangeText={(text) => this.setState({ age: text })} />
+          </View>
           <View style={styles.input}>
             <Picker
               selectedValue={this.state.gender}
@@ -75,8 +82,10 @@ class Register extends React.Component {
               <Picker.Item label="Male" value="Male" />
             </Picker>
           </View>
-          <TextInput secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
-          <Button color="#0099e6" title="Register" onPress={() => this.register()} />
+          <View style={styles.input}>
+            <TextInput underlineColorAndroid='rgba(0,0,0,0)' secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
+          </View>
+          <SocialIcon style={{ backgroundColor: '#296666' }} button title='Register' onPress={() => this.register()} />
         </View>
       </View>
     );
@@ -87,16 +96,18 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF'
+    backgroundColor: '#06a887'
   },
   input: {
-    borderBottomWidth: 0.3,
+    backgroundColor: 'white',
+    borderRadius: 7,
+    marginBottom: 10
   },
   birthPicker: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    marginTop: 10
+    marginTop: 30
   }
 })
 const mapStateToProps = (state) => {
