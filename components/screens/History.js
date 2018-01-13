@@ -5,6 +5,7 @@ import {
   Button,
   AsyncStorage
 } from 'react-native'
+import { BarChart, XAxis } from 'react-native-svg-charts'
 
 class History extends React.Component {
   constructor(){
@@ -45,8 +46,33 @@ class History extends React.Component {
   }
 
   render(){
+    const data    = [ 14, -1, 100, -95, -94, -24, -8, 85, -91, 35, -53, 53, -78, 66, 96, 33, -26, -32, 73, 8 ]
+      const barData = [
+        {
+          values: data,
+          positive: {
+              fill: 'rgb(134, 65, 244)',
+          },
+          negative: {
+              fill: 'rgba(134, 65, 244, 0.2)',
+          },
+        },
+      ]
     return (
       <View>
+        <View style={ { height: 200 } }>
+          <BarChart
+            style={ { flex: 1 } }
+            data={ barData }
+          />
+          <XAxis
+            style={ { paddingVertical: 16 } }
+            values={ data }
+            formatLabel={ (value, index) => index }
+            chartType={ XAxis.Type.BAR }
+            labelStyle={ { color: 'grey' } }
+          />
+        </View>
         <Text>{ JSON.stringify(this.state.historyUser) }</Text>
         <Button
           onPress={this.setAsync}

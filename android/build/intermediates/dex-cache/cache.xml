@@ -3,12 +3,183 @@
 
     <item
         is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_1f57efe15d03be797301b76fc524fb62af38aab6.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
         <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_c8cb2e8f7cda0be5bec49ef5f50093e15d369421.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_eb5aaa5c703dd1a8203e2760748048c4fe831bc1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_58117518c5575803b02e4d393cf7917917ce6dc9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_c6d38acb00999bf7042a6d923a2104bed6994149.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_94b0010bdf42d0c777b3e1caa90609bb52048a0f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_fab58f317dc636f88742aec7a74eafb196400d3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/fariswd/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_2989f80520a8a45876a21aaa1fd44ceddd787ef7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_47f9270e883b827b55b0d27d84b2082668d0b559.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/DriMerClient/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8065a43b1a868d17519e67d7651e13a99862d3ce">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/DriMerClient-react-native-vector-icons-unspecified_88fe64f13abe8c0a27613b9e00b0a4f9df736b8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_6c510d19b4593fc8eb248b5467e69d032ce4d528.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_f1f9b8097ad25aa67741854a419fdab445768102.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/fariswd/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_96c1facadafd58cffadde2af296eaf5900440509.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/fariswd/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_ec71308141c234f556e6e71ec559d6afb3afb565.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_4c8164148e74a2643612d5fcba2a8df2fa0750bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/DriMerClient/react-native-svg/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5836dabed63453936086d3dfee4b12e31475fff8">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/DriMerClient-react-native-svg-unspecified_2a327cf3092d673ff24dd81658f6ae840f4809a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_d9ce33af9e7e26544f60d28fcdf8494eddc2afcc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/fariswd/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_26e32f2431d6931dad07ef93f4d3202a49b81c96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/fariswd/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_af636910dec5917a2ea5de31a4f40ef09d4735ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_2431b4eda9907d833f48ba1bacc48d5c5865f259.jar" />
     </item>
     <item
         is-multidex="false"
@@ -30,15 +201,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_eb5aaa5c703dd1a8203e2760748048c4fe831bc1.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -48,57 +210,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.0_ac382d025b5e1b6009b1eb7fbeba208a01f33d0e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_c6d38acb00999bf7042a6d923a2104bed6994149.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/fariswd/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="6975da39a7040257bd51d21a231b76c915872d38">
         <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_a2ffa97b61d46e4230b48ce0d6ea8c7792f42cdc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_94b0010bdf42d0c777b3e1caa90609bb52048a0f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/fariswd/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_2989f80520a8a45876a21aaa1fd44ceddd787ef7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.0_b0ad932119633797dedbf60dff3a858a1cf9d0a8.jar" />
     </item>
     <item
         is-multidex="false"
@@ -120,30 +237,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/DriMerClient/react-native-vector-icons/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8065a43b1a868d17519e67d7651e13a99862d3ce">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/DriMerClient-react-native-vector-icons-unspecified_88fe64f13abe8c0a27613b9e00b0a4f9df736b8d.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
         <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_4643ebb91c33921c1bd6a6ebe32815992af4eb16.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/fariswd/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_96c1facadafd58cffadde2af296eaf5900440509.jar" />
     </item>
     <item
         is-multidex="false"
@@ -156,12 +255,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/fariswd/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_ec71308141c234f556e6e71ec559d6afb3afb565.jar" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_36802816a4243ac4fc484a379db022f2d5f9aac6.jar" />
     </item>
     <item
         is-multidex="false"
@@ -171,42 +270,6 @@
         revision="23.0.1"
         sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
         <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_acebd4f615fd924cf66b776f10278c96c2fcefa3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_d9ce33af9e7e26544f60d28fcdf8494eddc2afcc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0_c02e6579c6be67ed3672be4d92b2c9e6752e2f8c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/fariswd/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0_4ddfe22c1540e8127f150d2d393b2b1d3be29e2c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/fariswd/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/media/fariswd/FOX/HACKTIV8/FinalProject/newAppsMerge/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_af636910dec5917a2ea5de31a4f40ef09d4735ee.jar" />
     </item>
     <item
         is-multidex="false"
