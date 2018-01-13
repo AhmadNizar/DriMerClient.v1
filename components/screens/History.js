@@ -10,7 +10,7 @@ class History extends React.Component {
   constructor(){
     super()
     this.state = {
-      name: 'Capung'
+      historyUser: ''
     }
 
     this.setAsync = this.setAsync.bind(this)
@@ -29,14 +29,14 @@ class History extends React.Component {
 
   getAsync = async () => {
     try {
-      const value = await AsyncStorage.getItem('@History:today');
-      console.log(value)
-      if (value !== null){
+      const historyUserRaw = await AsyncStorage.getItem('@History:user');
+      if (historyUserRaw !== null){
         // We have data!!
-        // console.log(value);
-        // this.setState({
-        //   name: value
-        // })
+        // console.log(historyUserRaw);
+        const historyUser = JSON.parse(historyUserRaw)
+        this.setState({
+          historyUser: historyUser
+        })
       }
     } catch (error) {
       // Error retrieving data
@@ -47,7 +47,7 @@ class History extends React.Component {
   render(){
     return (
       <View>
-        <Text>This is History: { this.state.name }</Text>
+        <Text>{ JSON.stringify(this.state.historyUser) }</Text>
         <Button
           onPress={this.setAsync}
           title="set AsyncStorage"

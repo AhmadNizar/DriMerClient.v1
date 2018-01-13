@@ -150,13 +150,12 @@ class Profile extends React.Component {
 
   sensorToStoreHandler () {
     if(this.state.countForGetStatus == 5) {
-      console.log(this.state.countForGetStatus)
       this.checkStatus()
     } else if (this.state.countForGetStatus == 1) {
       this.startRecording()
     }
 
-    if(this.props.getUserStatus.updateHistoryCount == 5) {
+    if(this.props.getUserStatus.updateHistoryCount == 300) {
       this.setHistory()
       this.props.clearHistoryCount()
     } else {

@@ -113,6 +113,11 @@ class Login extends React.Component {
           title="To Profile"
           color="#841584"
         />
+        <Button
+          onPress={ () => navigate('History')}
+          title="To History"
+          color="#841584"
+        />
         </View>
       </View>
     );
