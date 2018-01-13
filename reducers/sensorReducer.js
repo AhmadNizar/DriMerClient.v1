@@ -4,7 +4,8 @@ const initialState = {
   totalStep: 0,
   savedStep: 0,
   statusSensor: 'false',
-  countCall: -1
+  countCall: -1,
+  updateHistoryCount: 0
 }
 
 const sensorReducer = (state = initialState, action) => {
@@ -21,6 +22,10 @@ const sensorReducer = (state = initialState, action) => {
     case 'init_step':
       console.log('initial step', action.payload, state.statusSensor)
       return {...state, savedStep: action.payload}
+    case 'update_history_count':
+      return {...state, updateHistoryCount: state.updateHistoryCount + 1}
+    case 'clear_history_count':
+      return {...state, updateHistoryCount: 0}
     default:
       return state
   }
