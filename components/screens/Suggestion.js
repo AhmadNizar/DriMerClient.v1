@@ -21,8 +21,8 @@ class Suggestion extends React.Component {
     super()
     this.state = {
       persen: 100,
-      air: 5,
-      konstanta: 5,
+      air: 0,
+      konstanta: 0,
       showAlert: false
     }    
   }
@@ -38,9 +38,26 @@ class Suggestion extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({
-      air: nextProps.waterNeed,
-      konstanta: nextProps.waterNeed
+    AsyncStorage.getItem('air').then((value) => {
+      if(value) {
+        this.setState({
+          air: value,
+          konstanta: nextProps.waterNeed
+        })
+      } else {
+        this.setState({
+          air: nextProps.waterNeed,
+          konstanta: nextProps.waterNeed
+        })
+      }
+    })
+
+    AsyncStorage.getItem('persen').then((value) => {
+      if(value) {
+        this.setState({
+          persen: Number(value),
+        })
+      }
     })
   }
 
@@ -70,13 +87,39 @@ class Suggestion extends React.Component {
       air = (air - jumlahminum).toFixed(2)
       persen = persen - kurang
 
+      AsyncStorage.setItem('air', air).then(() => {
+        console.log('yeah')
+      }).catch((err) => {
+        console.log(err)
+      })
+
+      AsyncStorage.setItem('persen', persen.toString()).then(() => {
+        console.log('yeah')
+      }).catch((err) => {
+        console.log(err)
+      })
+
       this.setState({
         air: air,
         persen: persen
-      })        
+      })
     } else {
+      console.log('kena di nol')
+      var air = 0
+      AsyncStorage.setItem('air', '0').then(() => {
+        console.log('yeah')
+      }).catch((err) => {
+        console.log(err)
+      })
+
+      AsyncStorage.setItem('persen', '0').then(() => {
+        console.log('yeah')
+      }).catch((err) => {
+        console.log(err)
+      })
+
       this.setState({
-        air: 0,
+        air: air,
         persen: 0,
         showAlert: true
       })

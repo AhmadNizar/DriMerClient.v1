@@ -14,6 +14,16 @@ class Dashboard extends React.Component {
     AsyncStorage.removeItem('drimerToken').then(() => {
       this.props.changeLogout()
     })
+    .catch((err) => {
+      console.log(err)
+    })
+
+    AsyncStorage.removeItem('air').then(() => {
+      console.log('hapus air')
+    })
+    .catch((err) => {
+      console.log(err)
+    })
   }
 
   componentDidMount() {
