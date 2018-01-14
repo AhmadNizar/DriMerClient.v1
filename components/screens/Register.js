@@ -14,7 +14,7 @@ class Register extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      name: '',
+      nameValue: '',
       email: '',
       password: '',
       age: '',
@@ -31,36 +31,31 @@ class Register extends React.Component {
     this.handleInputAge = this.handleInputAge.bind(this)
   }
   register = () => {
-
-    if (this.state.email === '' || this.state.age === '' || this.state.gender || this.state.name) {
+    console.log("Masuk register....")
+    if (this.state.email === '' || this.state.age === '' || this.state.gender === '' || this.state.nameValue === '') {
       this.setState({
         errorMessage: 'All forms must be filled.'
       })
     } else {
-      if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.state.email))) {
-        this.setState({
-          errorMessage: 'Please input the correct email. Ex: xxx@xxx.com'
-        })
-      } else {
+      if ((/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.state.email))) {
         this.setState({
           errorMessage: '',
           isLoading: true
         })
         let dataUser = {
-          name: this.state.name,
+          name: this.state.nameValue,
           email: this.state.email,
           password: this.state.password,
           age: Number(this.state.age),
           gender: this.state.gender
         }
         this.props.register(dataUser)
+      } else {
+        this.setState({
+          errorMessage: 'Please input the correct email. Ex: xxx@xxx.com'
+        })
       }
     }
-
-
-
-
-
 
   }
   componentWillReceiveProps(nextProps) {
@@ -77,7 +72,7 @@ class Register extends React.Component {
   }
 
   handleInputAge(age) {
-    if ((/[0-9]/.test(age)) || age === "") {
+    if ((/^[0-9]*$/.test(age)) || age === "") {
       this.setState({
         ageValidate: true,
         errorMessage: '',
@@ -95,7 +90,7 @@ class Register extends React.Component {
       this.setState({
         nameValidate: true,
         errorMessage: '',
-        name: name
+        nameValue: name
       })
     } else {
       this.setState({
@@ -141,7 +136,7 @@ class Register extends React.Component {
           <View style={styles.input}>
             <TextInput underlineColorAndroid='rgba(0,0,0,0)' secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
           </View>
-          <SocialIcon style={{ backgroundColor: '#296666' }} button title='Register' onPress={() => this.register()} />
+          <Button color='#296666' title='Register' onPress={this.register} />
         </View>
       </View>
     );
