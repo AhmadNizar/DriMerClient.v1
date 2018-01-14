@@ -90,7 +90,7 @@ class Login extends React.Component {
           <View>
             <TextInput placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
             <TextInput secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
-            <SocialIcon style={{ backgroundColor: '#3583c6' }} button title='Sign In' onPress={() => this.signin()} />
+            <SocialIcon style={{ backgroundColor: '#3583c6' }} button title='Sign In' onPress={this.signin} />
           </View>
           <View>
             <SocialIcon

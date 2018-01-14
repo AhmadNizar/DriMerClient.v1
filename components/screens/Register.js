@@ -31,8 +31,7 @@ class Register extends React.Component {
     this.handleInputAge = this.handleInputAge.bind(this)
   }
   register = () => {
-    console.log("Masuk register....")
-    if (this.state.email === '' || this.state.age === '' || this.state.gender === '' || this.state.nameValue === '') {
+    if (this.state.email === '' || this.state.age === '' || this.state.gender === '' || this.state.nameValue === '' || this.state.password === '') {
       this.setState({
         errorMessage: 'All forms must be filled.'
       })
@@ -136,7 +135,7 @@ class Register extends React.Component {
           <View style={styles.input}>
             <TextInput underlineColorAndroid='rgba(0,0,0,0)' secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
           </View>
-          <Button color='#296666' title='Register' onPress={this.register} />
+          <SocialIcon button style={{ backgroundColor: '#296666' }} title='Register' onPress={this.register} />
         </View>
       </View>
     );
