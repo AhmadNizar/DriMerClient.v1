@@ -33,8 +33,6 @@ const NavigationBase = StackNavigator({
   Login: { screen: Login },
   Register: { screen: Register },
   Quisioner: { screen: Quisioner },
-  History: { screen: History },
-  Profile: { screen: Profile}
 })
 
 const NavigationTab = TabNavigator({

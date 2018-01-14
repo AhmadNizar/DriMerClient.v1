@@ -107,17 +107,6 @@ class Login extends React.Component {
               <TouchableOpacity onPress={() => navigate('Register')}><Text style={styles.registeraccount}>account</Text></TouchableOpacity>
             </View>
           </View>
-
-        <Button
-          onPress={ () => navigate('Profile')}
-          title="To Profile"
-          color="#841584"
-        />
-        <Button
-          onPress={ () => navigate('History')}
-          title="To History"
-          color="#841584"
-        />
         </View>
       </View>
     );
