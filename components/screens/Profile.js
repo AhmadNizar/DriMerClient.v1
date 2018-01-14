@@ -1,11 +1,13 @@
 import React from 'react'
 import {
   Text,
+  Button,
   View,
   StyleSheet,
   Dimensions,
   DeviceEventEmitter,
-  Platform
+  Platform,
+  AsyncStorage
 } from 'react-native'
 import { connect } from 'react-redux'
 import { AudioRecorder, AudioUtils } from 'react-native-audio';
@@ -15,7 +17,9 @@ import {
   getUserStatus,
   addUserStep,
   updateStatusSensor,
-  initStep
+  initStep,
+  updateHistoryCount,
+  clearHistoryCount
 } from '../../actions/sensorAction'
 
 const initialLayout = {
@@ -54,14 +58,14 @@ class Profile extends React.Component {
     this.startRecording = this.startRecording.bind(this)
   }
 
-  componentWillMount(){
+  componentWillMount (){
     if(this.props.getUserStatus.statusSensor == true) {
       console.log('will mount')
       this.sensorStop ()
     }
   }
 
-  componentDidMount() {
+  componentDidMount () {
     if(this.props.getUserStatus.statusSensor == true) {
       console.log('sensor already started')
       this.sensorInit()
@@ -72,7 +76,7 @@ class Profile extends React.Component {
     }
   }
 
-  componentWillUnmount() {
+  componentWillUnmount () {
     console.log('unmount')
     this.sensorStop()
   }
@@ -127,12 +131,7 @@ class Profile extends React.Component {
       })
     });
     DeviceEventEmitter.addListener('Accelerometer', (data) => {
-      if(this.state.countForGetStatus == 5) {
-        console.log(this.state.countForGetStatus)
-        this.checkStatus()
-      } else if (this.state.countForGetStatus == 1) {
-        this.startRecording()
-      }
+      this.sensorToStoreHandler()
       this.setState({
         accelX: (+data.x).toFixed(2),
         accelY: (+data.y).toFixed(2),
@@ -149,7 +148,22 @@ class Profile extends React.Component {
     });
   }
 
-  checkStatus() {
+  sensorToStoreHandler () {
+    if(this.state.countForGetStatus == 5) {
+      this.checkStatus()
+    } else if (this.state.countForGetStatus == 1) {
+      this.startRecording()
+    }
+
+    if(this.props.getUserStatus.updateHistoryCount == 5) {
+      this.setHistory()
+      this.props.clearHistoryCount()
+    } else {
+      this.props.updateHistoryCount()
+    }
+  }
+
+  checkStatus () {
     console.log('checkStatus')
     let accelXstatus = this.state.accelX < 1.5 && this.state.accelX > -1.5
     let accelYstatus = this.state.accelY < 1.5 && this.state.accelY > -1.5
@@ -179,7 +193,53 @@ class Profile extends React.Component {
     }
   }
 
-  startRecording() {
+  setHistory = async () => {
+    try {
+      const myHistoryRaw = await AsyncStorage.getItem('@History:user');
+      const myHistoryJson = JSON.parse(myHistoryRaw)
+      console.log('set history', myHistoryJson)
+      if(myHistoryJson !== null) {
+        myHistoryJson.push({
+          date: new Date(),
+          step: this.props.getUserStatus.totalStep,
+          status: this.props.getUserStatus.userStatus,
+          drink: 0.1
+        })
+      } else {
+        myHistoryJson = [{
+          date: new Date(),
+          step: this.props.getUserStatus.totalStep,
+          status: this.props.getUserStatus.userStatus,
+          drink: 0.1
+        }]
+      }
+      const historyToString = JSON.stringify(myHistoryJson)
+      await AsyncStorage.setItem('@History:user', historyToString);
+    } catch (error) {
+      // Error saving data
+      console.log(error)
+    }
+  }
+
+  getHistory = async () => {
+    try {
+      const value = await AsyncStorage.getItem('@History:user');
+      console.log('get history', value)
+    } catch (error) {
+      // Error retrieving data
+      console.log(error)
+    }
+  }
+
+  clearHistory = async () => {
+    try {
+      AsyncStorage.removeItem('@History:user')
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  startRecording () {
     this.stopRecording()
     let audioPath = AudioUtils.DocumentDirectoryPath + '/test.aac';
     AudioRecorder.prepareRecordingAtPath(audioPath, {
@@ -200,7 +260,7 @@ class Profile extends React.Component {
     });
   }
 
-  stopRecording() {
+  stopRecording () {
     if(AudioRecorder.onProgress) {
       AudioRecorder.stopRecording()
       .then(() => {
@@ -212,7 +272,7 @@ class Profile extends React.Component {
     }
   }
 
-  render() {
+  render () {
     return (
       <View style = { styles.container }>
         <View style = { styles.tabContainer }>
@@ -232,6 +292,29 @@ class Profile extends React.Component {
               <Text style = {{ fontSize: 50 }}> 0.2/2.1 ℓ</Text>
             </View>
           </View>
+
+          <View style = {{ marginBottom: 10 }}>
+            <Button
+              onPress={this.setHistory}
+              title="set AsyncStorage History"
+              color="#841584"
+            />
+          </View>
+          <View style = {{ marginBottom: 10 }}>
+            <Button
+              onPress={this.getHistory}
+              title="get AsyncStorage History"
+              color="#841584"
+            />
+          </View>
+          <View style = {{ marginBottom: 10 }}>
+            <Button
+              onPress={this.clearHistory}
+              title="clear AsyncStorage History"
+              color="#841584"
+            />
+          </View>
+
         </View>
       </View>
     )
@@ -283,7 +366,9 @@ const mapActionToProps = (dispatch) => {
     setUserStatus: (userStatus, userStep, userEmoji) => dispatch(setUserStatus(userStatus, userStep, userEmoji)),
     addUserStep: (newStep) => dispatch(addUserStep(newStep)),
     updateStatusSensor: () => dispatch(updateStatusSensor()),
-    initStep: (initialStep) => dispatch(initStep(initialStep))
+    initStep: (initialStep) => dispatch(initStep(initialStep)),
+    updateHistoryCount: () => dispatch(updateHistoryCount()),
+    clearHistoryCount: () => dispatch(clearHistoryCount())
   }
 }
 

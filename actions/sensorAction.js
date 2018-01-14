@@ -35,3 +35,15 @@ export const initStep = (initialStep) => {
     payload: initialStep
   }
 }
+
+export const updateHistoryCount = () => {
+  return {
+    type: 'update_history_count'
+  }
+}
+
+export const clearHistoryCount = () => {
+  return {
+    type: 'clear_history_count'
+  }
+}

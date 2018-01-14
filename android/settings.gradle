@@ -1,4 +1,6 @@
 rootProject.name = 'DriMerClient'
+include ':react-native-svg'
+project(':react-native-svg').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-svg/android')
 include ':react-native-sensor-manager'
 project(':react-native-sensor-manager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sensor-manager/android')
 include ':react-native-audio'
