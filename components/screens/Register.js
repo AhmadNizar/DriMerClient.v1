@@ -55,7 +55,7 @@ class Register extends React.Component {
   }
 
   handleInputName(name) {
-    if ((/^[a-zA-Z-' ']+$/.test(name))) {
+    if ((/^[a-zA-Z-' ']+$/.test(name)) || name === "") {
       this.setState({
         nameValidate: true,
         errorMessage: ''
@@ -67,6 +67,7 @@ class Register extends React.Component {
       })
     }
   }
+
   render() {
     console.log(this.props.isSuccess)
     var tunggu = <Text>Tunggu</Text>
