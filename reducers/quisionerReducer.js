@@ -8,8 +8,9 @@ const quisionerReducer = (state = initialState, action) => {
 
       return { ...state, waterNeeds: action.payload }
     case 'get_suggestion':
-      console.log(action.payload)
       return {...state, waterNeeds: action.payload.sugest}
+    case 'clear_suggestion':
+      return {...state, waterNeeds: 0}
     default:
       return state
   }
