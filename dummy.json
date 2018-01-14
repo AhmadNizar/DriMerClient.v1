@@ -1,0 +1,158 @@
+[
+  {
+    "date": "Sat Jan 13 2018 00:00:00 GMT+0700 (WIB)",
+    "step": 0,
+    "status": "rest/sleep",
+    "drink": 0
+  },
+  {
+    "date": "Sat Jan 13 2018 01:00:00 GMT+0700 (WIB)",
+    "step": 0,
+    "status": "rest/sleep",
+    "drink": 0
+  },
+  {
+    "date": "Sat Jan 13 2018 02:00:00 GMT+0700 (WIB)",
+    "step": 0,
+    "status": "rest/sleep",
+    "drink": 0
+  },
+  {
+    "date": "Sat Jan 13 2018 03:00:00 GMT+0700 (WIB)",
+    "step": 0,
+    "status": "rest/sleep",
+    "drink": 0
+  },
+  {
+    "date": "Sat Jan 13 2018 04:00:00 GMT+0700 (WIB)",
+    "step": 0,
+    "status": "rest/sleep",
+    "drink": 0
+  },
+  {
+    "date": "Sat Jan 13 2018 05:00:00 GMT+0700 (WIB)",
+    "step": 0,
+    "status": "rest/sleep",
+    "drink": 0
+  },
+  {
+    "date": "Sat Jan 13 2018 06:00:00 GMT+0700 (WIB)",
+    "step": 0,
+    "status": "rest/sit",
+    "drink": 0
+  },
+  {
+    "date": "Sat Jan 13 2018 07:00:00 GMT+0700 (WIB)",
+    "step": 20,
+    "status": "rest/sit",
+    "drink": 0
+  },
+  {
+    "date": "Sat Jan 13 2018 08:00:00 GMT+0700 (WIB)",
+    "step": 45,
+    "status": "walk/run",
+    "drink": 0.24
+  },
+  {
+    "date": "Sat Jan 13 2018 09:00:00 GMT+0700 (WIB)",
+    "step": 145,
+    "status": "walk/run",
+    "drink": 0.48
+  },
+  {
+    "date": "Sat Jan 13 2018 10:00:00 GMT+0700 (WIB)",
+    "step": 200,
+    "status": "rest/sit",
+    "drink": 1.08
+  },
+  {
+    "date": "Sat Jan 13 2018 11:00:00 GMT+0700 (WIB)",
+    "step": 200,
+    "status": "rest/sit",
+    "drink": 1.08
+  },
+  {
+    "date": "Sat Jan 13 2018 12:00:00 GMT+0700 (WIB)",
+    "step": 200,
+    "status": "rest/sit",
+    "drink": 1.08
+  },
+  {
+    "date": "Sat Jan 13 2018 13:00:00 GMT+0700 (WIB)",
+    "step": 355,
+    "status": "rest/sit",
+    "drink": 1.68
+  },
+  {
+    "date": "Sat Jan 13 2018 14:00:00 GMT+0700 (WIB)",
+    "step": 400,
+    "status": "rest/sit",
+    "drink": 1.68
+  },
+  {
+    "date": "Sat Jan 13 2018 15:00:00 GMT+0700 (WIB)",
+    "step": 400,
+    "status": "rest/sit",
+    "drink": 1.68
+  },
+  {
+    "date": "Sat Jan 13 2018 16:00:00 GMT+0700 (WIB)",
+    "step": 450,
+    "status": "rest/sit",
+    "drink": 1.92
+  },
+  {
+    "date": "Sat Jan 13 2018 17:00:00 GMT+0700 (WIB)",
+    "step": 500,
+    "status": "rest/sit",
+    "drink": 1.92
+  },
+  {
+    "date": "Sat Jan 13 2018 18:00:00 GMT+0700 (WIB)",
+    "step": 850,
+    "status": "walk/run",
+    "drink": 1.92
+  },
+  {
+    "date": "Sat Jan 13 2018 19:00:00 GMT+0700 (WIB)",
+    "step": 850,
+    "status": "rest/sit",
+    "drink": 2.06
+  },
+  {
+    "date": "Sat Jan 13 2018 20:00:00 GMT+0700 (WIB)",
+    "step": 900,
+    "status": "rest/sit",
+    "drink": 2.06
+  },
+  {
+    "date": "Sat Jan 13 2018 21:00:00 GMT+0700 (WIB)",
+    "step": 900,
+    "status": "rest/sleep",
+    "drink": 2.06
+  },
+  {
+    "date": "Sat Jan 13 2018 21:00:00 GMT+0700 (WIB)",
+    "step": 900,
+    "status": "rest/sleep",
+    "drink": 2.06
+  },
+  {
+    "date": "Sat Jan 13 2018 22:00:00 GMT+0700 (WIB)",
+    "step": 900,
+    "status": "rest/sleep",
+    "drink": 2.06
+  },
+  {
+    "date": "Sat Jan 13 2018 23:00:00 GMT+0700 (WIB)",
+    "step": 900,
+    "status": "rest/sleep",
+    "drink": 2.06
+  },
+  {
+    "date": "Sat Jan 13 2018 24:00:00 GMT+0700 (WIB)",
+    "step": 900,
+    "status": "rest/sleep",
+    "drink": 2.06
+  }
+]
