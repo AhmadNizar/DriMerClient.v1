@@ -22,8 +22,7 @@ class Register extends React.Component {
       isDateTimePickerVisible: false,
       err: '',
       isLoading: false,
-      nameNumber: false,
-      nameChar: false,
+      nameValidate: true,
       errorMessage: ''
     }
 
@@ -56,15 +55,15 @@ class Register extends React.Component {
   }
 
   handleInputName(name) {
-    if ((/[0-9]/.test(name))) {
+    if ((/^[a-zA-Z-' ']+$/.test(name))) {
       this.setState({
-        nameNumber: true,
-        errorMessage: "Name should contain only alphabetic!"
+        nameValidate: true,
+        errorMessage: ''
       })
     } else {
       this.setState({
-        oneNumber: false,
-        errorMessage: ''
+        nameValidate: false,
+        errorMessage: "Name should contain only alphabetic!"
       })
     }
   }
