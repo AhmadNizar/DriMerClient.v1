@@ -21,8 +21,13 @@ class Register extends React.Component {
       gender: '',
       isDateTimePickerVisible: false,
       err: '',
-      isLoading: false
+      isLoading: false,
+      nameNumber: false,
+      nameChar: false,
+      errorMessage: ''
     }
+
+    this.handleInputName = this.handleInputName.bind(this)
   }
   register = () => {
     this.setState({
@@ -49,6 +54,20 @@ class Register extends React.Component {
       )
     }
   }
+
+  handleInputName(name) {
+    if ((/[0-9]/.test(name))) {
+      this.setState({
+        nameNumber: true,
+        errorMessage: "Name should contain only alphabetic!"
+      })
+    } else {
+      this.setState({
+        oneNumber: false,
+        errorMessage: ''
+      })
+    }
+  }
   render() {
     console.log(this.props.isSuccess)
     var tunggu = <Text>Tunggu</Text>
@@ -61,11 +80,11 @@ class Register extends React.Component {
     }
     return (
       <View style={styles.container}>
-        <Text>{this.state.err}</Text>
+        <Text style={styles.err}>{this.state.errorMessage}</Text>
         {tunggu}
         <View style={{ width: 300 }}>
           <View style={styles.input}>
-            <TextInput underlineColorAndroid='rgba(0,0,0,0)' placeholder="Name" onChangeText={(text) => this.setState({ name: text })} />
+            <TextInput underlineColorAndroid='rgba(0,0,0,0)' placeholder="Name" onChangeText={this.handleInputName} />
           </View>
           <View style={styles.input}>
             <TextInput underlineColorAndroid='rgba(0,0,0,0)' placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
@@ -97,6 +116,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#06a887'
+  },
+  err: {
+    color: 'red'
   },
   input: {
     backgroundColor: 'white',
