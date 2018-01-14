@@ -31,17 +31,37 @@ class Register extends React.Component {
     this.handleInputAge = this.handleInputAge.bind(this)
   }
   register = () => {
-    this.setState({
-      isLoading: true
-    })
-    let dataUser = {
-      name: this.state.name,
-      email: this.state.email,
-      password: this.state.password,
-      age: Number(this.state.age),
-      gender: this.state.gender
+
+    if (this.state.email === '' || this.state.age === '' || this.state.gender || this.state.name) {
+      this.setState({
+        errorMessage: 'All forms must be filled.'
+      })
+    } else {
+      if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.state.email))) {
+        this.setState({
+          errorMessage: 'Please input the correct email. Ex: xxx@xxx.com'
+        })
+      } else {
+        this.setState({
+          errorMessage: '',
+          isLoading: true
+        })
+        let dataUser = {
+          name: this.state.name,
+          email: this.state.email,
+          password: this.state.password,
+          age: Number(this.state.age),
+          gender: this.state.gender
+        }
+        this.props.register(dataUser)
+      }
     }
-    this.props.register(dataUser)
+
+
+
+
+
+
   }
   componentWillReceiveProps(nextProps) {
     if (nextProps.isSuccess) {
@@ -84,8 +104,6 @@ class Register extends React.Component {
       })
     }
   }
-
-
 
   render() {
     console.log(this.props.isSuccess)
