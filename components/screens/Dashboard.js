@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import { Icon } from 'react-native-elements'
 import { changeLogout } from '../../actions/userAction'
 import { changeVisible } from '../../actions/userAction'
+import { clearSuggestion } from "../../actions/quisionerAction";
 
 class Dashboard extends React.Component {
   static navigationOptions = {
@@ -19,6 +20,7 @@ class Dashboard extends React.Component {
   }
 
   logout = () => {
+
     AsyncStorage.removeItem('drimerToken').then(() => {
       this.props.changeLogout()
     })
@@ -29,23 +31,21 @@ class Dashboard extends React.Component {
     AsyncStorage.removeItem('air').then(() => {
       console.log('hapus air')
     })
-      .catch((err) => {
-        console.log(err)
-      })
+    .catch((err) => {
+      console.log(err)
+    })
+
     AsyncStorage.removeItem('persen').then(() => {
-      console.log('hapus persen')
+      console.log('hapus air')
     })
-      .catch((err) => {
-        console.log(err)
-      })
+    .catch((err) => {
+      console.log(err)
+    })    
   }
 
-  componentDidMount() {
-    AsyncStorage.getItem('drimerToken').then((value) => {
-      console.log(value)
-    })
+  componentWillUnmount() {
+    this.props.clearSuggestion()
   }
-
 
   render() {
     const { navigate } = this.props.navigation
@@ -79,11 +79,18 @@ const styles = StyleSheet.create({
   }
 })
 
-const mapActionToProps = (dispatch) => {
+const mapStateToProps = (state) => {
   return {
-    changeLogout: () => dispatch(changeLogout()),
-    changeVisible: () => dispatch(changeVisible())
+    waterNeed: state.quisionerReducer.waterNeeds
   }
 }
 
-export default connect(null, mapActionToProps)(Dashboard)
+const mapActionToProps = (dispatch) => {
+  return {
+    changeLogout: () => dispatch(changeLogout()),
+    changeVisible: () => dispatch(changeVisible()),
+    clearSuggestion: () => dispatch(clearSuggestion())
+  }
+}
+
+export default connect(mapStateToProps, mapActionToProps)(Dashboard)

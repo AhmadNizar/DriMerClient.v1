@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity, AsyncStorage } from "react-native";
+import { ActivityIndicator, StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity, AsyncStorage, Modal } from "react-native";
 import { connect } from 'react-redux'
 import { Icon } from 'react-native-elements'
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
@@ -23,14 +23,14 @@ class Suggestion extends React.Component {
       persen: 100,
       air: 0,
       konstanta: 0,
-      showAlert: false
-    }
+      showAlert: false,
+      modalVisible: true
+    }    
   }
 
   componentDidMount() {
     AsyncStorage.getItem('drimerToken').then((value) => {
       this.props.getSuggestion(value)
-      console.log('yaaaaaaaaaaaaaaaaaaa', this.props.waterNeed)
     })
       .catch((err) => {
         console.log(err)
@@ -59,6 +59,12 @@ class Suggestion extends React.Component {
         })
       }
     })
+
+    if(nextProps.waterNeed) {
+      this.setState({
+        modalVisible: false
+      })
+    }
   }
 
   showAlert = () => {
@@ -71,8 +77,7 @@ class Suggestion extends React.Component {
     this.setState({
       showAlert: false
     });
-  };
-
+  };  
 
   minum(jumlahminum) {
     if (this.state.air == 0) {
@@ -104,7 +109,6 @@ class Suggestion extends React.Component {
         persen: persen
       })
     } else {
-      console.log('kena di nol')
       var air = 0
       AsyncStorage.setItem('air', '0').then(() => {
         console.log('yeah')
@@ -129,6 +133,18 @@ class Suggestion extends React.Component {
   render() {
     return (
       <View>
+        <Modal
+         visible={this.state.modalVisible}
+         animationType={'fade'}
+         onRequestClose={() => this.closeModal()}
+        >
+          <View style={styles.modalContainer}>
+            <View style={styles.innerContainer}>
+              <Text style={styles.modalText}>Please wait</Text>
+              <ActivityIndicator size="large" color="#06a887" />            
+            </View>
+          </View>
+        </Modal>
         <View style={styles.container}>
           <AnimatedCircularProgress
             style={{
@@ -143,46 +159,48 @@ class Suggestion extends React.Component {
               (fill) => (
                 <View>
                   <Text style={styles.points}>
-                    {this.state.air}
+                    { this.state.air }
                   </Text>
                   <Text style={styles.points}>
                     Liter
-              </Text>
+                  </Text>
                 </View>
               )
             }
           </AnimatedCircularProgress>
+          
           <Icon
-            raised
-            name='md-battery-full'
-            type='ionicon'
-            color='white'
-            containerStyle={{
-              marginTop: 30,
-              backgroundColor: '#06a887',
-              width: 90,
-              height: 90,
-              borderRadius: 45
-            }}
-            onPress={() => { this.minum(0.6) }}
+           raised
+           name='md-battery-full'
+           type='ionicon'
+           color='white'
+           containerStyle={{
+             marginTop: 30,
+             backgroundColor: '#06a887',
+             width: 90,
+             height: 90,
+             borderRadius: 45
+           }}
+           onPress={() => { this.minum(0.6) }}
           />
 
           <Icon
-            raised
-            name='cup'
-            type='material-community'
-            color='white'
-            underlayColor='#296666'
-            containerStyle={{
-              marginTop: 30,
-              backgroundColor: '#06a887',
-              width: 90,
-              height: 90,
-              borderRadius: 45
-            }}
-            onPress={() => { this.minum(1) }}
+           raised
+           name='cup'
+           type='material-community'
+           color='white'
+           underlayColor='#296666'
+           containerStyle={{
+             marginTop: 30,
+             backgroundColor: '#06a887',
+             width: 90,
+             height: 90,
+             borderRadius: 45
+           }}
+           onPress={() => { this.minum(0.24) }}
           />
         </View>
+
         <AwesomeAlert
           show={this.state.showAlert}
           showProgress={false}
@@ -191,7 +209,7 @@ class Suggestion extends React.Component {
           closeOnTouchOutside={true}
           closeOnHardwareBackPress={false}
           showConfirmButton={true}
-          confirmText="Yes"
+          confirmText="OK"
           confirmButtonColor="#DD6B55"
           onCancelPressed={() => {
             this.hideAlert();
@@ -227,7 +245,18 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center'
   },
-
+  modalContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: 'white',
+  },
+  innerContainer: {
+    alignItems: 'center',
+  },
+  modalText: {
+    color: '#06a887',
+    marginBottom: 30
+  }
 });
 
 const mapStateToProps = (state) => {

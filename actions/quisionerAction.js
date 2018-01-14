@@ -52,3 +52,9 @@ export const getSuggestion = (token) => {
     })
   }
 }
+
+export const clearSuggestion = () => {
+  return {
+    type: 'clear_suggestion'
+  }
+}

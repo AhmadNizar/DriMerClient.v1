@@ -54,6 +54,9 @@ class Quisioner extends React.Component {
     //   isSmoker: smokerWaterNeed,
     //   weight: Number(this.state.weight)
     // }
+    if(calculateWater > 0) {
+      calculateWater = calculateWater.toFixed(2)
+    }
 
     this.props.calculateWater(calculateWater, this.props.token)
     this.props.changeVisible()

@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF'
+    backgroundColor: '#CADFE6'
   },
   img: {
     height: 100,
