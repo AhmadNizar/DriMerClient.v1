@@ -39,24 +39,25 @@ const NavigationBase = StackNavigator({
 
 const NavigationTab = TabNavigator({
   Suggestion: { screen: Suggestion },
-  Dashboard: { screen: Dashboard },
-  // Profile: {screen: Profile}
+  Profile: { screen: Profile },
+  History: { screen: History }
 }, {
-  tabBarPosition: 'bottom',
-  animationEnabled: true,
-  tabBarOptions: {
-    backBehavior: 'none',
-    showIcon: true,
-    showLabel: true,
-    labelStyle: {
-      fontSize: 12,
-      color: '#06a887'
-    },
-    style: {
-      backgroundColor: '#ffffff',
-      height: 60
+    tabBarPosition: 'bottom',
+    animationEnabled: true,
+    tabBarOptions: {
+      backBehavior: 'none',
+      showIcon: true,
+      showLabel: true,
+      labelStyle: {
+        fontSize: 12,
+        color: '#06a887'
+      },
+      style: {
+        backgroundColor: '#ffffff',
+        height: 60
+      }
     }
-  }})
+  })
 
 class App extends Component<{}> {
 

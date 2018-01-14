@@ -10,8 +10,12 @@ import {
   AsyncStorage
 } from 'react-native'
 import { connect } from 'react-redux'
+
 import { AudioRecorder, AudioUtils } from 'react-native-audio';
 import { SensorManager } from 'NativeModules';
+import { Icon } from 'react-native-elements'
+import { changeLogout, changeVisible } from '../../actions/userAction'
+import { clearSuggestion } from "../../actions/quisionerAction";
 import {
   setUserStatus,
   getUserStatus,
@@ -29,7 +33,13 @@ const initialLayout = {
 
 class Profile extends React.Component {
   static navigationOptions = {
-    title: "Profile"
+    tabBarLabel: 'Profile',
+    tabBarIcon: ({ tintColor }) => (
+      <Icon
+        name='user'
+        type="font-awesome"
+        color='#06a887' />
+    ),
   }
 
   constructor(props) {
@@ -58,15 +68,15 @@ class Profile extends React.Component {
     this.startRecording = this.startRecording.bind(this)
   }
 
-  componentWillMount (){
-    if(this.props.getUserStatus.statusSensor == true) {
+  componentWillMount() {
+    if (this.props.getUserStatus.statusSensor == true) {
       console.log('will mount')
-      this.sensorStop ()
+      this.sensorStop()
     }
   }
 
-  componentDidMount () {
-    if(this.props.getUserStatus.statusSensor == true) {
+  componentDidMount() {
+    if (this.props.getUserStatus.statusSensor == true) {
       console.log('sensor already started')
       this.sensorInit()
       // this.startSensor()
@@ -76,12 +86,40 @@ class Profile extends React.Component {
     }
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     console.log('unmount')
     this.sensorStop()
+    this.props.clearSuggestion()
+  }
+  logout = () => {
+
+    AsyncStorage.removeItem('drimerToken').then(() => {
+      this.props.changeLogout()
+    })
+      .catch((err) => {
+        console.log(err)
+      })
+
+    AsyncStorage.removeItem('air').then(() => {
+      console.log('hapus air')
+    })
+      .catch((err) => {
+        console.log(err)
+      })
+
+    AsyncStorage.removeItem('persen').then(() => {
+      console.log('hapus air')
+    })
+      .catch((err) => {
+        console.log(err)
+      })
   }
 
-  sensorInit () {
+  // componentWillUnmount() {
+  //   this.props.clearSuggestion()
+  // }
+
+  sensorInit() {
     console.log('start sensors')
     SensorManager.startStepCounter(100);
     SensorManager.startLightSensor(100);
@@ -91,7 +129,7 @@ class Profile extends React.Component {
     this.startSensor()
   }
 
-  sensorStop () {
+  sensorStop() {
     console.log('stop sensors')
     this.stopRecording()
     SensorManager.stopStepCounter();
@@ -101,7 +139,7 @@ class Profile extends React.Component {
     SensorManager.stopProximity();
   }
 
-  startSensor () {
+  startSensor() {
     console.log('start Sensor')
     DeviceEventEmitter.addListener('LightSensor', (data) => {
       this.setState({
@@ -109,7 +147,7 @@ class Profile extends React.Component {
       })
     });
     DeviceEventEmitter.addListener('StepCounter', (data) => {
-      if(this.state.status !== 'unknown') {
+      if (this.state.status !== 'unknown') {
         console.log(data.steps)
         this.setState({
           step: this.state.step + 1,
@@ -148,14 +186,14 @@ class Profile extends React.Component {
     });
   }
 
-  sensorToStoreHandler () {
-    if(this.state.countForGetStatus == 5) {
+  sensorToStoreHandler() {
+    if (this.state.countForGetStatus == 5) {
       this.checkStatus()
     } else if (this.state.countForGetStatus == 1) {
       this.startRecording()
     }
 
-    if(this.props.getUserStatus.updateHistoryCount == 5) {
+    if (this.props.getUserStatus.updateHistoryCount == 5) {
       this.setHistory()
       this.props.clearHistoryCount()
     } else {
@@ -163,7 +201,7 @@ class Profile extends React.Component {
     }
   }
 
-  checkStatus () {
+  checkStatus() {
     console.log('checkStatus')
     let accelXstatus = this.state.accelX < 1.5 && this.state.accelX > -1.5
     let accelYstatus = this.state.accelY < 1.5 && this.state.accelY > -1.5
@@ -172,7 +210,7 @@ class Profile extends React.Component {
     let micStatus = this.state.decible < -45
     console.log(this.state.decible)
     console.log(accelXstatus, lightStatus, micStatus)
-    if(lightStatus && accelXstatus && micStatus){
+    if (lightStatus && accelXstatus && micStatus) {
       this.setState({
         status: 'rest/sleep',
         emoji: '🛌',
@@ -198,7 +236,7 @@ class Profile extends React.Component {
       const myHistoryRaw = await AsyncStorage.getItem('@History:user');
       const myHistoryJson = JSON.parse(myHistoryRaw)
       console.log('set history', myHistoryJson)
-      if(myHistoryJson !== null) {
+      if (myHistoryJson !== null) {
         myHistoryJson.push({
           date: new Date(),
           step: this.props.getUserStatus.totalStep,
@@ -239,7 +277,7 @@ class Profile extends React.Component {
     }
   }
 
-  startRecording () {
+  startRecording() {
     this.stopRecording()
     let audioPath = AudioUtils.DocumentDirectoryPath + '/test.aac';
     AudioRecorder.prepareRecordingAtPath(audioPath, {
@@ -250,71 +288,78 @@ class Profile extends React.Component {
       MeteringEnabled: true
     });
     AudioRecorder.startRecording()
-    .then((data) => {
-      AudioRecorder.onProgress = data => {
-        let decibels = Math.floor(data.currentMetering);
-        this.setState({
-          decible: decibels
-        })
-      };
-    });
+      .then((data) => {
+        AudioRecorder.onProgress = data => {
+          let decibels = Math.floor(data.currentMetering);
+          this.setState({
+            decible: decibels
+          })
+        };
+      });
   }
 
-  stopRecording () {
-    if(AudioRecorder.onProgress) {
+  stopRecording() {
+    if (AudioRecorder.onProgress) {
       AudioRecorder.stopRecording()
-      .then(() => {
-        console.log('audio stop record')
-      })
-      .catch(err => {
-        console.log('cannot stop record', err)
-      })
+        .then(() => {
+          console.log('audio stop record')
+        })
+        .catch(err => {
+          console.log('cannot stop record', err)
+        })
     }
   }
 
-  render () {
+  render() {
     return (
-      <View style = { styles.container }>
-        <View style = { styles.tabContainer }>
-          <View style = { styles.card }>
-            <Text style = {{ fontSize: 45 }}>{this.props.getUserStatus.userEmoji} {this.props.getUserStatus.userStatus}</Text>
+      <View style={styles.container}>
+        <View style={styles.tabContainer}>
+          <View style={styles.card}>
+            <Text style={{ fontSize: 45 }}>{this.props.getUserStatus.userEmoji} {this.props.getUserStatus.userStatus}</Text>
           </View>
-          <View style = { styles.card }>
+          <View style={styles.card}>
             <View>
-              <Text style = {{ fontSize: 50 }}>👣 {this.props.getUserStatus.totalStep}</Text>
+              <Text style={{ fontSize: 50 }}>👣 {this.props.getUserStatus.totalStep}</Text>
             </View>
           </View>
-          <View style = { styles.card }>
+          <View style={styles.card}>
             <View>
-              <Text style = {{ fontSize: 50 }}>🥛</Text>
+              <Text style={{ fontSize: 50 }}>🥛</Text>
             </View>
             <View>
-              <Text style = {{ fontSize: 50 }}> 0.2/2.1 ℓ</Text>
+              <Text style={{ fontSize: 50 }}> 0.2/2.1 ℓ</Text>
             </View>
           </View>
 
-          <View style = {{ marginBottom: 10 }}>
+          <View style={{ marginBottom: 10 }}>
             <Button
               onPress={this.setHistory}
               title="set AsyncStorage History"
               color="#841584"
             />
           </View>
-          <View style = {{ marginBottom: 10 }}>
+          <View style={{ marginBottom: 10 }}>
             <Button
               onPress={this.getHistory}
               title="get AsyncStorage History"
               color="#841584"
             />
           </View>
-          <View style = {{ marginBottom: 10 }}>
+          <View style={{ marginBottom: 10 }}>
             <Button
               onPress={this.clearHistory}
               title="clear AsyncStorage History"
               color="#841584"
             />
           </View>
-
+          <View>
+            <Button
+              title="Logout"
+              onPress={() => {
+                this.logout()
+              }}
+            />
+          </View>
         </View>
       </View>
     )
@@ -357,6 +402,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (state) => {
   return {
+    waterNeed: state.quisionerReducer.waterNeeds,
     getUserStatus: state.sensorReducer
   }
 }
@@ -368,7 +414,10 @@ const mapActionToProps = (dispatch) => {
     updateStatusSensor: () => dispatch(updateStatusSensor()),
     initStep: (initialStep) => dispatch(initStep(initialStep)),
     updateHistoryCount: () => dispatch(updateHistoryCount()),
-    clearHistoryCount: () => dispatch(clearHistoryCount())
+    clearHistoryCount: () => dispatch(clearHistoryCount()),
+    changeLogout: () => dispatch(changeLogout()),
+    changeVisible: () => dispatch(changeVisible()),
+    clearSuggestion: () => dispatch(clearSuggestion())
   }
 }
 
