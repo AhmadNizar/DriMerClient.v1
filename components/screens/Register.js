@@ -23,10 +23,12 @@ class Register extends React.Component {
       err: '',
       isLoading: false,
       nameValidate: true,
+      ageValidate: true,
       errorMessage: ''
     }
 
     this.handleInputName = this.handleInputName.bind(this)
+    this.handleInputAge = this.handleInputAge.bind(this)
   }
   register = () => {
     this.setState({
@@ -54,11 +56,26 @@ class Register extends React.Component {
     }
   }
 
+  handleInputAge(age) {
+    if ((/[0-9]/.test(age)) || age === "") {
+      this.setState({
+        ageValidate: true,
+        errorMessage: '',
+        age: age
+      })
+    } else {
+      this.setState({
+        ageValidate: false,
+        errorMessage: 'Age should contain only number!'
+      })
+    }
+  }
   handleInputName(name) {
     if ((/^[a-zA-Z-' ']+$/.test(name)) || name === "") {
       this.setState({
         nameValidate: true,
-        errorMessage: ''
+        errorMessage: '',
+        name: name
       })
     } else {
       this.setState({
@@ -67,6 +84,8 @@ class Register extends React.Component {
       })
     }
   }
+
+
 
   render() {
     console.log(this.props.isSuccess)
@@ -90,7 +109,7 @@ class Register extends React.Component {
             <TextInput underlineColorAndroid='rgba(0,0,0,0)' placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
           </View>
           <View style={styles.input}>
-            <TextInput underlineColorAndroid='rgba(0,0,0,0)' placeholder="Age" onChangeText={(text) => this.setState({ age: text })} />
+            <TextInput underlineColorAndroid='rgba(0,0,0,0)' placeholder="Age" onChangeText={this.handleInputAge} />
           </View>
           <View style={styles.input}>
             <Picker
