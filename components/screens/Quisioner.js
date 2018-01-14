@@ -21,6 +21,8 @@ class Quisioner extends React.Component {
   }
 
   getQuisioner() {
+    console.log("Ini activity need", this.state.sportTime)
+
 
     let activityNeed = 0
     let smokerWaterNeed = 0
@@ -44,6 +46,7 @@ class Quisioner extends React.Component {
     } else {
       smokerWaterNeed = 0.03
     }
+
 
     let calculateWater = ((activityNeed + smokerWaterNeed) / 2) * (Number(this.state.weight))
     // let waterNeeds = {
