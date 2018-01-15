@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
   },
   input: {
     backgroundColor: '#e6fef9',
-    borderRadius: 20,
+    borderRadius: 10,
     marginBottom: 10
   },
   birthPicker: {
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginTop: 30
   },
-  inputPicker:{
+  inputPicker: {
     color: 'grey'
   }
 })

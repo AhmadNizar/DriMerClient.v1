@@ -87,9 +87,9 @@ class Login extends React.Component {
             {tunggu}
             <Image style={styles.img} source={require('../../assets/iconTeal.png')} />
           </View>
-          <View>
-            <TextInput placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
-            <TextInput secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
+          <View style={styles.viewInput}>
+            <TextInput style={{ paddingBottom: 5 }} placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
+            <TextInput style={{ paddingBottom: 5 }} secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
             <SocialIcon type="sign-in" style={{ backgroundColor: '#296666' }} button title='Sign In' onPress={() => this.signin()} />
           </View>
           {/* <View>
@@ -101,7 +101,7 @@ class Login extends React.Component {
             />
           </View> */}
           <View>
-            <Text style={{ textAlign: "center", color: 'white' }} >or</Text>
+            <Text style={{ textAlign: "center" }} >or</Text>
             <View>
               <Text style={styles.registertext}>Create an account if you dont have an </Text>
               <TouchableOpacity onPress={() => navigate('Register')}><Text style={styles.registeraccount}>account</Text></TouchableOpacity>
@@ -116,13 +116,18 @@ class Login extends React.Component {
 const styles = StyleSheet.create({
   viewImg: {
     alignItems: 'center',
+    marginBottom: 20
   },
   container: {
     flex: 1,
     justifyContent: 'space-around',
     alignItems: 'center',
     // backgroundColor: '#CADFE6'
-    backgroundColor: '#e7fef9'
+    backgroundColor: '#e7fef9',
+
+  },
+  viewInput: {
+    marginBottom: 15
   },
   img: {
     height: 85,
