@@ -11,7 +11,6 @@ import {
   ScrollView
 } from 'react-native'
 import { connect } from 'react-redux'
-
 import { AudioRecorder, AudioUtils } from 'react-native-audio';
 import { SensorManager } from 'NativeModules';
 import { Icon, SocialIcon } from 'react-native-elements'
