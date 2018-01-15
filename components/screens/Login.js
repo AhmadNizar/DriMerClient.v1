@@ -86,21 +86,21 @@ class Login extends React.Component {
         <View style={{ width: 300 }}>
           <View style={styles.viewImg}>
             {tunggu}
-            <Image style={styles.img} source={{ uri: 'https://i.pinimg.com/736x/95/bb/5b/95bb5be4f09440448f990752e0aa62e6--plumbing-logo-logo-water.jpg' }} />
+            <Image style={styles.img} source={require('../../assets/iconTeal.png')} />
           </View>
-          <View>
-            <TextInput placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
-            <TextInput secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
-            <SocialIcon style={{ backgroundColor: '#3583c6' }} button title='Sign In' onPress={() => this.signin()} />
+          <View style={styles.viewInput}>
+            <TextInput style={{ paddingBottom: 5 }} placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
+            <TextInput style={{ paddingBottom: 5 }} secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
+            <SocialIcon type="sign-in" style={{ backgroundColor: '#296666' }} button title='Sign In' onPress={() => this.signin()} />
           </View>
-          <View>
+          {/* <View>
             <SocialIcon
               title='Sign In With Facebook'
               button
               type='facebook'
               onPress={this.loginFacebook}
             />
-          </View>
+          </View> */}
           <View>
             <Text style={{ textAlign: "center" }} >or</Text>
             <View>
@@ -116,22 +116,28 @@ class Login extends React.Component {
 
 const styles = StyleSheet.create({
   viewImg: {
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: 20
   },
   container: {
     flex: 1,
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#CADFE6'
+    // backgroundColor: '#CADFE6'
+    backgroundColor: '#e7fef9',
+
+  },
+  viewInput: {
+    marginBottom: 15
   },
   img: {
-    height: 100,
-    width: 100,
+    height: 85,
+    width: 60,
   },
 
   registertext: {
     fontSize: 12,
-    textAlign: "center"
+    textAlign: "center",
   },
 
   registeraccount: {

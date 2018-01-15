@@ -1,6 +1,6 @@
 import React from "react";
 import { AsyncStorage, StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity } from "react-native";
-import { Slider, CheckBox } from 'react-native-elements';
+import { Slider, CheckBox, SocialIcon } from 'react-native-elements';
 import { connect } from 'react-redux'
 import { calculateWaterAction } from '../../actions/quisionerAction'
 import { changeVisible } from '../../actions/userAction'
@@ -54,7 +54,7 @@ class Quisioner extends React.Component {
     //   isSmoker: smokerWaterNeed,
     //   weight: Number(this.state.weight)
     // }
-    if(calculateWater > 0) {
+    if (calculateWater > 0) {
       calculateWater = calculateWater.toFixed(2)
     }
 
@@ -97,7 +97,7 @@ class Quisioner extends React.Component {
             />
             <CheckBox
               title='No'
-              checkedColor="#1ab2ff"
+              checkedColor="#06a887"
               checked={this.state.isNonSmoker}
               onPress={() => {
                 if (this.state.isSmoker) {
@@ -122,15 +122,15 @@ class Quisioner extends React.Component {
               <Text>High</Text>
             </View>
             <Slider
-              thumbTintColor='#1ab2ff'
+              thumbTintColor='#06a887'
               minimumValue={0}
               maximumValue={2}
               step={1}
               value={this.state.sportTime}
               onValueChange={(value) => this.setState({ sportTime: value })} />
           </View>
+          <SocialIcon style={{ backgroundColor: '#06a887' }} button title="Submit" onPress={() => this.getQuisioner()} />
         </View>
-        <Button title="Submit" onPress={() => this.getQuisioner()} />
 
       </View>
     );
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
 
   container: {
     flex: 1,
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#e7fef9',
     alignItems: 'center',
     paddingTop: 30
   },

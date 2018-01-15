@@ -125,7 +125,7 @@ class Register extends React.Component {
             <TextInput underlineColorAndroid='rgba(0,0,0,0)' placeholder="Age" onChangeText={this.handleInputAge} />
           </View>
           <View style={styles.input}>
-            <Picker
+            <Picker style={styles.inputPicker}
               selectedValue={this.state.gender}
               onValueChange={(itemValue, itemIndex) => this.setState({ gender: itemValue })}>
               <Picker.Item label="Your Gender" value="" />
@@ -136,7 +136,7 @@ class Register extends React.Component {
           <View style={styles.input}>
             <TextInput underlineColorAndroid='rgba(0,0,0,0)' secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
           </View>
-          <Button color='#296666' title='Register' onPress={this.register} />
+          <SocialIcon type="user-plus" button style={{ backgroundColor: '#296666' }} title='Register' onPress={this.register} />
         </View>
       </View>
     );
@@ -153,8 +153,8 @@ const styles = StyleSheet.create({
     color: 'red'
   },
   input: {
-    backgroundColor: 'white',
-    borderRadius: 7,
+    backgroundColor: '#e6fef9',
+    borderRadius: 10,
     marginBottom: 10
   },
   birthPicker: {
@@ -162,6 +162,9 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     justifyContent: 'space-between',
     marginTop: 30
+  },
+  inputPicker: {
+    color: 'grey'
   }
 })
 const mapStateToProps = (state) => {
