@@ -33,24 +33,328 @@ class History extends React.Component {
       historyUser: [],
       userStep: [],
       userDrink: [],
-      userStatus: []
+      userStatus: [],
+      dateGraphHistory: '',
+      diffrentDate: 1
     }
-    this.setAsync = this.setAsync.bind(this)
-    this.getAsync = this.getAsync.bind(this)
+    this.setHistory = this.setHistory.bind(this)
+    this.getHistory = this.getHistory.bind(this)
+    this.substractDate = this.substractDate.bind(this)
+    this.addDate = this.addDate.bind(this)
   }
 
-  setAsync = async () => {
+  setHistory = async () => {
     try {
-      const stringData = JSON.stringify({ name: ['Belalang', 'Capung'] })
-      await AsyncStorage.setItem('@History:today', stringData);
+      console.log('set history')
+      const dummy = [
+        {
+          "date": "Sat Jan 13 2018 00:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sleep",
+          "drink": 0
+        },
+        {
+          "date": "Sat Jan 13 2018 01:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sleep",
+          "drink": 0
+        },
+        {
+          "date": "Sat Jan 13 2018 02:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sleep",
+          "drink": 0
+        },
+        {
+          "date": "Sat Jan 13 2018 03:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sleep",
+          "drink": 0
+        },
+        {
+          "date": "Sat Jan 13 2018 04:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sleep",
+          "drink": 0
+        },
+        {
+          "date": "Sat Jan 13 2018 05:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sleep",
+          "drink": 0
+        },
+        {
+          "date": "Sat Jan 13 2018 06:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sit",
+          "drink": 0
+        },
+        {
+          "date": "Sat Jan 13 2018 07:00:00 GMT+0700 (WIB)",
+          "step": 20,
+          "status": "rest/sit",
+          "drink": 0
+        },
+        {
+          "date": "Sat Jan 13 2018 08:00:00 GMT+0700 (WIB)",
+          "step": 45,
+          "status": "walk/run",
+          "drink": 0.24
+        },
+        {
+          "date": "Sat Jan 13 2018 09:00:00 GMT+0700 (WIB)",
+          "step": 145,
+          "status": "walk/run",
+          "drink": 0.48
+        },
+        {
+          "date": "Sat Jan 13 2018 10:00:00 GMT+0700 (WIB)",
+          "step": 200,
+          "status": "rest/sit",
+          "drink": 1.08
+        },
+        {
+          "date": "Sat Jan 13 2018 11:00:00 GMT+0700 (WIB)",
+          "step": 200,
+          "status": "rest/sit",
+          "drink": 1.08
+        },
+        {
+          "date": "Sat Jan 13 2018 12:00:00 GMT+0700 (WIB)",
+          "step": 200,
+          "status": "rest/sit",
+          "drink": 1.08
+        },
+        {
+          "date": "Sat Jan 13 2018 13:00:00 GMT+0700 (WIB)",
+          "step": 355,
+          "status": "rest/sit",
+          "drink": 1.68
+        },
+        {
+          "date": "Sat Jan 13 2018 14:00:00 GMT+0700 (WIB)",
+          "step": 400,
+          "status": "rest/sit",
+          "drink": 1.68
+        },
+        {
+          "date": "Sat Jan 13 2018 15:00:00 GMT+0700 (WIB)",
+          "step": 400,
+          "status": "rest/sit",
+          "drink": 1.68
+        },
+        {
+          "date": "Sat Jan 13 2018 16:00:00 GMT+0700 (WIB)",
+          "step": 450,
+          "status": "rest/sit",
+          "drink": 1.92
+        },
+        {
+          "date": "Sat Jan 13 2018 17:00:00 GMT+0700 (WIB)",
+          "step": 500,
+          "status": "rest/sit",
+          "drink": 1.92
+        },
+        {
+          "date": "Sat Jan 13 2018 18:00:00 GMT+0700 (WIB)",
+          "step": 850,
+          "status": "walk/run",
+          "drink": 1.92
+        },
+        {
+          "date": "Sat Jan 13 2018 19:00:00 GMT+0700 (WIB)",
+          "step": 850,
+          "status": "rest/sit",
+          "drink": 2.06
+        },
+        {
+          "date": "Sat Jan 13 2018 20:00:00 GMT+0700 (WIB)",
+          "step": 900,
+          "status": "rest/sit",
+          "drink": 2.06
+        },
+        {
+          "date": "Sat Jan 13 2018 21:00:00 GMT+0700 (WIB)",
+          "step": 900,
+          "status": "rest/sleep",
+          "drink": 2.06
+        },
+        {
+          "date": "Sat Jan 13 2018 22:00:00 GMT+0700 (WIB)",
+          "step": 900,
+          "status": "rest/sleep",
+          "drink": 2.06
+        },
+        {
+          "date": "Sat Jan 13 2018 23:00:00 GMT+0700 (WIB)",
+          "step": 900,
+          "status": "rest/sleep",
+          "drink": 2.06
+        },
+        {
+          "date": "Sun Jan 14 2018 00:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sleep",
+          "drink": 0
+        },
+        {
+          "date": "Sun Jan 14 2018 01:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sleep",
+          "drink": 0
+        },
+        {
+          "date": "Sun Jan 14 2018 02:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sleep",
+          "drink": 0
+        },
+        {
+          "date": "Sun Jan 14 2018 03:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sleep",
+          "drink": 0
+        },
+        {
+          "date": "Sun Jan 14 2018 04:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sleep",
+          "drink": 0
+        },
+        {
+          "date": "Sun Jan 14 2018 05:00:00 GMT+0700 (WIB)",
+          "step": 0,
+          "status": "rest/sleep",
+          "drink": 0
+        },
+        {
+          "date": "Sun Jan 14 2018 06:00:00 GMT+0700 (WIB)",
+          "step": 10,
+          "status": "rest/sit",
+          "drink": 0
+        },
+        {
+          "date": "Sun Jan 14 2018 07:00:00 GMT+0700 (WIB)",
+          "step": 30,
+          "status": "walk/run",
+          "drink": 0
+        },
+        {
+          "date": "Sun Jan 14 2018 08:00:00 GMT+0700 (WIB)",
+          "step": 60,
+          "status": "walk/run",
+          "drink": 0.24
+        },
+        {
+          "date": "Sun Jan 14 2018 09:00:00 GMT+0700 (WIB)",
+          "step": 200,
+          "status": "walk/run",
+          "drink": 0.48
+        },
+        {
+          "date": "Sun Jan 14 2018 10:00:00 GMT+0700 (WIB)",
+          "step": 200,
+          "status": "rest/sit",
+          "drink": 1.32
+        },
+        {
+          "date": "Sun Jan 14 2018 11:00:00 GMT+0700 (WIB)",
+          "step": 200,
+          "status": "rest/sit",
+          "drink": 1.32
+        },
+        {
+          "date": "Sun Jan 14 2018 12:00:00 GMT+0700 (WIB)",
+          "step": 500,
+          "status": "rest/sit",
+          "drink": 1.92
+        },
+        {
+          "date": "Sun Jan 14 2018 13:00:00 GMT+0700 (WIB)",
+          "step": 552,
+          "status": "rest/sit",
+          "drink": 2.36
+        },
+        {
+          "date": "Sun Jan 14 2018 14:00:00 GMT+0700 (WIB)",
+          "step": 800,
+          "status": "walk/run",
+          "drink": 2.36
+        },
+        {
+          "date": "Sun Jan 14 2018 15:00:00 GMT+0700 (WIB)",
+          "step": 800,
+          "status": "rest/sit",
+          "drink": 2.36
+        },
+        {
+          "date": "Sun Jan 14 2018 16:00:00 GMT+0700 (WIB)",
+          "step": 800,
+          "status": "rest/sit",
+          "drink": 2.36
+        },
+        {
+          "date": "Sun Jan 14 2018 17:00:00 GMT+0700 (WIB)",
+          "step": 800,
+          "status": "rest/sit",
+          "drink": 2.36
+        },
+        {
+          "date": "Sun Jan 14 2018 18:00:00 GMT+0700 (WIB)",
+          "step": 829,
+          "status": "walk/run",
+          "drink": 2.36
+        },
+        {
+          "date": "Sun Jan 14 2018 19:00:00 GMT+0700 (WIB)",
+          "step": 850,
+          "status": "rest/sit",
+          "drink": 2.36
+        },
+        {
+          "date": "Sun Jan 14 2018 20:00:00 GMT+0700 (WIB)",
+          "step": 900,
+          "status": "rest/sit",
+          "drink": 2.36
+        },
+        {
+          "date": "Sun Jan 14 2018 21:00:00 GMT+0700 (WIB)",
+          "step": 900,
+          "status": "rest/sleep",
+          "drink": 2.36
+        },
+        {
+          "date": "Sun Jan 14 2018 22:00:00 GMT+0700 (WIB)",
+          "step": 900,
+          "status": "rest/sleep",
+          "drink": 2.36
+        },
+        {
+          "date": "Sun Jan 14 2018 23:00:00 GMT+0700 (WIB)",
+          "step": 900,
+          "status": "rest/sleep",
+          "drink": 2.36
+        },
+      ]
+      const stringData = JSON.stringify(dummy)
+      await AsyncStorage.setItem('@History:user', stringData);
     } catch (error) {
       // Error saving data
       console.log(error)
     }
   }
 
-  getAsync = async () => {
+  clearHistory = async () => {
     try {
+      AsyncStorage.removeItem('@History:user')
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  getHistory = async () => {
+    try {
+      console.log('get history')
       const historyUserRaw = await AsyncStorage.getItem('@History:user');
       if (historyUserRaw !== null) {
         // We have data!!
@@ -64,8 +368,14 @@ class History extends React.Component {
         const totalWalk = 0
         const lastStep = 0
         const lastDrink = 0
+        const newDateGraphHistory = ''
+        let totalData = 24
         historyUser.map((dataUser, index) => {
-          if (index < 25) {
+          const dateHistory = new Date(dataUser.date)
+          const today = new Date(Date.now())
+          if (dateHistory.getDate() == (today.getDate() - this.state.diffrentDate)) {
+            newDateGraphHistory = dateHistory
+            totalData -= 1
             newUserStep.push(dataUser.step - lastStep)
             newUserDrink.push(dataUser.drink - lastDrink)
             lastStep = dataUser.step
@@ -78,17 +388,17 @@ class History extends React.Component {
               totalSit += 1
             }
           }
-          if (index == 25) {
+          if (totalData == 0) {
             //set to async
             newUserStatus = [totalWalk, totalSleep, totalSit]
           }
         })
-        console.log(newUserStatus)
         this.setState({
           historyUser: historyUser,
           userStep: newUserStep,
           userDrink: newUserDrink,
-          userStatus: newUserStatus
+          userStatus: newUserStatus,
+          dateGraphHistory: `${newDateGraphHistory.toDateString()}`
         })
       }
     } catch (error) {
@@ -97,8 +407,16 @@ class History extends React.Component {
     }
   }
 
+  substractDate() {
+    this.setState({ diffrentDate: this.state.diffrentDate + 1 }, () => this.getHistory())
+  }
+
+  addDate() {
+    this.setState({ diffrentDate: this.state.diffrentDate - 1 }, () => this.getHistory())
+  }
+
   componentDidMount() {
-    this.getAsync()
+    this.getHistory()
   }
 
   render() {
@@ -118,9 +436,6 @@ class History extends React.Component {
         },
       },
     ]
-
-    const dataChart = [50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80]
-    const randomColor = () => ('#' + (Math.random() * 0xFFFFFF << 0).toString(16) + '000000').slice(0, 7)
     const pieData = this.state.userStatus
       .filter(value => value > 0)
       .map((value, index) => {
@@ -141,8 +456,6 @@ class History extends React.Component {
           key: `pie-${index}`,
         }
       })
-    console.log(pieData)
-
     return (
       <View style={{
         marginTop: 10,
@@ -151,6 +464,16 @@ class History extends React.Component {
         marginBottom: 10
       }}>
         <ScrollView contentContainerStyle={styles.contentContainer}>
+          <Button
+            onPress={ () => this.substractDate()}
+            title="- Date "
+            color="#841584"
+          />
+          <Button
+            onPress={ () => this.addDate()}
+            title="+ Date"
+            color="#841584"
+          />
           <View style={{
             backgroundColor: 'white',
             paddingLeft: 5,
@@ -158,10 +481,21 @@ class History extends React.Component {
             paddingRight: 5,
             width: 340,
             marginBottom: 10
-          }}
-          >
+            }}
+            >
+            <Text style={{ fontSize: 20 }}> History Date: { this.state.dateGraphHistory }</Text>
+          </View>
+          <View style={{
+            backgroundColor: 'white',
+            paddingLeft: 5,
+            paddingTop: 5,
+            paddingRight: 5,
+            width: 340,
+            marginBottom: 10
+            }}
+            >
             <Text>
-              Step / Hour - (Saturday: 13 January 2017)
+              Step / Hour - { this.state.dateGraphHistory }
             </Text>
             <View style={{ height: 200, width: 330, marginTop: 10 }}>
               <YAxis
@@ -195,10 +529,9 @@ class History extends React.Component {
             paddingRight: 5,
             width: 340,
             marginBottom: 10
-          }}
-          >
+            }}>
             <Text>
-              Drink(liter drink) / Hour - (Saturday: 13 January 2017)
+              Drink(liter drink) / Hour - { this.state.dateGraphHistory }
             </Text>
             <View style={{ height: 200, width: 330, marginTop: 10 }}>
               <YAxis
@@ -232,19 +565,33 @@ class History extends React.Component {
             paddingRight: 5,
             width: 340,
             marginBottom: 10
-          }}
-          >
+            }}>
             <Text>
-              Activity - (Saturday: 13 January 2017)
-          </Text>
+              Activity - { this.state.dateGraphHistory }
+            </Text>
             <Text>
               red: walk, green: sleep, blue: sit
-          </Text>
+            </Text>
             <PieChart
               style={{ height: 200, marginTop: 10, marginBottom: 10 }}
               data={pieData}
             />
           </View>
+          <Button
+            onPress={ () => this.setHistory()}
+            title="Set dummy Data"
+            color="#841584"
+          />
+          <Button
+            onPress={ () => this.clearHistory()}
+            title="clear history"
+            color="#841584"
+          />
+          <Button
+            onPress={ () => this.getHistory()}
+            title="get history"
+            color="#841584"
+          />
         </ScrollView>
       </View>
     )
