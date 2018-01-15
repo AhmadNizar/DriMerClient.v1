@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/me.leolin/ShortcutBadger/1.1.8/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="531c33d3697000a05e9493a2d0f09ba41fa114d3">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/me.leolin-ShortcutBadger-1.1.8_24f3ac6076b5c0e197afee8a88453f393596accf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.1.0_46df34c3f7ebd19d3869b281627e721e11939e5b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.1.0_42a15a34766f436d04c0d9906772884219c401e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcb5b75baf05d92e61d5706737200ee55949f97b">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-8.1.0_2d458c3e8feb515c21bf9c66dfccb90304ae9afe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/DriMerClient/react-native-push-notification/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d3d9d399096d507a437a41159737de65841f48d6">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/DriMerClient-react-native-push-notification-unspecified_0bdd51de93ee320d0162dff7d9dbc2c4591b3d9e.jar" />
+    </item>
+
+</items>
