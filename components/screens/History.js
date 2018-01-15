@@ -13,6 +13,9 @@ import {
   XAxis,
   YAxis
 } from 'react-native-svg-charts'
+import Svg, {
+  Rect
+} from 'react-native-svg';
 import { Icon } from 'react-native-elements'
 
 
@@ -573,21 +576,75 @@ class History extends React.Component {
             paddingLeft: 5,
             paddingTop: 5,
             paddingRight: 5,
+            paddingBottom: 5,
             width: 340,
-            marginBottom: 10
+            marginBottom: 10,
             }}>
             <Text>
               Activity - { this.state.dateGraphHistory }
-            </Text>
-            <Text>
-              red: walk, green: sleep, blue: sit
             </Text>
             <PieChart
               style={{ height: 200, marginTop: 10, marginBottom: 10 }}
               data={pieData}
             />
+            <View style={{ flex: 1,
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}>
+              <View>
+                <Svg
+                  width="20"
+                  height="20"
+                >
+                  <Rect
+                    width="20"
+                    height="20"
+                    fill="red"
+                  />
+                </Svg>
+              </View>
+              <View style={{ marginLeft: 5, marginRight: 5 }}>
+                <Text>
+                  Walk
+                </Text>
+              </View>
+              <View>
+                <Svg
+                  width="20"
+                  height="20"
+                >
+                  <Rect
+                    width="20"
+                    height="20"
+                    fill="blue"
+                  />
+                </Svg>
+              </View>
+              <View style={{ marginLeft: 5, marginRight: 5 }}>
+                <Text>
+                  Sit
+                </Text>
+              </View>
+                <View>
+                  <Svg
+                    width="20"
+                    height="20"
+                  >
+                    <Rect
+                      width="20"
+                      height="20"
+                      fill="green"
+                    />
+                  </Svg>
+                </View>
+                <View style={{ marginLeft: 5, marginRight: 5 }}>
+                  <Text>
+                    Sleep
+                  </Text>
+                </View>
+            </View>
           </View>
-
           <View style={{
             backgroundColor: 'white',
             paddingLeft: 5,
