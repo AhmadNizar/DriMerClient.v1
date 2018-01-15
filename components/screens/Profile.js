@@ -148,7 +148,6 @@ class Profile extends React.Component {
     });
     DeviceEventEmitter.addListener('StepCounter', (data) => {
       if (this.state.status !== 'unknown') {
-        console.log(data.steps)
         this.setState({
           step: this.state.step + 1,
           status: 'walk/run',
@@ -208,8 +207,7 @@ class Profile extends React.Component {
     let accelZstatus = this.state.accelZ < 1.5 && this.state.accelZ > -1.5
     let lightStatus = this.state.lightSensor < 10
     let micStatus = this.state.decible < -45
-    console.log(this.state.decible)
-    console.log(accelXstatus, lightStatus, micStatus)
+    console.log('mic decible: ', this.state.decible)
     if (lightStatus && accelXstatus && micStatus) {
       this.setState({
         status: 'rest/sleep',
@@ -235,7 +233,6 @@ class Profile extends React.Component {
     try {
       const myHistoryRaw = await AsyncStorage.getItem('@History:user');
       const myHistoryJson = JSON.parse(myHistoryRaw)
-      console.log('set history', myHistoryJson)
       if (myHistoryJson !== null) {
         myHistoryJson.push({
           date: new Date(),
@@ -329,28 +326,6 @@ class Profile extends React.Component {
             <View>
               <Text style={{ fontSize: 50 }}> 0.2/2.1 ℓ</Text>
             </View>
-          </View>
-
-          <View style={{ marginBottom: 10 }}>
-            <Button
-              onPress={this.setHistory}
-              title="set AsyncStorage History"
-              color="#841584"
-            />
-          </View>
-          <View style={{ marginBottom: 10 }}>
-            <Button
-              onPress={this.getHistory}
-              title="get AsyncStorage History"
-              color="#841584"
-            />
-          </View>
-          <View style={{ marginBottom: 10 }}>
-            <Button
-              onPress={this.clearHistory}
-              title="clear AsyncStorage History"
-              color="#841584"
-            />
           </View>
           <View>
             <Button
