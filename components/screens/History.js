@@ -411,11 +411,19 @@ class History extends React.Component {
   }
 
   substractDate() {
-    this.setState({ diffrentDate: this.state.diffrentDate + 1 }, () => this.getHistory())
+    if(this.state.diffrentDate == 2) {
+      console.log('hard code')
+    } else {
+      this.setState({ diffrentDate: this.state.diffrentDate + 1 }, () => this.getHistory())
+    }
   }
 
   addDate() {
-    this.setState({ diffrentDate: this.state.diffrentDate - 1 }, () => this.getHistory())
+    if(this.state.diffrentDate == 1) {
+      console.log('hard code')
+    } else {
+      this.setState({ diffrentDate: this.state.diffrentDate - 1 }, () => this.getHistory())
+    }
   }
 
   componentDidMount() {

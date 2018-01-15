@@ -144,12 +144,6 @@
     "drink": 2.06
   },
   {
-    "date": "Sat Jan 13 2018 24:00:00 GMT+0700 (WIB)",
-    "step": 900,
-    "status": "rest/sleep",
-    "drink": 2.06
-  },
-  {
     "date": "Sun Jan 14 2018 00:00:00 GMT+0700 (WIB)",
     "step": 0,
     "status": "rest/sleep",
@@ -293,10 +287,4 @@
     "status": "rest/sleep",
     "drink": 2.36
   },
-  {
-    "date": "Sun Jan 14 2018 24:00:00 GMT+0700 (WIB)",
-    "step": 900,
-    "status": "rest/sleep",
-    "drink": 2.36
-  }
 ]
