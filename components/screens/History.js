@@ -464,26 +464,36 @@ class History extends React.Component {
         marginBottom: 10
       }}>
         <ScrollView contentContainerStyle={styles.contentContainer}>
-          <Button
-            onPress={ () => this.substractDate()}
-            title="- Date "
-            color="#841584"
-          />
-          <Button
-            onPress={ () => this.addDate()}
-            title="+ Date"
-            color="#841584"
-          />
           <View style={{
             backgroundColor: 'white',
             paddingLeft: 5,
             paddingTop: 5,
             paddingRight: 5,
+            paddingBottom: 5,
             width: 340,
+            height: 60,
             marginBottom: 10
             }}
             >
-            <Text style={{ fontSize: 20 }}> History Date: { this.state.dateGraphHistory }</Text>
+            <View style={{ flex: 1, flexDirection: 'row'}}>
+              <View style={{ width: 50 }}>
+                <Button
+                  onPress={ () => this.substractDate()}
+                  title="- Date "
+                  color="#619af4"
+                />
+              </View>
+              <View style={{ width: 230, alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 20 }}>{ this.state.dateGraphHistory }</Text>
+              </View>
+              <View style={{ width: 50 }}>
+                <Button
+                  onPress={ () => this.addDate()}
+                  title="+ Date"
+                  color="#619af4"
+                />
+              </View>
+            </View>
           </View>
           <View style={{
             backgroundColor: 'white',
