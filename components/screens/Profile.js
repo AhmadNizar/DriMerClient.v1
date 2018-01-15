@@ -78,8 +78,6 @@ class Profile extends React.Component {
   }
 
   componentDidMount() {
-    console.log('component did mount')
-    this.getWaterDrinked()
     if (this.props.getUserStatus.statusSensor == true) {
       console.log('sensor already started')
       this.sensorInit()
@@ -208,7 +206,7 @@ class Profile extends React.Component {
     } else if (this.state.countForGetStatus == 1) {
       this.startRecording()
     }
-
+    //every 5 detik set history
     if (this.props.getUserStatus.updateHistoryCount == 5) {
       this.setHistory()
       this.props.clearHistoryCount()
@@ -249,24 +247,34 @@ class Profile extends React.Component {
   setHistory = async () => {
     try {
       const myHistoryRaw = await AsyncStorage.getItem('@History:user');
+      const drinkedWater = await AsyncStorage.getItem('air');
       const myHistoryJson = JSON.parse(myHistoryRaw)
+      let waterDrink = 0
+
+      if (drinkedWater !== null) {
+        waterDrink = this.props.waterNeed - Number(drinkedWater)
+      } else {
+        waterDrink = 0
+      }
+      // console.log(waterDrink)
       if (myHistoryJson !== null) {
         myHistoryJson.push({
           date: new Date(),
           step: this.props.getUserStatus.totalStep,
           status: this.props.getUserStatus.userStatus,
-          drink: 0.1
+          drink: waterDrink.toString()
         })
       } else {
         myHistoryJson = [{
           date: new Date(),
           step: this.props.getUserStatus.totalStep,
           status: this.props.getUserStatus.userStatus,
-          drink: 0.1
+          drink: waterDrink.toString()
         }]
       }
       const historyToString = JSON.stringify(myHistoryJson)
       await AsyncStorage.setItem('@History:user', historyToString);
+      await AsyncStorage.setItem('step', this.props.getUserStatus.totalStep.toString())
     } catch (error) {
       // Error saving data
       console.log(error)
