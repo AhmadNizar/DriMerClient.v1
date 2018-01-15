@@ -61,11 +61,13 @@ class Profile extends React.Component {
       proximityValue: 0,
       proximityMaxRange: 0,
       countForGetStatus: 0,
+      waterDrinked: 0
     }
 
     this.startSensor = this.startSensor.bind(this)
     this.checkStatus = this.checkStatus.bind(this)
     this.startRecording = this.startRecording.bind(this)
+    this.getWaterDrinked = this.getWaterDrinked.bind(this)
   }
 
   componentWillMount() {
@@ -76,6 +78,8 @@ class Profile extends React.Component {
   }
 
   componentDidMount() {
+    console.log('component did mount')
+    this.getWaterDrinked()
     if (this.props.getUserStatus.statusSensor == true) {
       console.log('sensor already started')
       this.sensorInit()
@@ -118,6 +122,19 @@ class Profile extends React.Component {
   // componentWillUnmount() {
   //   this.props.clearSuggestion()
   // }
+
+  getWaterDrinked = async () => {
+    try {
+      let waterDrinked = await AsyncStorage.getItem('air')
+      if(waterDrinked) {
+        this.setState({
+          waterDrinked: waterDrinked
+        })
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   sensorInit() {
     console.log('start sensors')
@@ -317,14 +334,6 @@ class Profile extends React.Component {
           <View style={styles.card}>
             <View>
               <Text style={{ fontSize: 50 }}>👣 {this.props.getUserStatus.totalStep}</Text>
-            </View>
-          </View>
-          <View style={styles.card}>
-            <View>
-              <Text style={{ fontSize: 50 }}>🥛</Text>
-            </View>
-            <View>
-              <Text style={{ fontSize: 50 }}> 0.2/2.1 ℓ</Text>
             </View>
           </View>
           <View>
