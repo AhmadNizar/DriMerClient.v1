@@ -471,7 +471,7 @@ class History extends React.Component {
             paddingRight: 5,
             paddingBottom: 5,
             width: 340,
-            height: 60,
+            height: 45,
             marginBottom: 10
             }}
             >
@@ -479,7 +479,7 @@ class History extends React.Component {
               <View style={{ width: 50 }}>
                 <Button
                   onPress={ () => this.substractDate()}
-                  title="- Date "
+                  title="➖"
                   color="#619af4"
                 />
               </View>
@@ -489,7 +489,7 @@ class History extends React.Component {
               <View style={{ width: 50 }}>
                 <Button
                   onPress={ () => this.addDate()}
-                  title="+ Date"
+                  title="➕"
                   color="#619af4"
                 />
               </View>
@@ -587,21 +587,37 @@ class History extends React.Component {
               data={pieData}
             />
           </View>
-          <Button
-            onPress={ () => this.setHistory()}
-            title="Set dummy Data"
-            color="#841584"
-          />
-          <Button
-            onPress={ () => this.clearHistory()}
-            title="clear history"
-            color="#841584"
-          />
-          <Button
-            onPress={ () => this.getHistory()}
-            title="get history"
-            color="#841584"
-          />
+
+          <View style={{
+            backgroundColor: 'white',
+            paddingLeft: 5,
+            paddingTop: 5,
+            paddingRight: 5,
+            width: 340,
+            marginBottom: 10
+            }}>
+            <View style={{ marginBottom: 5 }}>
+              <Button
+                onPress={ () => this.setHistory()}
+                title="Set dummy Data"
+                color="#841584"
+              />
+            </View>
+            <View style={{ marginBottom: 5 }}>
+              <Button
+                onPress={ () => this.clearHistory()}
+                title="clear history"
+                color="#841584"
+              />
+            </View>
+            <View style={{ marginBottom: 5 }}>
+              <Button
+                onPress={ () => this.getHistory()}
+                title="get history"
+                color="#841584"
+              />
+            </View>
+          </View>
         </ScrollView>
       </View>
     )
