@@ -5,6 +5,7 @@ import { Icon } from 'react-native-elements'
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
 import AwesomeAlert from 'react-native-awesome-alerts';
 import { getSuggestion } from "../../actions/quisionerAction";
+import icon from 'react-native-vector-icons/Ionicons';
 
 class Suggestion extends React.Component {
   static navigationOptions = {
@@ -141,7 +142,7 @@ class Suggestion extends React.Component {
           <View style={styles.modalContainer}>
             <View style={styles.innerContainer}>
               <Text style={styles.modalText}>Please wait</Text>
-              <ActivityIndicator size="large" color="#06a887" />            
+              <ActivityIndicator size="large" color="#06a887" />          
             </View>
           </View>
         </Modal>
@@ -169,36 +170,23 @@ class Suggestion extends React.Component {
             }
           </AnimatedCircularProgress>
           
-          <Icon
-           raised
-           name='md-battery-full'
-           type='ionicon'
-           color='white'
-           containerStyle={{
-             marginTop: 30,
-             backgroundColor: '#06a887',
-             width: 90,
-             height: 90,
-             borderRadius: 45
-           }}
-           onPress={() => { this.minum(0.6) }}
-          />
+          <TouchableOpacity style={styles.ButtonStyle} onPress={() => { this.minum(0.6) }}>
+            <Icon
+            name='md-battery-full'
+            type='ionicon'
+            color='white'
+            />            
+            <Text style={{color: 'white'}}>600 ml</Text>
+          </TouchableOpacity>
 
-          <Icon
-           raised
-           name='cup'
-           type='material-community'
-           color='white'
-           underlayColor='#296666'
-           containerStyle={{
-             marginTop: 30,
-             backgroundColor: '#06a887',
-             width: 90,
-             height: 90,
-             borderRadius: 45
-           }}
-           onPress={() => { this.minum(0.24) }}
-          />
+          <TouchableOpacity style={styles.ButtonStyle} onPress={() => { this.minum(0.24) }}>
+            <Icon
+            name='cup'
+            type='material-community'
+            color='white'
+            />            
+            <Text style={{color: 'white'}}>240 ml</Text>
+          </TouchableOpacity>
         </View>
 
         <AwesomeAlert
@@ -256,6 +244,16 @@ const styles = StyleSheet.create({
   modalText: {
     color: '#06a887',
     marginBottom: 30
+  },
+
+  ButtonStyle: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#06a887',
+    width: 90,
+    height: 90,
+    borderRadius: 45,
+    marginTop: 30
   }
 });
 
