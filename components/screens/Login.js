@@ -85,23 +85,23 @@ class Login extends React.Component {
         <View style={{ width: 300 }}>
           <View style={styles.viewImg}>
             {tunggu}
-            <Image style={styles.img} source={{ uri: 'https://i.pinimg.com/736x/95/bb/5b/95bb5be4f09440448f990752e0aa62e6--plumbing-logo-logo-water.jpg' }} />
+            <Image style={styles.img} source={require('../../assets/iconTeal.png')} />
           </View>
           <View>
             <TextInput placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
             <TextInput secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
-            <SocialIcon style={{ backgroundColor: '#3583c6' }} button title='Sign In' onPress={() => this.signin()} />
+            <SocialIcon type="sign-in" style={{ backgroundColor: '#296666' }} button title='Sign In' onPress={() => this.signin()} />
           </View>
-          <View>
+          {/* <View>
             <SocialIcon
               title='Sign In With Facebook'
               button
               type='facebook'
               onPress={this.loginFacebook}
             />
-          </View>
+          </View> */}
           <View>
-            <Text style={{ textAlign: "center" }} >or</Text>
+            <Text style={{ textAlign: "center", color: 'white' }} >or</Text>
             <View>
               <Text style={styles.registertext}>Create an account if you dont have an </Text>
               <TouchableOpacity onPress={() => navigate('Register')}><Text style={styles.registeraccount}>account</Text></TouchableOpacity>
@@ -115,22 +115,23 @@ class Login extends React.Component {
 
 const styles = StyleSheet.create({
   viewImg: {
-    alignItems: 'center'
+    alignItems: 'center',
   },
   container: {
     flex: 1,
     justifyContent: 'space-around',
     alignItems: 'center',
-    backgroundColor: '#CADFE6'
+    // backgroundColor: '#CADFE6'
+    backgroundColor: '#e7fef9'
   },
   img: {
-    height: 100,
-    width: 100,
+    height: 85,
+    width: 60,
   },
 
   registertext: {
     fontSize: 12,
-    textAlign: "center"
+    textAlign: "center",
   },
 
   registeraccount: {

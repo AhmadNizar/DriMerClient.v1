@@ -7,13 +7,14 @@ import {
   Dimensions,
   DeviceEventEmitter,
   Platform,
-  AsyncStorage
+  AsyncStorage,
+  ScrollView
 } from 'react-native'
 import { connect } from 'react-redux'
 
 import { AudioRecorder, AudioUtils } from 'react-native-audio';
 import { SensorManager } from 'NativeModules';
-import { Icon } from 'react-native-elements'
+import { Icon, SocialIcon } from 'react-native-elements'
 import { changeLogout, changeVisible } from '../../actions/userAction'
 import { clearSuggestion } from "../../actions/quisionerAction";
 import {
@@ -312,56 +313,61 @@ class Profile extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.tabContainer}>
-          <View style={styles.card}>
-            <Text style={{ fontSize: 45 }}>{this.props.getUserStatus.userEmoji} {this.props.getUserStatus.userStatus}</Text>
-          </View>
-          <View style={styles.card}>
-            <View>
-              <Text style={{ fontSize: 50 }}>👣 {this.props.getUserStatus.totalStep}</Text>
+      <ScrollView>
+        <View style={styles.container}>
+          <View style={styles.tabContainer}>
+            <View style={styles.card}>
+              <Text style={{ fontSize: 45 }}>{this.props.getUserStatus.userEmoji} {this.props.getUserStatus.userStatus}</Text>
             </View>
-          </View>
-          <View style={styles.card}>
-            <View>
-              <Text style={{ fontSize: 50 }}>🥛</Text>
+            <View style={styles.card}>
+              <View>
+                <Text style={{ fontSize: 50 }}>👣 {this.props.getUserStatus.totalStep}</Text>
+              </View>
             </View>
-            <View>
-              <Text style={{ fontSize: 50 }}> 0.2/2.1 ℓ</Text>
+            <View style={styles.card}>
+              <View>
+                <Text style={{ fontSize: 50 }}>🥛</Text>
+              </View>
+              <View>
+                <Text style={{ fontSize: 50 }}> 0.2/2.1 ℓ</Text>
+              </View>
             </View>
-          </View>
 
-          <View style={{ marginBottom: 10 }}>
-            <Button
-              onPress={this.setHistory}
-              title="set AsyncStorage History"
-              color="#841584"
-            />
-          </View>
-          <View style={{ marginBottom: 10 }}>
-            <Button
-              onPress={this.getHistory}
-              title="get AsyncStorage History"
-              color="#841584"
-            />
-          </View>
-          <View style={{ marginBottom: 10 }}>
-            <Button
-              onPress={this.clearHistory}
-              title="clear AsyncStorage History"
-              color="#841584"
-            />
-          </View>
-          <View>
-            <Button
-              title="Logout"
-              onPress={() => {
-                this.logout()
-              }}
-            />
+            <View style={{ marginBottom: 10 }}>
+              <Button
+                onPress={this.setHistory}
+                title="set AsyncStorage History"
+                color="#841584"
+              />
+            </View>
+            <View style={{ marginBottom: 10 }}>
+              <Button
+                onPress={this.getHistory}
+                title="get AsyncStorage History"
+                color="#841584"
+              />
+            </View>
+            <View style={{ marginBottom: 10 }}>
+              <Button
+                onPress={this.clearHistory}
+                title="clear AsyncStorage History"
+                color="#841584"
+              />
+            </View>
+            <View>
+              <SocialIcon
+                style={{ backgroundColor: '#06a887' }}
+                button
+                type="sign-out"
+                title="Logout"
+                onPress={() => {
+                  this.logout()
+                }}
+              />
+            </View>
           </View>
         </View>
-      </View>
+      </ScrollView>
     )
   }
 }
@@ -369,6 +375,7 @@ class Profile extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#296666'
   },
   tabContainer: {
     marginRight: 20,
