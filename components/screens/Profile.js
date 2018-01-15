@@ -62,11 +62,13 @@ class Profile extends React.Component {
       proximityValue: 0,
       proximityMaxRange: 0,
       countForGetStatus: 0,
+      waterDrinked: 0
     }
 
     this.startSensor = this.startSensor.bind(this)
     this.checkStatus = this.checkStatus.bind(this)
     this.startRecording = this.startRecording.bind(this)
+    this.getWaterDrinked = this.getWaterDrinked.bind(this)
   }
 
   componentWillMount() {
@@ -120,6 +122,19 @@ class Profile extends React.Component {
   //   this.props.clearSuggestion()
   // }
 
+  getWaterDrinked = async () => {
+    try {
+      let waterDrinked = await AsyncStorage.getItem('air')
+      if(waterDrinked) {
+        this.setState({
+          waterDrinked: waterDrinked
+        })
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   sensorInit() {
     console.log('start sensors')
     SensorManager.startStepCounter(100);
@@ -149,7 +164,6 @@ class Profile extends React.Component {
     });
     DeviceEventEmitter.addListener('StepCounter', (data) => {
       if (this.state.status !== 'unknown') {
-        console.log(data.steps)
         this.setState({
           step: this.state.step + 1,
           status: 'walk/run',
@@ -193,7 +207,7 @@ class Profile extends React.Component {
     } else if (this.state.countForGetStatus == 1) {
       this.startRecording()
     }
-
+    //every 5 detik set history
     if (this.props.getUserStatus.updateHistoryCount == 5) {
       this.setHistory()
       this.props.clearHistoryCount()
@@ -209,8 +223,7 @@ class Profile extends React.Component {
     let accelZstatus = this.state.accelZ < 1.5 && this.state.accelZ > -1.5
     let lightStatus = this.state.lightSensor < 10
     let micStatus = this.state.decible < -45
-    console.log(this.state.decible)
-    console.log(accelXstatus, lightStatus, micStatus)
+    console.log('mic decible: ', this.state.decible)
     if (lightStatus && accelXstatus && micStatus) {
       this.setState({
         status: 'rest/sleep',
@@ -235,25 +248,34 @@ class Profile extends React.Component {
   setHistory = async () => {
     try {
       const myHistoryRaw = await AsyncStorage.getItem('@History:user');
+      const drinkedWater = await AsyncStorage.getItem('air');
       const myHistoryJson = JSON.parse(myHistoryRaw)
-      console.log('set history', myHistoryJson)
+      let waterDrink = 0
+
+      if (drinkedWater !== null) {
+        waterDrink = this.props.waterNeed - Number(drinkedWater)
+      } else {
+        waterDrink = 0
+      }
+      // console.log(waterDrink)
       if (myHistoryJson !== null) {
         myHistoryJson.push({
           date: new Date(),
           step: this.props.getUserStatus.totalStep,
           status: this.props.getUserStatus.userStatus,
-          drink: 0.1
+          drink: waterDrink.toString()
         })
       } else {
         myHistoryJson = [{
           date: new Date(),
           step: this.props.getUserStatus.totalStep,
           status: this.props.getUserStatus.userStatus,
-          drink: 0.1
+          drink: waterDrink.toString()
         }]
       }
       const historyToString = JSON.stringify(myHistoryJson)
       await AsyncStorage.setItem('@History:user', historyToString);
+      await AsyncStorage.setItem('step', this.props.getUserStatus.totalStep.toString())
     } catch (error) {
       // Error saving data
       console.log(error)
@@ -323,36 +345,6 @@ class Profile extends React.Component {
               <View>
                 <Text style={{ fontSize: 50 }}>👣 {this.props.getUserStatus.totalStep}</Text>
               </View>
-            </View>
-            <View style={styles.card}>
-              <View>
-                <Text style={{ fontSize: 50 }}>🥛</Text>
-              </View>
-              <View>
-                <Text style={{ fontSize: 50 }}> 0.2/2.1 ℓ</Text>
-              </View>
-            </View>
-
-            <View style={{ marginBottom: 10 }}>
-              <Button
-                onPress={this.setHistory}
-                title="set AsyncStorage History"
-                color="#841584"
-              />
-            </View>
-            <View style={{ marginBottom: 10 }}>
-              <Button
-                onPress={this.getHistory}
-                title="get AsyncStorage History"
-                color="#841584"
-              />
-            </View>
-            <View style={{ marginBottom: 10 }}>
-              <Button
-                onPress={this.clearHistory}
-                title="clear AsyncStorage History"
-                color="#841584"
-              />
             </View>
             <View>
               <SocialIcon

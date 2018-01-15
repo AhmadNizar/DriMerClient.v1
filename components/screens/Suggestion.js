@@ -26,7 +26,7 @@ class Suggestion extends React.Component {
       konstanta: 0,
       showAlert: false,
       modalVisible: true
-    }    
+    }
   }
 
   componentDidMount() {
@@ -78,7 +78,7 @@ class Suggestion extends React.Component {
     this.setState({
       showAlert: false
     });
-  };  
+  };
 
   minum(jumlahminum) {
     if (this.state.air == 0) {
@@ -142,7 +142,7 @@ class Suggestion extends React.Component {
           <View style={styles.modalContainer}>
             <View style={styles.innerContainer}>
               <Text style={styles.modalText}>Please wait</Text>
-              <ActivityIndicator size="large" color="#06a887" />          
+              <ActivityIndicator size="large" color="#06a887" />
             </View>
           </View>
         </Modal>
@@ -169,13 +169,13 @@ class Suggestion extends React.Component {
               )
             }
           </AnimatedCircularProgress>
-          
+
           <TouchableOpacity style={styles.ButtonStyle} onPress={() => { this.minum(0.6) }}>
             <Icon
             name='md-battery-full'
             type='ionicon'
             color='white'
-            />            
+            />
             <Text style={{color: 'white'}}>600 ml</Text>
           </TouchableOpacity>
 
@@ -184,7 +184,7 @@ class Suggestion extends React.Component {
             name='cup'
             type='material-community'
             color='white'
-            />            
+            />
             <Text style={{color: 'white'}}>240 ml</Text>
           </TouchableOpacity>
         </View>
@@ -258,7 +258,7 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = (state) => {
-  console.log('ini map', state)
+  // console.log('ini map', state)
   return {
     waterNeed: state.quisionerReducer.waterNeeds
   }
