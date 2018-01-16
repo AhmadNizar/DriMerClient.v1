@@ -3801,6 +3801,10 @@ react-native-nav@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/react-native-nav/-/react-native-nav-2.0.2.tgz#280be2c9b2ecb5c10e57f8b1833aa1ac9c5c1101"
 
+react-native-push-notification@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-push-notification/-/react-native-push-notification-3.0.2.tgz#3fa7d654cfd915436597b0dd5ba8b0f898c4b0f5"
+
 react-native-sensor-manager@^0.1.10:
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/react-native-sensor-manager/-/react-native-sensor-manager-0.1.10.tgz#c228280d67fddb668e715b4d7b823188de504da8"

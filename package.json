@@ -9,8 +9,8 @@
   "dependencies": {
     "art": "^0.10.1",
     "axios": "^0.17.1",
-    "jwt-decode": "^2.2.0",
     "d3-shape": "^1.2.0",
+    "jwt-decode": "^2.2.0",
     "react": "16.2.0",
     "react-native": "0.52.0",
     "react-native-audio": "git+https://github.com/M0N3/react-native-audio.git",
@@ -19,6 +19,7 @@
     "react-native-elements": "^0.18.5",
     "react-native-modal-datetime-picker": "^4.13.0",
     "react-native-nav": "^2.0.2",
+    "react-native-push-notification": "^3.0.2",
     "react-native-sensor-manager": "^0.1.10",
     "react-native-svg": "^6.0.1-rc.1",
     "react-native-svg-charts": "^2.0.1",
