@@ -3,6 +3,123 @@
 
     <item
         is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_fc31c3cd2b2d916e4f4c2834c2976f5234a6f02a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/DriMerClient/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8065a43b1a868d17519e67d7651e13a99862d3ce">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/DriMerClient-react-native-vector-icons-unspecified_6a024c526a5426e7d13aac533cdf675e2cb1d121.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_912200ca733b3191be8b3830de06d68df81b7da1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_6924e57a25ceb4d7658c4f4e7f1a77b2a9d4a3db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/DriMerClient/react-native-push-notification/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d3d9d399096d507a437a41159737de65841f48d6">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/DriMerClient-react-native-push-notification-unspecified_0bdd51de93ee320d0162dff7d9dbc2c4591b3d9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.1.0_42a15a34766f436d04c0d9906772884219c401e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/DriMerClient/react-native-svg/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ef4e1b69a936811a94594d57f171606d67451d79">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/DriMerClient-react-native-svg-unspecified_5c0df6a9ba9e93d657d5003cbc1921c042582000.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_b7cf211362492f54f8c98104c398a150a73bf73f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_e866bc62efc34ad3c0e084891045e57dab4cf037.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_24f37cd48feda1d60f49abadddbff12fa8500302.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_22ef8f66f7f0d83673c01071a280e8f288a37413.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_155372baa99617ba4a0178b58860d18b1cf1e53a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_520810ad6283f31d587f43de049da00bb585ed0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -27,6 +144,15 @@
         revision="23.0.1"
         sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
         <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_19444a596c40b342770fb040da32b3a35e4b9334.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/me.leolin/ShortcutBadger/1.1.8/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="531c33d3697000a05e9493a2d0f09ba41fa114d3">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/me.leolin-ShortcutBadger-1.1.8_24f3ac6076b5c0e197afee8a88453f393596accf.jar" />
     </item>
     <item
         is-multidex="false"
@@ -84,21 +210,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_fc31c3cd2b2d916e4f4c2834c2976f5234a6f02a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/DriMerClient/react-native-vector-icons/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8065a43b1a868d17519e67d7651e13a99862d3ce">
-        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/DriMerClient-react-native-vector-icons-unspecified_6a024c526a5426e7d13aac533cdf675e2cb1d121.jar" />
+        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.1.0_46df34c3f7ebd19d3869b281627e721e11939e5b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -108,15 +225,6 @@
         revision="23.0.1"
         sha1="6be3b9d9e1c2e16a149111cd2c167fa320bea248">
         <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/DriMerClient-react-native-audio-unspecified_ef11f4e6ffbcd4ad6e4aca3dacfd62783719d23c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/albert/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_912200ca733b3191be8b3830de06d68df81b7da1.jar" />
     </item>
     <item
         is-multidex="false"
@@ -138,15 +246,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_6924e57a25ceb4d7658c4f4e7f1a77b2a9d4a3db.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -156,12 +255,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/DriMerClient/react-native-svg/unspecified/jars/classes.jar"
+        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="ef4e1b69a936811a94594d57f171606d67451d79">
-        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/DriMerClient-react-native-svg-unspecified_5c0df6a9ba9e93d657d5003cbc1921c042582000.jar" />
+        sha1="dcb5b75baf05d92e61d5706737200ee55949f97b">
+        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-8.1.0_2d458c3e8feb515c21bf9c66dfccb90304ae9afe.jar" />
     </item>
     <item
         is-multidex="false"
@@ -174,57 +273,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_b7cf211362492f54f8c98104c398a150a73bf73f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_e866bc62efc34ad3c0e084891045e57dab4cf037.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
         <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_8e6850b51e17b8da4a11897171d0978f62cb4732.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_24f37cd48feda1d60f49abadddbff12fa8500302.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/albert/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_22ef8f66f7f0d83673c01071a280e8f288a37413.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/albert/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_155372baa99617ba4a0178b58860d18b1cf1e53a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -243,15 +297,6 @@
         revision="23.0.1"
         sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
         <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_21133779782054a2f4fa2394538244788a5ff5f0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="/home/albert/Documents/AhmadNizar/DriMerClient.v1/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_520810ad6283f31d587f43de049da00bb585ed0e.jar" />
     </item>
     <item
         is-multidex="false"

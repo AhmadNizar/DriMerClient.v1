@@ -29,6 +29,7 @@ import Login from './components/screens/Login';
 import Dashboard from './components/screens/Dashboard';
 import Suggestion from './components/screens/Suggestion';
 import Profile from './components/screens/Profile';
+import History from './components/screens/History'
 
 const NavigationBase = StackNavigator({
   Login: { screen: Login },
@@ -38,10 +39,10 @@ const NavigationBase = StackNavigator({
 
 const NavigationTab = TabNavigator({
   Suggestion: { screen: Suggestion },
-  // Profile: { screen: Profile },
-  // History: { screen: History },
-  Dashboard: { screen: Dashboard }
-  Profile: { screen: Profile }
+  Profile: { screen: Profile },
+  History: { screen: History },
+  Dashboard: { screen: Dashboard },
+
 }, {
     tabBarPosition: 'bottom',
     animationEnabled: true,
