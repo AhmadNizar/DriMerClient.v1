@@ -196,11 +196,11 @@ class Suggestion extends React.Component {
             {
               (fill) => (
                 <View>
-                  <Text style={styles.points}>
+                  <Text style={styles.numberLiter}>
                     { this.state.air < 0? "+" + this.state.air * -1: this.state.air }
                   </Text>
                   <Text style={styles.points}>
-                    Liter
+                    Liter / day
                   </Text>
                 </View>
               )
@@ -265,8 +265,14 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 
-  points: {
+  numberLiter: {
     fontSize: 40,
+    color: 'white',
+    textAlign: 'center'
+  },
+
+  points: {
+    fontSize: 28,
     color: 'white',
     textAlign: 'center'
   },

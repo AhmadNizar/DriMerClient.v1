@@ -340,16 +340,16 @@ class Profile extends React.Component {
       <Icon
        name='run'
        type='material-community'
-       color='white'
-       size={24}
+       color='#7DB2B2'
+       size={36}
       />
     } else if(this.props.getUserStatus.userStatus == 'rest/sleep') {
       activityIcon = 
       <Icon
        name='hotel'
        type='font-awesome'
-       color='white'
-       size={24}
+       color='#7DB2B2'
+       size={36}
        containerStyle={{marginLeft: 5, marginRight: 5}}
       />
     } else if(this.props.getUserStatus.userStatus == 'rest/sit') {
@@ -357,52 +357,72 @@ class Profile extends React.Component {
       <Icon
        name='seat-recline-extra'
        type='material-community'
-       color='white'
-       size={24}
+       color='#7DB2B2'
+       size={36}
       />      
     }
     return (
+        // <View style={styles.container}>
+        //   <AnimatedCircularProgress
+        //     style={{
+        //       marginTop: 40
+        //     }}
+        //     size={220}
+        //     width={5}
+        //     fill={0}
+        //     tintColor="#00e0ff"
+        //     backgroundColor="#3d5875">
+        //     {
+        //       (fill) => (
+        //         <View style={{alignItems: 'center'}}>
+        //         <Text style={{fontSize: 46, alignItems: 'center'}}>
+        //           👣 {this.props.getUserStatus.totalStep}
+        //         </Text>
+        //         <Text>
+        //           STEPS TODAY
+        //         </Text>
+        //         </View>
+        //       )
+        //     }
+        //   </AnimatedCircularProgress>
+        //   <View style={styles.activityStatus}>
+        //     <View style={{flexDirection: 'row', width: null, height: 60, alignItems: 'center'}}>
+        //     <Text style={styles.stepText}>Activity Status :</Text>
+        //     {activityIcon}
+        //     <Text style={styles.stepText}>{this.props.getUserStatus.userStatus.toUpperCase()}</Text>
+        //     </View>
+        //   </View>
+        //   <View>
+        //     <SocialIcon
+        //       style={{ backgroundColor: '#06a887' }}
+        //       button
+        //       type="sign-out"
+        //       title="Logout"
+        //       onPress={() => {
+        //         this.logout()
+        //       }}
+        //     />
+        //     </View>          
+        // </View>
         <View style={styles.container}>
-          <AnimatedCircularProgress
-            style={{
-              marginTop: 40
-            }}
-            size={220}
-            width={5}
-            fill={0}
-            tintColor="#00e0ff"
-            backgroundColor="#3d5875">
-            {
-              (fill) => (
-                <View style={{alignItems: 'center'}}>
-                <Text style={{fontSize: 46, alignItems: 'center'}}>
-                  👣 {this.props.getUserStatus.totalStep}
-                </Text>
-                <Text>
-                  STEPS TODAY
-                </Text>
-                </View>
-              )
-            }
-          </AnimatedCircularProgress>
-          <View style={styles.activityStatus}>
-            <View style={{flexDirection: 'row', width: null, height: 60, alignItems: 'center'}}>
-            <Text style={styles.stepText}>Activity Status :</Text>
-            {activityIcon}
-            <Text style={styles.stepText}>{this.props.getUserStatus.userStatus.toUpperCase()}</Text>
-            </View>
-          </View>
-          <View>
-            <SocialIcon
-              style={{ backgroundColor: '#06a887' }}
-              button
-              type="sign-out"
-              title="Logout"
-              onPress={() => {
-                this.logout()
-              }}
+          <View style={styles.footStatus}>
+            <Icon
+            name='foot'
+            type='foundation'
+            color='#7DB2B2'
+            size={78}
+            containerStyle={{paddingRight: 150}}
             />
-            </View>          
+            <Text style={styles.stepText}>{this.props.getUserStatus.totalStep}</Text>
+            <Text style={styles.stepToday}>Steps Today</Text>
+          </View>
+          <Text style={{marginLeft: 20, color: '#7DB2B2', fontSize: 20, marginTop: 80}}>Activity Status</Text>
+          <View style={styles.activityStatus}>
+            <View style={{flexDirection: 'row', width: null, height: 60, alignItems: 'center', justifyContent: 'flex-start'}}>
+            {activityIcon}
+            <Text style={{fontSize: 36, color: '#66FFFF'}}>{this.props.getUserStatus.userStatus.toUpperCase()}</Text>
+            </View>
+          </View>        
         </View>
     )
   }
@@ -411,25 +431,34 @@ class Profile extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: 'white'
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    backgroundColor: '#296666'
   },
 
   stepText: {
-    fontSize: 24,
-    color: 'white'
+    fontSize: 64,
+    color: '#66FFFF'
   },
 
   activityStatus: {
-    justifyContent:'center',
-    flexDirection: 'row', 
-    backgroundColor: '#06a887', 
-    width: 500, 
+    justifyContent:'flex-start',
+    flexDirection: 'row',
     height: 60, 
     alignItems: 'center', 
-    marginBottom: 70
-  } 
+    marginBottom: 70,
+    marginLeft: 20
+  },
+
+  stepToday: {
+    fontSize: 20,
+    color: '#7DB2B2'
+  },
+
+  footStatus: {
+    marginLeft: 20,
+    paddingTop: 24
+  }
 })
 
 const mapStateToProps = (state) => {
