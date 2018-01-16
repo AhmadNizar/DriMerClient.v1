@@ -4,8 +4,8 @@ import NavBar, { NavGroup, NavButton, NavButtonText, NavTitle } from 'react-nati
 import { Icon } from 'react-native-elements';
 
 export default class Navbar extends React.Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
   }
 
   render() {
