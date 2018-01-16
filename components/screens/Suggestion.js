@@ -26,7 +26,8 @@ class Suggestion extends React.Component {
       air: 0,
       konstanta: 0,
       showAlert: false,
-      modalVisible: true
+      modalVisible: true,
+      goalStatus: false
     }
   }
 
@@ -119,10 +120,35 @@ class Suggestion extends React.Component {
   };
 
   minum(jumlahminum) {
-    if (this.state.air == 0) {
-      console.log('yeah')
+    if(this.state.air <= 0) {
+      var persen = this.state.persen
+      var air = this.state.air
+
+      var kurang = (jumlahminum / this.state.konstanta) * 100
+
+      air = (air - jumlahminum).toFixed(2)
+      persen = persen - kurang
+
+      AsyncStorage.setItem('air', air).then(() => {
+        console.log('yeah')
+      }).catch((err) => {
+        console.log(err)
+      })
+
+      AsyncStorage.setItem('persen', persen.toString()).then(() => {
+        console.log('yeah')
+      }).catch((err) => {
+        console.log(err)
+      })
+
+      this.setState({
+        air: air,
+        persen: persen,
+        goalStatus: true
+      })         
     }
-    else if (this.state.air - jumlahminum > 0) {
+
+    else if (this.state.air - jumlahminum >= 0) {
       var persen = this.state.persen
       var air = this.state.air
 
@@ -147,15 +173,24 @@ class Suggestion extends React.Component {
         air: air,
         persen: persen
       })
-    } else {
-      var air = 0
-      AsyncStorage.setItem('air', '0').then(() => {
+    } 
+    
+    else if(!this.state.air - jumlahminum < 0) {
+      var persen = this.state.persen
+      var air = this.state.air
+
+      var kurang = (jumlahminum / this.state.konstanta) * 100
+
+      air = (air - jumlahminum).toFixed(2)
+      persen = persen - kurang
+
+      AsyncStorage.setItem('air', air).then(() => {
         console.log('yeah')
       }).catch((err) => {
         console.log(err)
       })
 
-      AsyncStorage.setItem('persen', '0').then(() => {
+      AsyncStorage.setItem('persen', persen.toString()).then(() => {
         console.log('yeah')
       }).catch((err) => {
         console.log(err)
@@ -163,8 +198,9 @@ class Suggestion extends React.Component {
 
       this.setState({
         air: air,
-        persen: 0,
-        showAlert: true
+        persen: persen,
+        showAlert: true,
+        goalStatus: true
       })
     }
   }
@@ -185,29 +221,31 @@ class Suggestion extends React.Component {
           </View>
         </Modal>
         <View style={styles.container}>
+          <Text style={styles.textRec}>Today's Drink Target</Text>
           <AnimatedCircularProgress
             style={{
               marginTop: 20
             }}
-            size={200}
+            size={180}
             width={8}
             fill={this.state.persen}
             tintColor="#00e0ff"
-            backgroundColor="#3d5875">
+            backgroundColor="white">
             {
               (fill) => (
                 <View>
-                  <Text style={styles.points}>
-                    { this.state.air }
+                  <Text style={styles.numberLiter}>
+                    { this.state.air < 0? "+" + this.state.air * -1: this.state.air }
                   </Text>
                   <Text style={styles.points}>
-                    Liter
+                    Liter / day
                   </Text>
                 </View>
               )
             }
           </AnimatedCircularProgress>
-
+          <Text style={styles.textRec}>Tap your drink</Text>
+          <View style={{width: 300, height: 150, flexDirection: 'row', alignItems: 'center' ,justifyContent: 'space-around'}}>
           <TouchableOpacity style={styles.ButtonStyle} onPress={() => { this.minum(0.6) }}>
             <Icon
             name='md-battery-full'
@@ -225,6 +263,7 @@ class Suggestion extends React.Component {
             />
             <Text style={{color: 'white'}}>240 ml</Text>
           </TouchableOpacity>
+          </View>
         </View>
 
         <AwesomeAlert
@@ -266,8 +305,14 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 
-  points: {
+  numberLiter: {
     fontSize: 40,
+    color: 'white',
+    textAlign: 'center'
+  },
+
+  points: {
+    fontSize: 28,
     color: 'white',
     textAlign: 'center'
   },
@@ -288,10 +333,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#06a887',
-    width: 90,
-    height: 90,
-    borderRadius: 45,
-    marginTop: 30
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+    marginTop: 20
+  },
+
+  textRec: {
+    fontSize: 18,
+    color: "white",
+    marginTop: 40
+
   }
 });
 

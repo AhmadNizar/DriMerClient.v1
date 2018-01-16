@@ -29,12 +29,11 @@ import Login from './components/screens/Login';
 import Dashboard from './components/screens/Dashboard';
 import Suggestion from './components/screens/Suggestion';
 import Profile from './components/screens/Profile';
-import History from './components/screens/History';
 
 const NavigationBase = StackNavigator({
   Login: { screen: Login },
   Register: { screen: Register },
-  Quisioner: { screen: Quisioner }
+  Quisioner: { screen: Quisioner },
 })
 
 const NavigationTab = TabNavigator({
@@ -42,6 +41,7 @@ const NavigationTab = TabNavigator({
   // Profile: { screen: Profile },
   // History: { screen: History },
   Dashboard: { screen: Dashboard }
+  Profile: { screen: Profile }
 }, {
     tabBarPosition: 'bottom',
     animationEnabled: true,
