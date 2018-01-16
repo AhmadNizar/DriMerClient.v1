@@ -76,6 +76,13 @@ class Dashboard extends React.Component {
       .catch((err) => {
         console.log(err)
       })
+
+      AsyncStorage.removeItem('persentaseAir').then(() => {
+        console.log('hapus persentase air')
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   }
 
   componentWillUnmount() {

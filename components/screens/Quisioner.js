@@ -98,7 +98,7 @@ class Quisioner extends React.Component {
             <Text style={{ fontWeight: 'bold' }}>Are you a smoker ?</Text>
             <CheckBox
               title='Yes'
-              checkedColor="#1ab2ff"
+              checkedColor="#06a887"
               checked={this.state.isSmoker}
               onPress={() => {
                 if (this.state.isSmoker) {

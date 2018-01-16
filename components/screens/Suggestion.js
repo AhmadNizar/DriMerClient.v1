@@ -27,7 +27,9 @@ class Suggestion extends React.Component {
       konstanta: 0,
       showAlert: false,
       modalVisible: true,
-      goalStatus: false
+      goalStatus: false,
+      persentaseAir: 0,
+      persenVisible: false
     }
   }
 
@@ -100,6 +102,17 @@ class Suggestion extends React.Component {
       }
     })
 
+    AsyncStorage.getItem('persentaseAir').then((value) => {
+      console.log('dapat persentase air dari componen willmoun', value)
+      if(value) {
+        this.setState({
+          persentaseAir: Number(value)
+        })        
+      }
+    }).catch((err) => {
+      console.log('gagal mendapatkan persentase air', err)
+    })
+
     if(nextProps.waterNeed) {
       this.setState({
         modalVisible: false
@@ -119,15 +132,29 @@ class Suggestion extends React.Component {
     });
   };
 
+  changeVisiblePersen = () => {
+    if(this.state.persenVisible) {
+      this.setState({
+        persenVisible: false
+      })
+    } else {
+      this.setState({
+        persenVisible: true
+      })
+    }
+  }
+
   minum(jumlahminum) {
     if(this.state.air <= 0) {
       var persen = this.state.persen
       var air = this.state.air
+      var persentaseAir = this.state.persentaseAir
 
       var kurang = (jumlahminum / this.state.konstanta) * 100
 
       air = (air - jumlahminum).toFixed(2)
       persen = persen - kurang
+      persentaseAir = persentaseAir + kurang
 
       AsyncStorage.setItem('air', air).then(() => {
         console.log('yeah')
@@ -137,6 +164,12 @@ class Suggestion extends React.Component {
 
       AsyncStorage.setItem('persen', persen.toString()).then(() => {
         console.log('yeah')
+      }).catch((err) => {
+        console.log(err)
+      })
+
+      AsyncStorage.setItem('persentaseAir', persentaseAir.toString()).then(() => {
+        console.log('berhasil menyimpan persentase air')
       }).catch((err) => {
         console.log(err)
       })
@@ -144,18 +177,21 @@ class Suggestion extends React.Component {
       this.setState({
         air: air,
         persen: persen,
-        goalStatus: true
+        goalStatus: true,
+        persentaseAir: persentaseAir
       })         
     }
 
     else if (this.state.air - jumlahminum >= 0) {
       var persen = this.state.persen
       var air = this.state.air
+      var persentaseAir = this.state.persentaseAir
 
       var kurang = (jumlahminum / this.state.konstanta) * 100
 
       air = (air - jumlahminum).toFixed(2)
       persen = persen - kurang
+      persentaseAir = persentaseAir + kurang
 
       AsyncStorage.setItem('air', air).then(() => {
         console.log('yeah')
@@ -165,24 +201,33 @@ class Suggestion extends React.Component {
 
       AsyncStorage.setItem('persen', persen.toString()).then(() => {
         console.log('yeah')
+      }).catch((err) => {
+        console.log(err)
+      })
+
+      AsyncStorage.setItem('persentaseAir', persentaseAir.toString()).then(() => {
+        console.log('berhasil menyimpan persentase air')
       }).catch((err) => {
         console.log(err)
       })
 
       this.setState({
         air: air,
-        persen: persen
+        persen: persen,
+        persentaseAir: persentaseAir
       })
     } 
     
     else if(!this.state.air - jumlahminum < 0) {
       var persen = this.state.persen
       var air = this.state.air
+      var persentaseAir = this.state.persentaseAir
 
       var kurang = (jumlahminum / this.state.konstanta) * 100
 
       air = (air - jumlahminum).toFixed(2)
       persen = persen - kurang
+      persentaseAir = persentaseAir + kurang
 
       AsyncStorage.setItem('air', air).then(() => {
         console.log('yeah')
@@ -192,6 +237,12 @@ class Suggestion extends React.Component {
 
       AsyncStorage.setItem('persen', persen.toString()).then(() => {
         console.log('yeah')
+      }).catch((err) => {
+        console.log(err)
+      })
+
+      AsyncStorage.setItem('persentaseAir', persentaseAir.toString()).then(() => {
+        console.log('berhasil menyimpan persentase air')
       }).catch((err) => {
         console.log(err)
       })
@@ -200,12 +251,23 @@ class Suggestion extends React.Component {
         air: air,
         persen: persen,
         showAlert: true,
-        goalStatus: true
+        goalStatus: true,
+        persentaseAir: persentaseAir
       })
     }
   }
 
   render() {
+    var airPersen = null
+    var satuan = null
+    if(this.state.persenVisible) {
+      airPersen = this.state.persentaseAir.toFixed(2)
+      satuan = 'percent'
+    } else {
+      airPersen = this.state.air < 0? "+" + this.state.air * -1: this.state.air
+      satuan = 'Liter / day'
+    }
+
     return (
       <View>
         <Modal
@@ -222,28 +284,30 @@ class Suggestion extends React.Component {
         </Modal>
         <View style={styles.container}>
           <Text style={styles.textRec}>Today's Drink Target</Text>
-          <AnimatedCircularProgress
-            style={{
-              marginTop: 20
-            }}
-            size={180}
-            width={8}
-            fill={this.state.persen}
-            tintColor="#00e0ff"
-            backgroundColor="white">
-            {
-              (fill) => (
-                <View>
-                  <Text style={styles.numberLiter}>
-                    { this.state.air < 0? "+" + this.state.air * -1: this.state.air }
-                  </Text>
-                  <Text style={styles.points}>
-                    Liter / day
-                  </Text>
-                </View>
-              )
-            }
-          </AnimatedCircularProgress>
+          <TouchableOpacity onPress={() => {this.changeVisiblePersen()}}>
+            <AnimatedCircularProgress
+              style={{
+                marginTop: 20
+              }}
+              size={180}
+              width={8}
+              fill={this.state.persen}
+              tintColor="#00e0ff"
+              backgroundColor="white">
+              {
+                (fill) => (
+                  <View>
+                    <Text style={styles.numberLiter}>
+                      {airPersen}
+                    </Text>
+                    <Text style={styles.points}>
+                      {satuan}
+                    </Text>
+                  </View>
+                )
+              }
+            </AnimatedCircularProgress>
+          </TouchableOpacity>
           <Text style={styles.textRec}>Tap your drink</Text>
           <View style={{width: 300, height: 150, flexDirection: 'row', alignItems: 'center' ,justifyContent: 'space-around'}}>
           <TouchableOpacity style={styles.ButtonStyle} onPress={() => { this.minum(0.6) }}>
