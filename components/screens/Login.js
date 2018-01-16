@@ -89,8 +89,8 @@ class Login extends React.Component {
             <Image style={styles.img} source={require('../../assets/iconTeal.png')} />
           </View>
           <View style={styles.viewInput}>
-            <TextInput style={{ paddingBottom: 5 }} placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
-            <TextInput style={{ paddingBottom: 5 }} secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
+            <TextInput style={{ paddingBottom: 8 }} placeholder="Email" onChangeText={(text) => this.setState({ email: text })} />
+            <TextInput style={{ paddingBottom: 8 }} secureTextEntry placeholder="Password" onChangeText={(text) => this.setState({ password: text })} />
             <SocialIcon type="sign-in" style={{ backgroundColor: '#296666' }} button title='Sign In' onPress={() => this.signin()} />
           </View>
           {/* <View>

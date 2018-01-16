@@ -11,7 +11,6 @@ import {
   ScrollView
 } from 'react-native'
 import { connect } from 'react-redux'
-
 import { AudioRecorder, AudioUtils } from 'react-native-audio';
 import { SensorManager } from 'NativeModules';
 import { Icon, SocialIcon } from 'react-native-elements'
@@ -125,7 +124,7 @@ class Profile extends React.Component {
   getWaterDrinked = async () => {
     try {
       let waterDrinked = await AsyncStorage.getItem('air')
-      if(waterDrinked) {
+      if (waterDrinked) {
         this.setState({
           waterDrinked: waterDrinked
         })
@@ -335,31 +334,29 @@ class Profile extends React.Component {
 
   render() {
     return (
-      <ScrollView>
-        <View style={styles.container}>
-          <View style={styles.tabContainer}>
-            <View style={styles.card}>
-              <Text style={{ fontSize: 45 }}>{this.props.getUserStatus.userEmoji} {this.props.getUserStatus.userStatus}</Text>
-            </View>
-            <View style={styles.card}>
-              <View>
-                <Text style={{ fontSize: 50 }}>👣 {this.props.getUserStatus.totalStep}</Text>
-              </View>
-            </View>
+      <View style={styles.container}>
+        <View style={styles.tabContainer}>
+          <View style={styles.card}>
+            <Text style={{ fontSize: 45 }}>{this.props.getUserStatus.userEmoji} {this.props.getUserStatus.userStatus}</Text>
+          </View>
+          <View style={styles.card}>
             <View>
-              <SocialIcon
-                style={{ backgroundColor: '#06a887' }}
-                button
-                type="sign-out"
-                title="Logout"
-                onPress={() => {
-                  this.logout()
-                }}
-              />
+              <Text style={{ fontSize: 50 }}>👣 {this.props.getUserStatus.totalStep}</Text>
             </View>
           </View>
+          <View>
+            <SocialIcon
+              style={{ backgroundColor: '#06a887' }}
+              button
+              type="sign-out"
+              title="Logout"
+              onPress={() => {
+                this.logout()
+              }}
+            />
+          </View>
         </View>
-      </ScrollView>
+      </View>
     )
   }
 }

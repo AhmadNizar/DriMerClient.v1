@@ -13,67 +13,86 @@ class Quisioner extends React.Component {
     super()
 
     this.state = {
-      weight: '',
+      weight: 0,
       sportTime: 0,
       isSmoker: false,
-      isNonSmoker: true
+      isNonSmoker: true,
+      errorMessage: '',
+      weightValidate: true
     }
+
+    this.handleInputWeight = this.handleInputWeight.bind(this)
   }
 
   getQuisioner() {
-    console.log("Ini activity need", this.state.sportTime)
 
-
-    let activityNeed = 0
-    let smokerWaterNeed = 0
-
-    switch (this.state.sportTime) {
-      case 0:
-        activityNeed = 0.03
-        break;
-      case 1:
-        activityNeed = 0.035
-        break;
-      case 2:
-        activityNeed = 0.04
-        break;
-      default:
-        break;
-    }
-
-    if (this.state.isSmoker) {
-      smokerWaterNeed = 0.04
+    if (this.state.weight === 0 || this.state.weight === '') {
+      this.setState({
+        errorMessage: 'Please fill the form!'
+      })
     } else {
-      smokerWaterNeed = 0.03
+      let activityNeed = 0
+      let smokerWaterNeed = 0
+
+      switch (this.state.sportTime) {
+        case 0:
+          activityNeed = 0.03
+          break;
+        case 1:
+          activityNeed = 0.035
+          break;
+        case 2:
+          activityNeed = 0.04
+          break;
+        default:
+          break;
+      }
+
+      if (this.state.isSmoker) {
+        smokerWaterNeed = 0.04
+      } else {
+        smokerWaterNeed = 0.03
+      }
+
+
+      let calculateWater = ((activityNeed + smokerWaterNeed) / 2) * (Number(this.state.weight))
+      if (calculateWater > 0) {
+        calculateWater = calculateWater.toFixed(2)
+      }
+
+      this.props.calculateWater(calculateWater, this.props.token)
+      this.props.changeVisible()
+      AsyncStorage.setItem('drimerToken', this.props.token)
     }
 
 
-    let calculateWater = ((activityNeed + smokerWaterNeed) / 2) * (Number(this.state.weight))
-    // let waterNeeds = {
-    //   sportTime: activityNeed,
-    //   isSmoker: smokerWaterNeed,
-    //   weight: Number(this.state.weight)
-    // }
-    if (calculateWater > 0) {
-      calculateWater = calculateWater.toFixed(2)
-    }
-
-    this.props.calculateWater(calculateWater, this.props.token)
-    this.props.changeVisible()
-    AsyncStorage.setItem('drimerToken', this.props.token)
-    // this.props.navigation.navigate('Suggestion')
   }
 
+  handleInputWeight(weight) {
+    if ((/^[0-9]*$/.test(weight)) || weight === "") {
+      this.setState({
+        weightValidate: true,
+        errorMessage: '',
+        weight: weight
+      })
+    } else {
+      this.setState({
+        weightValidate: false,
+        errorMessage: 'Weight should contain only number!'
+      })
+    }
+  }
   render() {
     return (
       <View style={styles.container}>
         <View style={styles.viewTitle}>
           <Text style={styles.title}>Quesionnaire</Text>
         </View>
+        <Text style={{ color: 'red' }}>{this.state.errorMessage}</Text>
         <View style={styles.textInput}>
           <View style={styles.quisioner}>
             <Text style={{ fontWeight: 'bold' }}>How much is your weight? </Text>
-            <TextInput placeholder="in kg" onChangeText={(text) => this.setState({ weight: text })} />
+            <TextInput keyboardType='numeric' placeholder="in kg" onChangeText={this.handleInputWeight} />
           </View>
           <View style={styles.quisioner}>
             <Text style={{ fontWeight: 'bold' }}>Are you a smoker ?</Text>
