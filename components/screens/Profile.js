@@ -26,6 +26,7 @@ import {
   updateHistoryCount,
   clearHistoryCount
 } from '../../actions/sensorAction'
+import { AnimatedCircularProgress } from 'react-native-circular-progress'
 
 const initialLayout = {
   height: 0,
@@ -90,7 +91,6 @@ class Profile extends React.Component {
   }
 
   componentWillUnmount() {
-    console.log('unmount')
     this.sensorStop()
     this.props.clearSuggestion()
   }
@@ -334,32 +334,76 @@ class Profile extends React.Component {
   }
 
   render() {
+    var activityIcon = null
+    if(this.props.getUserStatus.userStatus == 'walk/run') {
+      activityIcon = 
+      <Icon
+       name='run'
+       type='material-community'
+       color='white'
+       size={24}
+      />
+    } else if(this.props.getUserStatus.userStatus == 'rest/sleep') {
+      activityIcon = 
+      <Icon
+       name='hotel'
+       type='font-awesome'
+       color='white'
+       size={24}
+       containerStyle={{marginLeft: 5, marginRight: 5}}
+      />
+    } else if(this.props.getUserStatus.userStatus == 'rest/sit') {
+      activityIcon = 
+      <Icon
+       name='seat-recline-extra'
+       type='material-community'
+       color='white'
+       size={24}
+      />      
+    }
     return (
-      <ScrollView>
         <View style={styles.container}>
-          <View style={styles.tabContainer}>
-            <View style={styles.card}>
-              <Text style={{ fontSize: 45 }}>{this.props.getUserStatus.userEmoji} {this.props.getUserStatus.userStatus}</Text>
-            </View>
-            <View style={styles.card}>
-              <View>
-                <Text style={{ fontSize: 50 }}>👣 {this.props.getUserStatus.totalStep}</Text>
-              </View>
-            </View>
-            <View>
-              <SocialIcon
-                style={{ backgroundColor: '#06a887' }}
-                button
-                type="sign-out"
-                title="Logout"
-                onPress={() => {
-                  this.logout()
-                }}
-              />
+          <AnimatedCircularProgress
+            style={{
+              marginTop: 40
+            }}
+            size={220}
+            width={5}
+            fill={0}
+            tintColor="#00e0ff"
+            backgroundColor="#3d5875">
+            {
+              (fill) => (
+                <View style={{alignItems: 'center'}}>
+                <Text style={{fontSize: 46, alignItems: 'center'}}>
+                  👣 {this.props.getUserStatus.totalStep}
+                </Text>
+                <Text>
+                  STEPS TODAY
+                </Text>
+                </View>
+              )
+            }
+          </AnimatedCircularProgress>
+          <View style={styles.activityStatus}>
+            <View style={{flexDirection: 'row', width: null, height: 60, alignItems: 'center'}}>
+            <Text style={styles.stepText}>Activity Status :</Text>
+            {activityIcon}
+            <Text style={styles.stepText}>{this.props.getUserStatus.userStatus.toUpperCase()}</Text>
             </View>
           </View>
+          <View>
+            <SocialIcon
+              style={{ backgroundColor: '#06a887' }}
+              button
+              type="sign-out"
+              title="Logout"
+              onPress={() => {
+                this.logout()
+              }}
+            />
+            </View>          
         </View>
-      </ScrollView>
     )
   }
 }
@@ -367,36 +411,25 @@ class Profile extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#296666'
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: 'white'
   },
-  tabContainer: {
-    marginRight: 20,
-    marginLeft: 20,
-    marginTop: 20,
-    marginBottom: 20,
-    flexDirection: 'column',
+
+  stepText: {
+    fontSize: 24,
+    color: 'white'
   },
-  card: {
-    backgroundColor: '#FFF',
-    flexDirection: 'row',
-    borderWidth: 1,
-    borderColor: 'lightgray',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.8,
-    shadowRadius: 2,
-    elevation: 1,
-    height: 90,
-    width: 320,
-    paddingRight: 15,
-    paddingLeft: 15,
-    paddingTop: 15,
-    paddingBottom: 15,
-    marginBottom: 15,
-  },
-  fontSizeContainer: {
-    fontSize: 20
-  }
+
+  activityStatus: {
+    justifyContent:'center',
+    flexDirection: 'row', 
+    backgroundColor: '#06a887', 
+    width: 500, 
+    height: 60, 
+    alignItems: 'center', 
+    marginBottom: 70
+  } 
 })
 
 const mapStateToProps = (state) => {
