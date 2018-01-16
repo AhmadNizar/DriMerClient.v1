@@ -16,6 +16,7 @@ import {
 import Svg, {
   Rect
 } from 'react-native-svg';
+import { connect } from 'react-redux'
 import { Icon } from 'react-native-elements'
 import dummyEvery15Min from '../../dummyEvery15Min.json'
 
@@ -46,6 +47,13 @@ class History extends React.Component {
     this.addDate = this.addDate.bind(this)
   }
 
+  componentDidMount() {
+    // this.clearHistory()
+    // this.setHistory()
+    console.log('didmount')
+    this.getHistory()
+  }
+
   setHistory = async () => {
     try {
       console.log('set history')
@@ -72,7 +80,7 @@ class History extends React.Component {
       const historyUserRaw = await AsyncStorage.getItem('@History:user');
       if (historyUserRaw !== null) {
         // We have data!!
-        console.log(historyUserRaw);
+        // console.log(historyUserRaw);
         const historyUser = JSON.parse(historyUserRaw)
         const newUserStep = []
         const newUserDrink = []
@@ -162,6 +170,7 @@ class History extends React.Component {
   }
 
   substractDate() {
+    console.log('========================', this.state.diffrentDate)
     if(this.state.diffrentDate == 1) {
       console.log('hard code')
     } else {
@@ -170,18 +179,20 @@ class History extends React.Component {
   }
 
   addDate() {
-    if(this.state.diffrentDate == 3) {
+    console.log('========================', this.state.diffrentDate)
+    if(this.state.diffrentDate == 0) {
       console.log('hard code')
     } else {
       this.setState({ diffrentDate: this.state.diffrentDate - 1 }, () => this.getHistory())
     }
   }
 
-  componentDidMount() {
-    // this.clearHistory()
-    // this.setHistory()
-    console.log('didmount')
-    this.getHistory()
+  suggestion() {
+    if(this.state.userDrink.reduce(function(a, b) { return a + b; }, 0) > this.props.waterNeed){
+      return 'Congratulation you have completed your liquid needs. Liquid drink / liquid needs: ' + this.state.userDrink.reduce(function(a, b) { return a + b; }, 0)  + '/' + this.props.waterNeed + 'liter'
+    } else {
+      return 'You need more drink because your body needs it.  Liquid drink / liquid needs: ' + this.state.userDrink.reduce(function(a, b) { return a + b; }, 0)  + '/' + this.props.waterNeed + 'liter'
+    }
   }
 
   render() {
@@ -204,16 +215,16 @@ class History extends React.Component {
     const pieData = this.state.userStatus
       .filter(value => value > 0)
       .map((value, index) => {
-        let color = 'lightblue'
+        let color = '#1B4032'
         if (index == 0) {
           //walk
-          color = 'darksalmon'
+          color = '#63E5B6'
         } else if (index == 1) {
           //sit
-          color = 'darkseagreen'
+          color = '#377F65'
         } else {
           //sit
-          color = 'lightblue'
+          color = '#1B4032'
         }
         return {
           value,
@@ -238,7 +249,7 @@ class History extends React.Component {
             width: 340,
             height: 60,
             marginBottom: 10,
-            alignItems: 'center'
+            alignItems: 'center',
             }}
             >
             <Text>Use { '<' } or { '>' } for move a history time</Text>
@@ -268,7 +279,10 @@ class History extends React.Component {
             paddingTop: 5,
             paddingRight: 5,
             width: 340,
-            marginBottom: 10
+            marginBottom: 10,
+            borderStyle: 'solid',
+            borderWidth: 2,
+            borderColor: 'lightgray'
             }}
             >
             <View style={{ alignItems: 'center' }}>
@@ -310,7 +324,10 @@ class History extends React.Component {
             paddingTop: 5,
             paddingRight: 5,
             width: 340,
-            marginBottom: 10
+            marginBottom: 10,
+            borderStyle: 'solid',
+            borderWidth: 2,
+            borderColor: 'lightgray'
             }}>
             <View style={{ alignItems: 'center' }}>
               <Text style={{ fontSize: 20 }}>
@@ -353,6 +370,9 @@ class History extends React.Component {
             paddingBottom: 5,
             width: 340,
             marginBottom: 10,
+            borderStyle: 'solid',
+            borderWidth: 2,
+            borderColor: 'lightgray'
             }}>
             <View style={{ alignItems: 'center' }}>
               <Text style={{ fontSize: 20 }}>
@@ -379,7 +399,7 @@ class History extends React.Component {
                   <Rect
                     width="20"
                     height="20"
-                    fill="darksalmon"
+                    fill="#63E5B6"
                   />
                 </Svg>
               </View>
@@ -396,7 +416,7 @@ class History extends React.Component {
                   <Rect
                     width="20"
                     height="20"
-                    fill="lightblue"
+                    fill="#1B4032"
                   />
                 </Svg>
               </View>
@@ -413,7 +433,7 @@ class History extends React.Component {
                     <Rect
                       width="20"
                       height="20"
-                      fill="darkseagreen"
+                      fill="#377F65"
                     />
                   </Svg>
                 </View>
@@ -432,6 +452,9 @@ class History extends React.Component {
             paddingBottom: 5,
             width: 340,
             marginBottom: 10,
+            borderStyle: 'solid',
+            borderWidth: 2,
+            borderColor: 'lightgray'
             }}>
             <View style={{ alignItems: 'center', marginBottom: 10 }}>
               <Text style={{ fontSize: 20 }} >Summary</Text>
@@ -441,7 +464,7 @@ class History extends React.Component {
             <Text>Sit Time: { this.state.userStatus[2] * 15 }  Minutes / { this.state.userStatus[2] * 15 / 60 } Hour(s) </Text>
             <Text>Total Step: { this.state.userStep.reduce(function(a, b) { return a + b; }, 0) } Steps / { this.state.userStep.reduce(function(a, b) { return a + b; }, 0) * 0.5 } meter </Text>
             <Text>Total Drink: { this.state.userDrink.reduce(function(a, b) { return a + b; }, 0) } liters</Text>
-            <Text>Suggestion: </Text>
+            <Text>Suggestion: { this.suggestion() }</Text>
           </View>
           <View style={{
             backgroundColor: 'white',
@@ -449,27 +472,30 @@ class History extends React.Component {
             paddingTop: 5,
             paddingRight: 5,
             width: 340,
-            marginBottom: 10
+            marginBottom: 10,
+            borderStyle: 'solid',
+            borderWidth: 2,
+            borderColor: 'lightgray'
             }}>
             <View style={{ marginBottom: 5 }}>
               <Button
                 onPress={ () => this.setHistory()}
                 title="Set dummy Data"
-                color="#841584"
+                color="#06a887"
               />
             </View>
             <View style={{ marginBottom: 5 }}>
               <Button
                 onPress={ () => this.clearHistory()}
                 title="clear history"
-                color="#841584"
+                color="#06a887"
               />
             </View>
             <View style={{ marginBottom: 5 }}>
               <Button
                 onPress={ () => this.getHistory()}
                 title="get history"
-                color="#841584"
+                color="#06a887"
               />
             </View>
           </View>
@@ -485,4 +511,10 @@ const styles = StyleSheet.create({
   }
 })
 
-export default History
+const mapStateToProps = (state) => {
+  return {
+    waterNeed: state.quisionerReducer.waterNeeds
+  }
+}
+
+export default connect(mapStateToProps, null)(History)
