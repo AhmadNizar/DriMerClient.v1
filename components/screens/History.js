@@ -105,7 +105,7 @@ class History extends React.Component {
             if (perHour == 0) {
               let newAvgStep = avgStep
               let newAvgDrink = avgDrink
-              console.log(newAvgDrink)
+              // console.log(newAvgDrink)
               avgStep = 0
               avgDrink = 0
               avgStepArr.push(newAvgStep)
@@ -141,7 +141,7 @@ class History extends React.Component {
             console.log('userlength 0, userstep 0')
           }
         })
-        console.log(avgStepArr)
+        // console.log(avgStepArr)
         if (typeof newDateGraphHistory == 'string') {
           console.log('======================empty array')
           const today = new Date(Date.now())
@@ -170,7 +170,7 @@ class History extends React.Component {
   }
 
   substractDate() {
-    console.log('========================', this.state.diffrentDate)
+    console.log('------------------------substract diffrentDate', this.state.diffrentDate)
     if(this.state.diffrentDate == 1) {
       console.log('hard code')
     } else {
@@ -179,7 +179,7 @@ class History extends React.Component {
   }
 
   addDate() {
-    console.log('========================', this.state.diffrentDate)
+    console.log('++++++++++++++++++++++add diffrentDate', this.state.diffrentDate)
     if(this.state.diffrentDate == 0) {
       console.log('hard code')
     } else {
@@ -293,7 +293,7 @@ class History extends React.Component {
                 { this.state.dateGraphHistory }
               </Text>
             </View>
-            <View style={{ height: 200, width: 330, marginTop: 10 }}>
+            <View style={{ height: 200, width: 320, marginTop: 10 }}>
               <YAxis
                 style={{ marginBottom: -2, position: 'absolute', top: 0, bottom: 0, transform: [{ translateY: -5 }] }}
                 dataPoints={this.state.userStep}
@@ -337,7 +337,7 @@ class History extends React.Component {
                 { this.state.dateGraphHistory }
               </Text>
             </View>
-            <View style={{ height: 200, width: 330, marginTop: 10 }}>
+            <View style={{ height: 200, width: 320, marginTop: 10 }}>
               <YAxis
                 style={{ marginBottom: -2, position: 'absolute', top: 0, bottom: 0, transform: [{ translateY: -5 }] }}
                 dataPoints={this.state.userDrink}
@@ -367,9 +367,9 @@ class History extends React.Component {
             paddingLeft: 5,
             paddingTop: 5,
             paddingRight: 5,
-            paddingBottom: 5,
+            paddingBottom: 15,
             width: 340,
-            marginBottom: 10,
+            marginBottom: 15,
             borderStyle: 'solid',
             borderWidth: 2,
             borderColor: 'lightgray'
@@ -425,23 +425,23 @@ class History extends React.Component {
                   Sit
                 </Text>
               </View>
-                <View>
-                  <Svg
+              <View>
+                <Svg
+                  width="20"
+                  height="20"
+                >
+                  <Rect
                     width="20"
                     height="20"
-                  >
-                    <Rect
-                      width="20"
-                      height="20"
-                      fill="#377F65"
-                    />
-                  </Svg>
-                </View>
-                <View style={{ marginLeft: 5, marginRight: 5 }}>
-                  <Text>
-                    Sleep
-                  </Text>
-                </View>
+                    fill="#377F65"
+                  />
+                </Svg>
+              </View>
+              <View style={{ marginLeft: 5, marginRight: 5 }}>
+                <Text>
+                  Sleep
+                </Text>
+              </View>
             </View>
           </View>
           <View style={{
@@ -488,13 +488,6 @@ class History extends React.Component {
               <Button
                 onPress={ () => this.clearHistory()}
                 title="clear history"
-                color="#06a887"
-              />
-            </View>
-            <View style={{ marginBottom: 5 }}>
-              <Button
-                onPress={ () => this.getHistory()}
-                title="get history"
                 color="#06a887"
               />
             </View>
