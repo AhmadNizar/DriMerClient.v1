@@ -207,6 +207,7 @@ class Suggestion extends React.Component {
             }
           </AnimatedCircularProgress>
           <Text style={styles.textRec}>Tap your drink</Text>
+          <View style={{width: 300, height: 150, flexDirection: 'row', alignItems: 'center' ,justifyContent: 'space-around'}}>
           <TouchableOpacity style={styles.ButtonStyle} onPress={() => { this.minum(0.6) }}>
             <Icon
             name='md-battery-full'
@@ -224,6 +225,7 @@ class Suggestion extends React.Component {
             />
             <Text style={{color: 'white'}}>240 ml</Text>
           </TouchableOpacity>
+          </View>
         </View>
 
         <AwesomeAlert
@@ -293,16 +295,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#06a887',
-    width: 80,
-    height: 80,
-    borderRadius: 40,
+    width: 120,
+    height: 120,
+    borderRadius: 60,
     marginTop: 20
   },
 
   textRec: {
     fontSize: 18,
     color: "white",
-    marginTop: 20
+    marginTop: 40
+
   }
 });
 
