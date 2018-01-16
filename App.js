@@ -34,15 +34,14 @@ import History from './components/screens/History';
 const NavigationBase = StackNavigator({
   Login: { screen: Login },
   Register: { screen: Register },
-  Quisioner: { screen: Quisioner },
-  Profile: { screen: Profile },
-  History: { screen: History }
+  Quisioner: { screen: Quisioner }
 })
 
 const NavigationTab = TabNavigator({
   Suggestion: { screen: Suggestion },
-  Profile: { screen: Profile },
-  History: { screen: History }
+  // Profile: { screen: Profile },
+  // History: { screen: History },
+  Dashboard: { screen: Dashboard }
 }, {
     tabBarPosition: 'bottom',
     animationEnabled: true,
@@ -51,7 +50,7 @@ const NavigationTab = TabNavigator({
       showIcon: true,
       showLabel: true,
       labelStyle: {
-        fontSize: 12,
+        fontSize: 9,
         color: '#06a887'
       },
       style: {
