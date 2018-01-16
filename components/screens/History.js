@@ -72,7 +72,7 @@ class History extends React.Component {
       const historyUserRaw = await AsyncStorage.getItem('@History:user');
       if (historyUserRaw !== null) {
         // We have data!!
-        // console.log(historyUserRaw);
+        console.log(historyUserRaw);
         const historyUser = JSON.parse(historyUserRaw)
         const newUserStep = []
         const newUserDrink = []
@@ -104,7 +104,6 @@ class History extends React.Component {
               avgDrinkArr.push(newAvgDrink)
               perHour = 3
             } else {
-              console.log(dataUser.drink)
               avgStep += (dataUser.step - lastStep)
               if(dataUser.drink - lastDrink < 0) {
                 avgDrink = (dataUser.drink - lastDrink) * -1
@@ -134,7 +133,7 @@ class History extends React.Component {
             console.log('userlength 0, userstep 0')
           }
         })
-        console.log(avgDrinkArr)
+        console.log(avgStepArr)
         if (typeof newDateGraphHistory == 'string') {
           console.log('======================empty array')
           const today = new Date(Date.now())
