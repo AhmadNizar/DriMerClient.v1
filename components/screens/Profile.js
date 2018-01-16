@@ -208,12 +208,12 @@ class Profile extends React.Component {
       this.startRecording()
     }
     //every 5 detik set history
-    if (this.props.getUserStatus.updateHistoryCount == 5) {
-      this.setHistory()
-      this.props.clearHistoryCount()
-    } else {
-      this.props.updateHistoryCount()
-    }
+    // if (this.props.getUserStatus.updateHistoryCount == 5) {
+    //   this.setHistory()
+    //   this.props.clearHistoryCount()
+    // } else {
+    //   this.props.updateHistoryCount()
+    // }
   }
 
   checkStatus() {

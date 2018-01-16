@@ -51,293 +51,486 @@ class History extends React.Component {
       console.log('set history')
       const dummy = [
         {
-          "date": "Sat Jan 13 2018 00:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sleep",
-          "drink": 0
-        },
-        {
-          "date": "Sat Jan 13 2018 01:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sleep",
-          "drink": 0
-        },
-        {
-          "date": "Sat Jan 13 2018 02:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sleep",
-          "drink": 0
-        },
-        {
-          "date": "Sat Jan 13 2018 03:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sleep",
-          "drink": 0
-        },
-        {
-          "date": "Sat Jan 13 2018 04:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sleep",
-          "drink": 0
-        },
-        {
-          "date": "Sat Jan 13 2018 05:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sleep",
-          "drink": 0
-        },
-        {
-          "date": "Sat Jan 13 2018 06:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sit",
-          "drink": 0
-        },
-        {
-          "date": "Sat Jan 13 2018 07:00:00 GMT+0700 (WIB)",
-          "step": 20,
-          "status": "rest/sit",
-          "drink": 0
-        },
-        {
-          "date": "Sat Jan 13 2018 08:00:00 GMT+0700 (WIB)",
-          "step": 45,
-          "status": "walk/run",
-          "drink": 0.24
-        },
-        {
-          "date": "Sat Jan 13 2018 09:00:00 GMT+0700 (WIB)",
-          "step": 145,
-          "status": "walk/run",
-          "drink": 0.48
-        },
-        {
-          "date": "Sat Jan 13 2018 10:00:00 GMT+0700 (WIB)",
-          "step": 200,
-          "status": "rest/sit",
-          "drink": 1.08
-        },
-        {
-          "date": "Sat Jan 13 2018 11:00:00 GMT+0700 (WIB)",
-          "step": 200,
-          "status": "rest/sit",
-          "drink": 1.08
-        },
-        {
-          "date": "Sat Jan 13 2018 12:00:00 GMT+0700 (WIB)",
-          "step": 200,
-          "status": "rest/sit",
-          "drink": 1.08
-        },
-        {
-          "date": "Sat Jan 13 2018 13:00:00 GMT+0700 (WIB)",
-          "step": 355,
-          "status": "rest/sit",
-          "drink": 1.68
-        },
-        {
-          "date": "Sat Jan 13 2018 14:00:00 GMT+0700 (WIB)",
-          "step": 400,
-          "status": "rest/sit",
-          "drink": 1.68
-        },
-        {
-          "date": "Sat Jan 13 2018 15:00:00 GMT+0700 (WIB)",
-          "step": 400,
-          "status": "rest/sit",
-          "drink": 1.68
-        },
-        {
-          "date": "Sat Jan 13 2018 16:00:00 GMT+0700 (WIB)",
-          "step": 450,
-          "status": "rest/sit",
-          "drink": 1.92
-        },
-        {
-          "date": "Sat Jan 13 2018 17:00:00 GMT+0700 (WIB)",
-          "step": 500,
-          "status": "rest/sit",
-          "drink": 1.92
-        },
-        {
-          "date": "Sat Jan 13 2018 18:00:00 GMT+0700 (WIB)",
-          "step": 850,
-          "status": "walk/run",
-          "drink": 1.92
-        },
-        {
-          "date": "Sat Jan 13 2018 19:00:00 GMT+0700 (WIB)",
-          "step": 850,
-          "status": "rest/sit",
-          "drink": 2.06
-        },
-        {
-          "date": "Sat Jan 13 2018 20:00:00 GMT+0700 (WIB)",
-          "step": 900,
-          "status": "rest/sit",
-          "drink": 2.06
-        },
-        {
-          "date": "Sat Jan 13 2018 21:00:00 GMT+0700 (WIB)",
-          "step": 900,
-          "status": "rest/sleep",
-          "drink": 2.06
-        },
-        {
-          "date": "Sat Jan 13 2018 22:00:00 GMT+0700 (WIB)",
-          "step": 900,
-          "status": "rest/sleep",
-          "drink": 2.06
-        },
-        {
-          "date": "Sat Jan 13 2018 23:00:00 GMT+0700 (WIB)",
-          "step": 900,
-          "status": "rest/sleep",
-          "drink": 2.06
-        },
-        {
-          "date": "Sun Jan 14 2018 00:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sleep",
-          "drink": 0
-        },
-        {
-          "date": "Sun Jan 14 2018 01:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sleep",
-          "drink": 0
-        },
-        {
-          "date": "Sun Jan 14 2018 02:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sleep",
-          "drink": 0
-        },
-        {
-          "date": "Sun Jan 14 2018 03:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sleep",
-          "drink": 0
-        },
-        {
-          "date": "Sun Jan 14 2018 04:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sleep",
-          "drink": 0
-        },
-        {
-          "date": "Sun Jan 14 2018 05:00:00 GMT+0700 (WIB)",
-          "step": 0,
-          "status": "rest/sleep",
-          "drink": 0
-        },
-        {
-          "date": "Sun Jan 14 2018 06:00:00 GMT+0700 (WIB)",
-          "step": 10,
-          "status": "rest/sit",
-          "drink": 0
-        },
-        {
-          "date": "Sun Jan 14 2018 07:00:00 GMT+0700 (WIB)",
-          "step": 30,
-          "status": "walk/run",
-          "drink": 0
-        },
-        {
-          "date": "Sun Jan 14 2018 08:00:00 GMT+0700 (WIB)",
-          "step": 60,
-          "status": "walk/run",
-          "drink": 0.24
-        },
-        {
-          "date": "Sun Jan 14 2018 09:00:00 GMT+0700 (WIB)",
-          "step": 200,
-          "status": "walk/run",
-          "drink": 0.48
-        },
-        {
-          "date": "Sun Jan 14 2018 10:00:00 GMT+0700 (WIB)",
-          "step": 200,
-          "status": "rest/sit",
-          "drink": 1.32
-        },
-        {
-          "date": "Sun Jan 14 2018 11:00:00 GMT+0700 (WIB)",
-          "step": 200,
-          "status": "rest/sit",
-          "drink": 1.32
-        },
-        {
-          "date": "Sun Jan 14 2018 12:00:00 GMT+0700 (WIB)",
-          "step": 500,
-          "status": "rest/sit",
-          "drink": 1.92
-        },
-        {
-          "date": "Sun Jan 14 2018 13:00:00 GMT+0700 (WIB)",
-          "step": 552,
-          "status": "rest/sit",
-          "drink": 2.36
-        },
-        {
-          "date": "Sun Jan 14 2018 14:00:00 GMT+0700 (WIB)",
-          "step": 800,
-          "status": "walk/run",
-          "drink": 2.36
-        },
-        {
-          "date": "Sun Jan 14 2018 15:00:00 GMT+0700 (WIB)",
-          "step": 800,
-          "status": "rest/sit",
-          "drink": 2.36
-        },
-        {
-          "date": "Sun Jan 14 2018 16:00:00 GMT+0700 (WIB)",
-          "step": 800,
-          "status": "rest/sit",
-          "drink": 2.36
-        },
-        {
-          "date": "Sun Jan 14 2018 17:00:00 GMT+0700 (WIB)",
-          "step": 800,
-          "status": "rest/sit",
-          "drink": 2.36
-        },
-        {
-          "date": "Sun Jan 14 2018 18:00:00 GMT+0700 (WIB)",
-          "step": 829,
-          "status": "walk/run",
-          "drink": 2.36
-        },
-        {
-          "date": "Sun Jan 14 2018 19:00:00 GMT+0700 (WIB)",
-          "step": 850,
-          "status": "rest/sit",
-          "drink": 2.36
-        },
-        {
-          "date": "Sun Jan 14 2018 20:00:00 GMT+0700 (WIB)",
-          "step": 900,
-          "status": "rest/sit",
-          "drink": 2.36
-        },
-        {
-          "date": "Sun Jan 14 2018 21:00:00 GMT+0700 (WIB)",
-          "step": 900,
-          "status": "rest/sleep",
-          "drink": 2.36
-        },
-        {
-          "date": "Sun Jan 14 2018 22:00:00 GMT+0700 (WIB)",
-          "step": 900,
-          "status": "rest/sleep",
-          "drink": 2.36
-        },
-        {
-          "date": "Sun Jan 14 2018 23:00:00 GMT+0700 (WIB)",
-          "step": 900,
-          "status": "rest/sleep",
-          "drink": 2.36
-        },
+          "date" : "Mon Jan 15 2018 00:00:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 00:15:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 00:30:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 00:45:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 01:00:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 01:15:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 01:30:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 01:45:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 02:00:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 02:15:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 02:30:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 02:45:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 03:00:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 03:15:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 03:30:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 03:45:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 04:00:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 04:15:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 04:30:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 04:45:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 05:00:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 05:15:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 05:30:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 05:45:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 06:00:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 06:15:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 06:30:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 06:45:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sleep",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 07:00:00 GMT+0700 (WIB)",
+          "step" : 0,
+          "status" : "rest/sit",
+          "drink" : 0
+        }, {
+          "date" : "Mon Jan 15 2018 07:15:00 GMT+0700 (WIB)",
+          "step" : 20,
+          "status" : "walk/run",
+          "drink" : 0.24
+        }, {
+          "date" : "Mon Jan 15 2018 07:30:00 GMT+0700 (WIB)",
+          "step" : 60,
+          "status" : "walk/run",
+          "drink" : 0.24
+        }, {
+          "date" : "Mon Jan 15 2018 07:45:00 GMT+0700 (WIB)",
+          "step" : 60,
+          "status" : "walk/run",
+          "drink" : 0.24
+        }, {
+          "date" : "Mon Jan 15 2018 08:00:00 GMT+0700 (WIB)",
+          "step" : 100,
+          "status" : "walk/run",
+          "drink" : 0.48
+        }, {
+          "date" : "Mon Jan 15 2018 08:15:00 GMT+0700 (WIB)",
+          "step" : 100,
+          "status" : "walk/run",
+          "drink" : 0.48
+        }, {
+          "date" : "Mon Jan 15 2018 08:30:00 GMT+0700 (WIB)",
+          "step" : 100,
+          "status" : "walk/run",
+          "drink" : 0.48
+        }, {
+          "date" : "Mon Jan 15 2018 08:45:00 GMT+0700 (WIB)",
+          "step" : 100,
+          "status" : "walk/run",
+          "drink" : 0.48
+        }, {
+          "date" : "Mon Jan 15 2018 09:00:00 GMT+0700 (WIB)",
+          "step" : 100,
+          "status" : "rest/sit",
+          "drink" : 0.48
+        }, {
+          "date" : "Mon Jan 15 2018 09:15:00 GMT+0700 (WIB)",
+          "step" : 120,
+          "status" : "rest/sit",
+          "drink" : 0.48
+        }, {
+          "date" : "Mon Jan 15 2018 09:30:00 GMT+0700 (WIB)",
+          "step" : 120,
+          "status" : "rest/sit",
+          "drink" : 0.48
+        }, {
+          "date" : "Mon Jan 15 2018 09:45:00 GMT+0700 (WIB)",
+          "step" : 120,
+          "status" : "rest/sit",
+          "drink" : 0.48
+        }, {
+          "date" : "Mon Jan 15 2018 10:00:00 GMT+0700 (WIB)",
+          "step" : 120,
+          "status" : "rest/sit",
+          "drink" : 1.08
+        }, {
+          "date" : "Mon Jan 15 2018 10:15:00 GMT+0700 (WIB)",
+          "step" : 120,
+          "status" : "rest/sit",
+          "drink" : 1.08
+        }, {
+          "date" : "Mon Jan 15 2018 10:30:00 GMT+0700 (WIB)",
+          "step" : 120,
+          "status" : "rest/sit",
+          "drink" : 1.08
+        }, {
+          "date" : "Mon Jan 15 2018 10:45:00 GMT+0700 (WIB)",
+          "step" : 130,
+          "status" : "rest/sit",
+          "drink" : 1.08
+        }, {
+          "date" : "Mon Jan 15 2018 11:00:00 GMT+0700 (WIB)",
+          "step" : 150,
+          "status" : "rest/sit",
+          "drink" : 1.32
+        }, {
+          "date" : "Mon Jan 15 2018 11:15:00 GMT+0700 (WIB)",
+          "step" : 380,
+          "status" : "walk/run",
+          "drink" : 1.32
+        }, {
+          "date" : "Mon Jan 15 2018 11:30:00 GMT+0700 (WIB)",
+          "step" : 502,
+          "status" : "walk/run",
+          "drink" : 1.32
+        }, {
+          "date" : "Mon Jan 15 2018 11:45:00 GMT+0700 (WIB)",
+          "step" : 502,
+          "status" : "rest/sit",
+          "drink" : 1.32
+        }, {
+          "date" : "Mon Jan 15 2018 12:00:00 GMT+0700 (WIB)",
+          "step" : 502,
+          "status" : "rest/sit",
+          "drink" : 1.32
+        }, {
+          "date" : "Mon Jan 15 2018 12:15:00 GMT+0700 (WIB)",
+          "step" : 752,
+          "status" : "walk/run",
+          "drink" : 1.56
+        }, {
+          "date" : "Mon Jan 15 2018 12:30:00 GMT+0700 (WIB)",
+          "step" : 899,
+          "status" : "walk/run",
+          "drink" : 1.56
+        }, {
+          "date" : "Mon Jan 15 2018 12:45:00 GMT+0700 (WIB)",
+          "step" : 1002,
+          "status" : "rest/sit",
+          "drink" : 1.56
+        }, {
+          "date" : "Mon Jan 15 2018 13:00:00 GMT+0700 (WIB)",
+          "step" : 1004,
+          "status" : "rest/sit",
+          "drink" : 1.56
+        }, {
+          "date" : "Mon Jan 15 2018 13:15:00 GMT+0700 (WIB)",
+          "step" : 1200,
+          "status" : "walk/run",
+          "drink" : 1.56
+        }, {
+          "date" : "Mon Jan 15 2018 13:30:00 GMT+0700 (WIB)",
+          "step" : 1250,
+          "status" : "walk/run",
+          "drink" : 1.8
+        }, {
+          "date" : "Mon Jan 15 2018 13:45:00 GMT+0700 (WIB)",
+          "step" : 1250,
+          "status" : "rest/sit",
+          "drink" : 1.8
+        }, {
+          "date" : "Mon Jan 15 2018 14:00:00 GMT+0700 (WIB)",
+          "step" : 1260,
+          "status" : "rest/sit",
+          "drink" : 1.8
+        }, {
+          "date" : "Mon Jan 15 2018 14:15:00 GMT+0700 (WIB)",
+          "step" : 1260,
+          "status" : "rest/sit",
+          "drink" : 1.8
+        }, {
+          "date" : "Mon Jan 15 2018 14:30:00 GMT+0700 (WIB)",
+          "step" : 1270,
+          "status" : "rest/sit",
+          "drink" : 1.8
+        }, {
+          "date" : "Mon Jan 15 2018 14:45:00 GMT+0700 (WIB)",
+          "step" : 1280,
+          "status" : "rest/sit",
+          "drink" : 2.02
+        }, {
+          "date" : "Mon Jan 15 2018 15:00:00 GMT+0700 (WIB)",
+          "step" : 1290,
+          "status" : "rest/sit",
+          "drink" : 2.02
+        }, {
+          "date" : "Mon Jan 15 2018 15:15:00 GMT+0700 (WIB)",
+          "step" : 1300,
+          "status" : "rest/sit",
+          "drink" : 2.02
+        }, {
+          "date" : "Mon Jan 15 2018 15:30:00 GMT+0700 (WIB)",
+          "step" : 1300,
+          "status" : "rest/sit",
+          "drink" : 2.02
+        }, {
+          "date" : "Mon Jan 15 2018 15:45:00 GMT+0700 (WIB)",
+          "step" : 1300,
+          "status" : "rest/sit",
+          "drink" : 2.02
+        }, {
+          "date" : "Mon Jan 15 2018 16:00:00 GMT+0700 (WIB)",
+          "step" : 1330,
+          "status" : "rest/sit",
+          "drink" : 2.02
+        }, {
+          "date" : "Mon Jan 15 2018 16:15:00 GMT+0700 (WIB)",
+          "step" : 1330,
+          "status" : "rest/sit",
+          "drink" : 2.02
+        }, {
+          "date" : "Mon Jan 15 2018 16:30:00 GMT+0700 (WIB)",
+          "step" : 1330,
+          "status" : "rest/sit",
+          "drink" : 2.02
+        }, {
+          "date" : "Mon Jan 15 2018 16:45:00 GMT+0700 (WIB)",
+          "step" : 1330,
+          "status" : "rest/sit",
+          "drink" : 2.02
+        }, {
+          "date" : "Mon Jan 15 2018 17:00:00 GMT+0700 (WIB)",
+          "step" : 1330,
+          "status" : "rest/sit",
+          "drink" : 2.02
+        }, {
+          "date" : "Mon Jan 15 2018 17:15:00 GMT+0700 (WIB)",
+          "step" : 1330,
+          "status" : "rest/sit",
+          "drink" : 2.02
+        }, {
+          "date" : "Mon Jan 15 2018 17:30:00 GMT+0700 (WIB)",
+          "step" : 1420,
+          "status" : "walk/run",
+          "drink" : 2.02
+        }, {
+          "date" : "Mon Jan 15 2018 17:45:00 GMT+0700 (WIB)",
+          "step" : 1420,
+          "status" : "rest/sit",
+          "drink" : 2.24
+        }, {
+          "date" : "Mon Jan 15 2018 18:00:00 GMT+0700 (WIB)",
+          "step" : 1450,
+          "status" : "rest/sit",
+          "drink" : 2.24
+        }, {
+          "date" : "Mon Jan 15 2018 18:15:00 GMT+0700 (WIB)",
+          "step" : 1450,
+          "status" : "rest/sit",
+          "drink" : 2.24
+        }, {
+          "date" : "Mon Jan 15 2018 18:30:00 GMT+0700 (WIB)",
+          "step" : 1600,
+          "status" : "walk/run",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 18:45:00 GMT+0700 (WIB)",
+          "step" : 1750,
+          "status" : "walk/run",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 19:00:00 GMT+0700 (WIB)",
+          "step" : 1750,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 19:15:00 GMT+0700 (WIB)",
+          "step" : 1900,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 19:30:00 GMT+0700 (WIB)",
+          "step" : 1950,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 19:45:00 GMT+0700 (WIB)",
+          "step" : 1950,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 20:00:00 GMT+0700 (WIB)",
+          "step" : 1950,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 20:15:00 GMT+0700 (WIB)",
+          "step" : 2050,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 20:30:00 GMT+0700 (WIB)",
+          "step" : 2070,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 20:45:00 GMT+0700 (WIB)",
+          "step" : 2095,
+          "status" : "walk/run",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 21:00:00 GMT+0700 (WIB)",
+          "step" : 2355,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 21:15:00 GMT+0700 (WIB)",
+          "step" : 2374,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 21:30:00 GMT+0700 (WIB)",
+          "step" : 2375,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 21:45:00 GMT+0700 (WIB)",
+          "step" : 2390,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 22:00:00 GMT+0700 (WIB)",
+          "step" : 2400,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 22:15:00 GMT+0700 (WIB)",
+          "step" : 2400,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 22:30:00 GMT+0700 (WIB)",
+          "step" : 2400,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 22:45:00 GMT+0700 (WIB)",
+          "step" : 2400,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 23:00:00 GMT+0700 (WIB)",
+          "step" : 2680,
+          "status" : "walk/run",
+          "drink" : 2.48
+        }, {
+          "date" : "Mon Jan 15 2018 23:15:00 GMT+0700 (WIB)",
+          "step" : 2900,
+          "status" : "walk/run",
+          "drink" : 2.32
+        }, {
+          "date" : "Mon Jan 15 2018 23:30:00 GMT+0700 (WIB)",
+          "step" : 2955,
+          "status" : "rest/sit",
+          "drink" : 2.32
+        }, {
+          "date" : "Mon Jan 15 2018 23:45:00 GMT+0700 (WIB)",
+          "step" : 3002,
+          "status" : "rest/sit",
+          "drink" : 2.48
+        }
       ]
       const stringData = JSON.stringify(dummy)
       await AsyncStorage.setItem('@History:user', stringData);
@@ -372,11 +565,35 @@ class History extends React.Component {
         const lastStep = 0
         const lastDrink = 0
         const newDateGraphHistory = ''
+        let avgStep = 0
+        let avgStepArr = []
+        let avgDrink = 0
+        let avgDrinkArr = []
         let totalData = 24
+        let perHour = 3
         historyUser.map((dataUser, index) => {
           const dateHistory = new Date(dataUser.date)
           const today = new Date(Date.now())
           if (dateHistory.getDate() == (today.getDate() - this.state.diffrentDate)) {
+            console.log(dataUser)
+            if (perHour == 0) {
+              let newAvgStep = avgStep
+              let newAvgDrink = avgDrink
+              console.log(newAvgDrink)
+              avgStep = 0
+              avgDrink = 0
+              avgStepArr.push(newAvgStep)
+              avgDrinkArr.push(newAvgDrink)
+              perHour = 3
+            } else {
+              console.log(dataUser.drink)
+              avgStep += (dataUser.step - lastStep)
+              if(dataUser.drink - lastDrink < 0) {
+                avgDrink = (dataUser.drink - lastDrink) * -1
+              }
+              avgDrink += (dataUser.drink - lastDrink)
+              perHour -= 1
+            }
             newDateGraphHistory = dateHistory
             totalData -= 1
             newUserStep.push(dataUser.step - lastStep)
@@ -391,17 +608,34 @@ class History extends React.Component {
               totalSit += 1
             }
           }
-          if (totalData == 0) {
+          if (historyUser.length-1 == index) {
             //set to async
             newUserStatus = [totalWalk, totalSleep, totalSit]
           }
+          if (newUserStep.length == 0 && historyUser.length-1 == index) {
+            console.log('userlength 0, userstep 0')
+          }
         })
+        console.log(avgDrinkArr)
+        if (typeof newDateGraphHistory == 'string') {
+          console.log('======================empty array')
+          const today = new Date(Date.now())
+          today.setDate(today.getDate() - 1)
+          newDateGraphHistory = today
+        }
         this.setState({
           historyUser: historyUser,
-          userStep: newUserStep,
-          userDrink: newUserDrink,
+          userStep: avgStepArr,
+          userDrink: avgDrinkArr,
           userStatus: newUserStatus,
           dateGraphHistory: `${newDateGraphHistory.toDateString()}`
+        })
+      } else {
+        console.log('no async storage')
+        const today = new Date(Date.now())
+        today.setDate(today.getDate() - 1)
+        this.setState({
+          dateGraphHistory: `${today.toDateString()}`
         })
       }
     } catch (error) {
@@ -411,7 +645,7 @@ class History extends React.Component {
   }
 
   substractDate() {
-    if(this.state.diffrentDate == 2) {
+    if(this.state.diffrentDate == 3) {
       console.log('hard code')
     } else {
       this.setState({ diffrentDate: this.state.diffrentDate + 1 }, () => this.getHistory())
@@ -427,6 +661,8 @@ class History extends React.Component {
   }
 
   componentDidMount() {
+    // this.clearHistory()
+    // this.setHistory()
     this.getHistory()
   }
 
@@ -516,7 +752,7 @@ class History extends React.Component {
             }}
             >
             <Text>
-              Step / Hour - { this.state.dateGraphHistory }
+              Your Average Step / Hour - { this.state.dateGraphHistory }
             </Text>
             <View style={{ height: 200, width: 330, marginTop: 10 }}>
               <YAxis
@@ -552,7 +788,7 @@ class History extends React.Component {
             marginBottom: 10
             }}>
             <Text>
-              Drink(liter drink) / Hour - { this.state.dateGraphHistory }
+              Your Average Drink(liter) / Hour - { this.state.dateGraphHistory }
             </Text>
             <View style={{ height: 200, width: 330, marginTop: 10 }}>
               <YAxis
@@ -589,7 +825,7 @@ class History extends React.Component {
             marginBottom: 10,
             }}>
             <Text>
-              Activity - { this.state.dateGraphHistory }
+              Your Activity - { this.state.dateGraphHistory }
             </Text>
             <PieChart
               style={{ height: 200, marginTop: 10, marginBottom: 10 }}
