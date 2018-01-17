@@ -40,7 +40,7 @@ const NavigationBase = StackNavigator({
 const NavigationTab = TabNavigator({
   Suggestion: { screen: Suggestion },
   Profile: { screen: Profile },
-  // History: { screen: History },
+  History: { screen: History },
   Dashboard: { screen: Dashboard },
 
 }, {

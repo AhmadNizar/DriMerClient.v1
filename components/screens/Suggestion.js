@@ -280,11 +280,15 @@ class Suggestion extends React.Component {
           </View>
         </Modal>
         <View style={styles.container}>
-          <Text style={styles.textRec}>Todays Drink Target</Text>
+          <View style={styles.goal}>
+            <Text style={{fontSize: 20}}>Goals: {this.state.konstanta} L</Text>
+          </View>
+          <Text style={styles.textRec}>My Progress</Text>
           <TouchableOpacity onPress={() => {this.changeVisiblePersen()}}>
             <AnimatedCircularProgress
               style={{
-                marginTop: 20
+                marginTop: 20,
+                marginBottom: 15
               }}
               size={180}
               width={8}
@@ -305,7 +309,7 @@ class Suggestion extends React.Component {
               }
             </AnimatedCircularProgress>
           </TouchableOpacity>
-          <Text style={styles.textRec}>Tap your drink</Text>
+          <Text style={styles.textTapDrink}>Tap your drink</Text>
           <View style={{width: 300, height: 150, flexDirection: 'row', alignItems: 'center' ,justifyContent: 'space-around'}}>
           <TouchableOpacity style={styles.ButtonStyle} onPress={() => { this.minum(0.6) }}>
             <Icon
@@ -397,14 +401,33 @@ const styles = StyleSheet.create({
     width: 120,
     height: 120,
     borderRadius: 60,
-    marginTop: 20
+    marginTop: 5
   },
 
   textRec: {
     fontSize: 18,
     color: "white",
-    marginTop: 40
+    marginTop:5
+  },
 
+  textTapDrink: {
+    fontSize: 18,
+    color: 'white',
+    marginTop: 15
+  },
+
+  goal: {
+    backgroundColor: '#e7fef9',
+    width: '80%',
+    marginLeft: 20,
+    marginRight: 20,
+    marginTop: 10,
+    marginBottom: 10,
+    padding: 10,
+    height: 'auto',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 15
   }
 });
 
