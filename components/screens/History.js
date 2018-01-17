@@ -171,7 +171,7 @@ class History extends React.Component {
 
   substractDate() {
     console.log('------------------------substract diffrentDate', this.state.diffrentDate)
-    if(this.state.diffrentDate == 1) {
+    if(this.state.diffrentDate == 2) {
       console.log('hard code')
     } else {
       this.setState({ diffrentDate: this.state.diffrentDate + 1 }, () => this.getHistory())
@@ -234,265 +234,268 @@ class History extends React.Component {
       })
     return (
       <View style={{
-        marginTop: 10,
-        marginLeft: 10,
-        marginLeft: 10,
-        marginBottom: 10,
-      }}>
-        <ScrollView contentContainerStyle={styles.contentContainer}>
-          <View style={{
-            backgroundColor: 'white',
-            paddingLeft: 5,
-            paddingTop: 5,
-            paddingRight: 5,
-            paddingBottom: 5,
-            width: 340,
-            height: 60,
-            marginBottom: 10,
-            alignItems: 'center',
-            }}
-            >
-            <Text>Use { '<' } or { '>' } for move a history time</Text>
-            <View style={{ flex: 1, flexDirection: 'row'}}>
-              <View style={{ width: 50 }}>
-                <Button
-                  onPress={ () => this.substractDate()}
-                  title="<"
-                  color="#06a887"
-                />
-              </View>
-              <View style={{ width: 230, alignItems: 'center', justifyContent: 'center' }}>
-                <Text style={{ fontSize: 20 }}>{ this.state.dateGraphHistory }</Text>
-              </View>
-              <View style={{ width: 50 }}>
-                <Button
-                  onPress={ () => this.addDate()}
-                  title=">"
-                  color="#06a887"
-                />
-              </View>
-            </View>
-          </View>
-          <View style={{
-            backgroundColor: 'white',
-            paddingLeft: 5,
-            paddingTop: 5,
-            paddingRight: 5,
-            width: 340,
-            marginBottom: 10,
-            borderStyle: 'solid',
-            borderWidth: 2,
-            borderColor: 'lightgray'
-            }}
-            >
-            <View style={{ alignItems: 'center' }}>
-              <Text style={{ fontSize: 20 }}>
-                Average Step / Hour
-              </Text>
-              <Text>
-                { this.state.dateGraphHistory }
-              </Text>
-            </View>
-            <View style={{ height: 200, width: 320, marginTop: 10 }}>
-              <YAxis
-                style={{ marginBottom: -2, position: 'absolute', top: 0, bottom: 0, transform: [{ translateY: -5 }] }}
-                dataPoints={this.state.userStep}
-                contentInset={{ top: 10, bottom: 10 }}
-              />
-              <BarChart
-                style={{ flex: 1, marginLeft: 25 }}
-                data={stepData}
-              />
-              <XAxis
-                style={{ paddingVertical: 0, marginLeft: 25 }}
-                values={this.state.userStep}
-                formatLabel={(value, index) => {
-                  if (index % 2 !== 0) {
-                    return ' '
-                  } else {
-                    return index
-                  }
-                }}
-                chartType={XAxis.Type.BAR}
-                labelStyle={{ color: 'grey' }}
-              />
-            </View>
-          </View>
-          <View style={{
-            backgroundColor: 'white',
-            paddingLeft: 5,
-            paddingTop: 5,
-            paddingRight: 5,
-            width: 340,
-            marginBottom: 10,
-            borderStyle: 'solid',
-            borderWidth: 2,
-            borderColor: 'lightgray'
-            }}>
-            <View style={{ alignItems: 'center' }}>
-              <Text style={{ fontSize: 20 }}>
-                Average Drink(liter) / Hour
-              </Text>
-              <Text>
-                { this.state.dateGraphHistory }
-              </Text>
-            </View>
-            <View style={{ height: 200, width: 320, marginTop: 10 }}>
-              <YAxis
-                style={{ marginBottom: -2, position: 'absolute', top: 0, bottom: 0, transform: [{ translateY: -5 }] }}
-                dataPoints={this.state.userDrink}
-                contentInset={{ top: 10, bottom: 10 }}
-              />
-              <BarChart
-                style={{ flex: 1, marginLeft: 25 }}
-                data={drinkData}
-              />
-              <XAxis
-                style={{ paddingVertical: 0, marginLeft: 25 }}
-                values={this.state.userDrink}
-                formatLabel={(value, index) => {
-                  if (index % 2 !== 0) {
-                    return ' '
-                  } else {
-                    return index
-                  }
-                }}
-                chartType={XAxis.Type.BAR}
-                labelStyle={{ color: 'grey' }}
-              />
-            </View>
-          </View>
-          <View style={{
-            backgroundColor: 'white',
-            paddingLeft: 5,
-            paddingTop: 5,
-            paddingRight: 5,
-            paddingBottom: 15,
-            width: 340,
-            marginBottom: 15,
-            borderStyle: 'solid',
-            borderWidth: 2,
-            borderColor: 'lightgray'
-            }}>
-            <View style={{ alignItems: 'center' }}>
-              <Text style={{ fontSize: 20 }}>
-                24 Hour Activity
-              </Text>
-              <Text>
-                { this.state.dateGraphHistory }
-              </Text>
-            </View>
-            <PieChart
-              style={{ height: 200, marginTop: 10, marginBottom: 10 }}
-              data={pieData}
-            />
-            <View style={{ flex: 1,
-              flexDirection: 'row',
+        backgroundColor: '#296666',
+      }} >
+        <View style={{
+          marginTop: 10,
+          marginLeft: 10,
+          marginLeft: 10,
+          marginBottom: 10,
+        }}>
+          <ScrollView contentContainerStyle={styles.contentContainer}>
+            <View style={{
+              backgroundColor: '#e7fef9',
+              paddingLeft: 5,
+              paddingTop: 5,
+              paddingRight: 5,
+              paddingBottom: 5,
+              width: 340,
+              height: 50,
+              marginBottom: 10,
               alignItems: 'center',
-              justifyContent: 'center'
-            }}>
-              <View>
-                <Svg
-                  width="20"
-                  height="20"
-                >
-                  <Rect
-                    width="20"
-                    height="20"
-                    fill="#63E5B6"
+              }}
+              >
+              <View style={{ flex: 1, flexDirection: 'row'}}>
+                <View style={{ width: 50 }}>
+                  <Button
+                    onPress={ () => this.substractDate()}
+                    title="<"
+                    color="#06a887"
                   />
-                </Svg>
-              </View>
-              <View style={{ marginLeft: 5, marginRight: 5 }}>
-                <Text>
-                  Walk
-                </Text>
-              </View>
-              <View>
-                <Svg
-                  width="20"
-                  height="20"
-                >
-                  <Rect
-                    width="20"
-                    height="20"
-                    fill="#1B4032"
+                </View>
+                <View style={{ width: 230, alignItems: 'center', justifyContent: 'center' }}>
+                  <Text style={{ fontSize: 20 }}>{ this.state.dateGraphHistory }</Text>
+                </View>
+                <View style={{ width: 50 }}>
+                  <Button
+                    onPress={ () => this.addDate()}
+                    title=">"
+                    color="#06a887"
                   />
-                </Svg>
-              </View>
-              <View style={{ marginLeft: 5, marginRight: 5 }}>
-                <Text>
-                  Sit
-                </Text>
-              </View>
-              <View>
-                <Svg
-                  width="20"
-                  height="20"
-                >
-                  <Rect
-                    width="20"
-                    height="20"
-                    fill="#377F65"
-                  />
-                </Svg>
-              </View>
-              <View style={{ marginLeft: 5, marginRight: 5 }}>
-                <Text>
-                  Sleep
-                </Text>
+                </View>
               </View>
             </View>
-          </View>
-          <View style={{
-            backgroundColor: 'white',
-            paddingLeft: 5,
-            paddingTop: 5,
-            paddingRight: 5,
-            paddingBottom: 5,
-            width: 340,
-            marginBottom: 10,
-            borderStyle: 'solid',
-            borderWidth: 2,
-            borderColor: 'lightgray'
-            }}>
-            <View style={{ alignItems: 'center', marginBottom: 10 }}>
-              <Text style={{ fontSize: 20 }} >Summary</Text>
-              <Text>{ this.state.dateGraphHistory }</Text>
+            <View style={{
+              backgroundColor: '#e7fef9',
+              paddingLeft: 5,
+              paddingTop: 5,
+              paddingRight: 5,
+              width: 340,
+              marginBottom: 10,
+              borderStyle: 'solid',
+              borderWidth: 2,
+              borderColor: 'lightgray'
+              }}
+              >
+              <View style={{ alignItems: 'center' }}>
+                <Text style={{ fontSize: 20 }}>
+                  Average Step / Hour
+                </Text>
+                <Text>
+                  { this.state.dateGraphHistory }
+                </Text>
+              </View>
+              <View style={{ height: 200, width: 320, marginTop: 10 }}>
+                <YAxis
+                  style={{ marginBottom: -2, position: 'absolute', top: 0, bottom: 0, transform: [{ translateY: -5 }] }}
+                  dataPoints={this.state.userStep}
+                  contentInset={{ top: 10, bottom: 10 }}
+                />
+                <BarChart
+                  style={{ flex: 1, marginLeft: 25 }}
+                  data={stepData}
+                />
+                <XAxis
+                  style={{ paddingVertical: 0, marginLeft: 25 }}
+                  values={this.state.userStep}
+                  formatLabel={(value, index) => {
+                    if (index % 2 !== 0) {
+                      return ' '
+                    } else {
+                      return index
+                    }
+                  }}
+                  chartType={XAxis.Type.BAR}
+                  labelStyle={{ color: 'grey' }}
+                />
+              </View>
             </View>
-            <Text>Sleep Time: { this.state.userStatus[1] * 15 } Minutes / { this.state.userStatus[1] * 15 / 60 } Hour(s) </Text>
-            <Text>Sit Time: { this.state.userStatus[2] * 15 }  Minutes / { this.state.userStatus[2] * 15 / 60 } Hour(s) </Text>
-            <Text>Total Step: { this.state.userStep.reduce(function(a, b) { return a + b; }, 0) } Steps / { this.state.userStep.reduce(function(a, b) { return a + b; }, 0) * 0.5 } meter </Text>
-            <Text>Total Drink: { this.state.userDrink.reduce(function(a, b) { return a + b; }, 0) } liters</Text>
-            <Text>Suggestion: { this.suggestion() }</Text>
-          </View>
-          <View style={{
-            backgroundColor: 'white',
-            paddingLeft: 5,
-            paddingTop: 5,
-            paddingRight: 5,
-            width: 340,
-            marginBottom: 10,
-            borderStyle: 'solid',
-            borderWidth: 2,
-            borderColor: 'lightgray'
-            }}>
-            <View style={{ marginBottom: 5 }}>
-              <Button
-                onPress={ () => this.setHistory()}
-                title="Set dummy Data"
-                color="#06a887"
+            <View style={{
+              backgroundColor: '#e7fef9',
+              paddingLeft: 5,
+              paddingTop: 5,
+              paddingRight: 5,
+              width: 340,
+              marginBottom: 10,
+              borderStyle: 'solid',
+              borderWidth: 2,
+              borderColor: 'lightgray'
+              }}>
+              <View style={{ alignItems: 'center' }}>
+                <Text style={{ fontSize: 20 }}>
+                  Average Drink(liter) / Hour
+                </Text>
+                <Text>
+                  { this.state.dateGraphHistory }
+                </Text>
+              </View>
+              <View style={{ height: 200, width: 320, marginTop: 10 }}>
+                <YAxis
+                  style={{ marginBottom: -2, position: 'absolute', top: 0, bottom: 0, transform: [{ translateY: -5 }] }}
+                  dataPoints={this.state.userDrink}
+                  contentInset={{ top: 10, bottom: 10 }}
+                />
+                <BarChart
+                  style={{ flex: 1, marginLeft: 25 }}
+                  data={drinkData}
+                />
+                <XAxis
+                  style={{ paddingVertical: 0, marginLeft: 25 }}
+                  values={this.state.userDrink}
+                  formatLabel={(value, index) => {
+                    if (index % 2 !== 0) {
+                      return ' '
+                    } else {
+                      return index
+                    }
+                  }}
+                  chartType={XAxis.Type.BAR}
+                  labelStyle={{ color: 'grey' }}
+                />
+              </View>
+            </View>
+            <View style={{
+              backgroundColor: '#e7fef9',
+              paddingLeft: 5,
+              paddingTop: 5,
+              paddingRight: 5,
+              paddingBottom: 15,
+              width: 340,
+              marginBottom: 15,
+              borderStyle: 'solid',
+              borderWidth: 2,
+              borderColor: 'lightgray'
+              }}>
+              <View style={{ alignItems: 'center' }}>
+                <Text style={{ fontSize: 20 }}>
+                  24 Hour Activity
+                </Text>
+                <Text>
+                  { this.state.dateGraphHistory }
+                </Text>
+              </View>
+              <PieChart
+                style={{ height: 200, marginTop: 10, marginBottom: 10 }}
+                data={pieData}
               />
+              <View style={{ flex: 1,
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}>
+                <View>
+                  <Svg
+                    width="20"
+                    height="20"
+                  >
+                    <Rect
+                      width="20"
+                      height="20"
+                      fill="#63E5B6"
+                    />
+                  </Svg>
+                </View>
+                <View style={{ marginLeft: 5, marginRight: 5 }}>
+                  <Text>
+                    Walk
+                  </Text>
+                </View>
+                <View>
+                  <Svg
+                    width="20"
+                    height="20"
+                  >
+                    <Rect
+                      width="20"
+                      height="20"
+                      fill="#1B4032"
+                    />
+                  </Svg>
+                </View>
+                <View style={{ marginLeft: 5, marginRight: 5 }}>
+                  <Text>
+                    Sit
+                  </Text>
+                </View>
+                <View>
+                  <Svg
+                    width="20"
+                    height="20"
+                  >
+                    <Rect
+                      width="20"
+                      height="20"
+                      fill="#377F65"
+                    />
+                  </Svg>
+                </View>
+                <View style={{ marginLeft: 5, marginRight: 5 }}>
+                  <Text>
+                    Sleep
+                  </Text>
+                </View>
+              </View>
             </View>
-            <View style={{ marginBottom: 5 }}>
-              <Button
-                onPress={ () => this.clearHistory()}
-                title="clear history"
-                color="#06a887"
-              />
+            <View style={{
+              backgroundColor: '#e7fef9',
+              paddingLeft: 5,
+              paddingTop: 5,
+              paddingRight: 5,
+              paddingBottom: 5,
+              width: 340,
+              marginBottom: 10,
+              borderStyle: 'solid',
+              borderWidth: 2,
+              borderColor: 'lightgray'
+              }}>
+              <View style={{ alignItems: 'center', marginBottom: 10 }}>
+                <Text style={{ fontSize: 20 }} >Summary</Text>
+                <Text>{ this.state.dateGraphHistory }</Text>
+              </View>
+              <Text>Sleep Time: { this.state.userStatus[1] * 15 } Minutes / { this.state.userStatus[1] * 15 / 60 } Hour(s) </Text>
+              <Text>Sit Time: { this.state.userStatus[2] * 15 }  Minutes / { this.state.userStatus[2] * 15 / 60 } Hour(s) </Text>
+              <Text>Total Step: { this.state.userStep.reduce(function(a, b) { return a + b; }, 0) } Steps / { this.state.userStep.reduce(function(a, b) { return a + b; }, 0) * 0.5 } meter </Text>
+              <Text>Total Drink: { this.state.userDrink.reduce(function(a, b) { return a + b; }, 0) } liters</Text>
+              <Text>Suggestion: { this.suggestion() }</Text>
             </View>
-          </View>
-        </ScrollView>
+            <View style={{
+              backgroundColor: '#e7fef9',
+              paddingLeft: 5,
+              paddingTop: 5,
+              paddingRight: 5,
+              width: 340,
+              marginBottom: 10,
+              borderStyle: 'solid',
+              borderWidth: 2,
+              borderColor: 'lightgray'
+              }}>
+              <View style={{ marginBottom: 5 }}>
+                <Button
+                  onPress={ () => this.setHistory()}
+                  title="Set dummy Data"
+                  color="#06a887"
+                />
+              </View>
+              <View style={{ marginBottom: 5 }}>
+                <Button
+                  onPress={ () => this.clearHistory()}
+                  title="clear history"
+                  color="#06a887"
+                />
+              </View>
+            </View>
+          </ScrollView>
+        </View>
       </View>
     )
   }
@@ -500,7 +503,7 @@ class History extends React.Component {
 
 const styles = StyleSheet.create({
   contentContainer: {
-    paddingVertical: 0
+    paddingVertical: 0,
   }
 })
 
