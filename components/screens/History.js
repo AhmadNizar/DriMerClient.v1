@@ -253,6 +253,9 @@ class History extends React.Component {
               height: 50,
               marginBottom: 10,
               alignItems: 'center',
+              borderStyle: 'solid',
+              borderWidth: 2,
+              borderColor: 'lightgray'
               }}
               >
               <View style={{ flex: 1, flexDirection: 'row'}}>
@@ -287,7 +290,12 @@ class History extends React.Component {
               borderColor: 'lightgray'
               }}
               >
-              <View style={{ alignItems: 'center' }}>
+              <View style={{ alignItems: 'center',
+                borderBottomColor: '#bbb',
+                borderBottomWidth: StyleSheet.hairlineWidth,
+                marginBottom: 10,
+                paddingBottom: 5
+                }}>
                 <Text style={{ fontSize: 20 }}>
                   Average Step / Hour
                 </Text>
@@ -331,7 +339,13 @@ class History extends React.Component {
               borderWidth: 2,
               borderColor: 'lightgray'
               }}>
-              <View style={{ alignItems: 'center' }}>
+              <View style={{
+                alignItems: 'center',
+                borderBottomColor: '#bbb',
+                borderBottomWidth: StyleSheet.hairlineWidth,
+                marginBottom: 10,
+                paddingBottom: 5
+                }}>
                 <Text style={{ fontSize: 20 }}>
                   Average Drink(liter) / Hour
                 </Text>
@@ -376,7 +390,12 @@ class History extends React.Component {
               borderWidth: 2,
               borderColor: 'lightgray'
               }}>
-              <View style={{ alignItems: 'center' }}>
+              <View style={{ alignItems: 'center',
+                borderBottomColor: '#bbb',
+                borderBottomWidth: StyleSheet.hairlineWidth,
+                marginBottom: 10,
+                paddingBottom: 5
+                }}>
                 <Text style={{ fontSize: 20 }}>
                   24 Hour Activity
                 </Text>
@@ -458,15 +477,118 @@ class History extends React.Component {
               borderWidth: 2,
               borderColor: 'lightgray'
               }}>
-              <View style={{ alignItems: 'center', marginBottom: 10 }}>
+              <View style={{ alignItems: 'center',
+                borderBottomColor: '#bbb',
+                borderBottomWidth: StyleSheet.hairlineWidth,
+                marginBottom: 10,
+                paddingBottom: 5
+                }}>
                 <Text style={{ fontSize: 20 }} >Summary</Text>
                 <Text>{ this.state.dateGraphHistory }</Text>
               </View>
-              <Text>Sleep Time: { this.state.userStatus[1] * 15 } Minutes / { this.state.userStatus[1] * 15 / 60 } Hour(s) </Text>
-              <Text>Sit Time: { this.state.userStatus[2] * 15 }  Minutes / { this.state.userStatus[2] * 15 / 60 } Hour(s) </Text>
-              <Text>Total Step: { this.state.userStep.reduce(function(a, b) { return a + b; }, 0) } Steps / { this.state.userStep.reduce(function(a, b) { return a + b; }, 0) * 0.5 } meter </Text>
-              <Text>Total Drink: { this.state.userDrink.reduce(function(a, b) { return a + b; }, 0) } liters</Text>
-              <Text>Suggestion: { this.suggestion() }</Text>
+              <View style={{
+                  flex: 1,
+                  flexDirection: 'row',
+                  borderBottomColor: '#bbb',
+                  borderBottomWidth: StyleSheet.hairlineWidth,
+                  marginBottom: 10,
+                  paddingBottom: 5
+                }}>
+                <View style={{ width: 50 }} >
+                  <Icon
+                   name='hotel'
+                   type='material-community'
+                   color='#7DB2B2'
+                   size={36}
+                  />
+                </View>
+                <View style={{ width: 230, justifyContent: 'center'}}>
+                  <Text style={{ fontSize: 17 }}>{ this.state.userStatus[1] * 15 } Minutes / { this.state.userStatus[1] * 15 / 60 } Hour(s) </Text>
+                </View>
+              </View>
+              <View style={{
+                  flex: 1,
+                  flexDirection: 'row',
+                  borderBottomColor: '#bbb',
+                  borderBottomWidth: StyleSheet.hairlineWidth,
+                  marginBottom: 10,
+                  paddingBottom: 5
+                }}>
+                <View style={{ width: 50 }} >
+                  <Icon
+                   name='seat-recline-extra'
+                   type='material-community'
+                   color='#7DB2B2'
+                   size={36}
+                  />
+                </View>
+                <View style={{ width: 230, justifyContent: 'center'}}>
+                  <Text style={{ fontSize: 17 }}>{ this.state.userStatus[2] * 15 }  Minutes / { this.state.userStatus[2] * 15 / 60 } Hour(s) </Text>
+                </View>
+              </View>
+              <View style={{
+                  flex: 1,
+                  flexDirection: 'row',
+                  borderBottomColor: '#bbb',
+                  borderBottomWidth: StyleSheet.hairlineWidth,
+                  marginBottom: 10,
+                  paddingBottom: 5
+                }}>
+                <View style={{ width: 50 }} >
+                  <Icon
+                   name='run'
+                   type='material-community'
+                   color='#7DB2B2'
+                   size={36}
+                  />
+                </View>
+                <View style={{ width: 230, justifyContent: 'center'}}>
+                  <Text style={{ fontSize: 17 }}>{ this.state.userStep.reduce(function(a, b) { return a + b; }, 0) } Steps / { this.state.userStep.reduce(function(a, b) { return a + b; }, 0) * 0.5 } meter </Text>
+                </View>
+              </View>
+              <View style={{
+                  flex: 1,
+                  flexDirection: 'row',
+                  borderBottomColor: '#bbb',
+                  borderBottomWidth: StyleSheet.hairlineWidth,
+                  marginBottom: 10,
+                  paddingBottom: 5
+                }}>
+                <View style={{ width: 50 }}>
+                  <Icon
+                   name='cup'
+                   type='material-community'
+                   color='#7DB2B2'
+                   size={36}
+                  />
+                </View>
+                <View style={{ width: 230, justifyContent: 'center'}}>
+                  <Text style={{ fontSize: 17 }}>{ this.state.userDrink.reduce(function(a, b) { return a + b; }, 0) } liters (goals: { this.props.waterNeed } liters)</Text>
+                </View>
+              </View>
+            </View>
+            <View style={{
+              backgroundColor: '#e7fef9',
+              paddingLeft: 5,
+              paddingTop: 5,
+              paddingRight: 5,
+              paddingBottom: 5,
+              width: 340,
+              marginBottom: 10,
+              borderStyle: 'solid',
+              borderWidth: 2,
+              borderColor: 'lightgray'
+              }}>
+              <View style={{ alignItems: 'center',
+                borderBottomColor: '#bbb',
+                borderBottomWidth: StyleSheet.hairlineWidth,
+                marginBottom: 10,
+                paddingBottom: 5
+                }}>
+                <Text style={{ fontSize: 20 }} >Suggestion</Text>
+                <Text>{ this.state.dateGraphHistory }</Text>
+              </View>
+              <Text style={{ fontSize: 17 }}>{ this.suggestion() }</Text>
             </View>
             <View style={{
               backgroundColor: '#e7fef9',
@@ -481,13 +603,6 @@ class History extends React.Component {
               }}>
               <View style={{ marginBottom: 5 }}>
                 <Button
-                  onPress={ () => this.setHistory()}
-                  title="Set dummy Data"
-                  color="#06a887"
-                />
-              </View>
-              <View style={{ marginBottom: 5 }}>
-                <Button
                   onPress={ () => this.clearHistory()}
                   title="clear history"
                   color="#06a887"
@@ -500,6 +615,14 @@ class History extends React.Component {
     )
   }
 }
+
+// <View style={{ marginBottom: 5 }}>
+//   <Button
+//     onPress={ () => this.setHistory()}
+//     title="Set dummy Data"
+//     color="#06a887"
+//   />
+// </View>
 
 const styles = StyleSheet.create({
   contentContainer: {
