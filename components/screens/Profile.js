@@ -418,7 +418,7 @@ class Profile extends React.Component {
             <View style={{ alignItems: 'center' }}>
 
               <Text style={styles.stepText}>{this.props.getUserStatus.totalStep}</Text>
-              <Text style={styles.stepToday}>Steps Today</Text>
+              <Text style={styles.stepToday}>Steps</Text>
             </View>
 
           </View>
