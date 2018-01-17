@@ -66,16 +66,21 @@ class Suggestion extends React.Component {
       ongoing: false, // (optional) set whether this is an "ongoing" notification
 
       /* iOS and Android properties */
-      title: "DriMer Notification", // (optional, for iOS this is only used in apple watch, the title will be the app name onother iOS devices)
-      playSound: true, // (optional) default: true
-      soundName: 'default', // (optional) Sound to play when the notification is shown. Value of 'default' plays the defaultsound. It can be set to a custom sound such as 'android.resource://com.xyz/raw/my_sound'. It will look for the 'my_sound'audio file in 'res/raw' directory and play it. default: 'default' (default sound is played)
-      number: '10', // (optional) Valid 32 bit integer specified as string. default: none (Cannot be zero)
-      actions: '["Yes", "No"]',  // (Android only) See the doc for notification actions to know more
+      // title: "DriMer Notification", // (optional, for iOS this is only used in apple watch, the title will be the app name onother iOS devices)
+      // message: "Udah ", // (required)
+      // playSound: true, // (optional) default: true
+      // soundName: 'default', // (optional) Sound to play when the notification is shown. Value of 'default' plays the defaultsound. It can be set to a custom sound such as 'android.resource://com.xyz/raw/my_sound'. It will look for the 'my_sound'audio file in 'res/raw' directory and play it. default: 'default' (default sound is played)
+      // number: '1', // (optional) Valid 32 bit integer specified as string. default: none (Cannot be zero)
+      // repeatType: 'hour',
+      // repeatTime: 60000,
+      // actions: '["Yes", "No"]',  // (Android only) See the doc for notification actions to know more
     });
 
     PushNotification.localNotificationSchedule({
       message: `Minum yok guys, sisa 2 Liter lagi nih`, // (required)
-      date: new Date(Date.now() + (60 * 1000)) // in 60 secs
+      date: new Date(Date.now()), // in 60 secs
+      repeatType: 'time',
+      repeatTime: 60000
     })
   }
 
@@ -107,7 +112,7 @@ class Suggestion extends React.Component {
       if(value) {
         this.setState({
           persentaseAir: Number(value)
-        })        
+        })
       }
     }).catch((err) => {
       console.log('gagal mendapatkan persentase air', err)
@@ -179,7 +184,7 @@ class Suggestion extends React.Component {
         persen: persen,
         goalStatus: true,
         persentaseAir: persentaseAir
-      })         
+      })
     }
 
     else if (this.state.air - jumlahminum >= 0) {
@@ -216,8 +221,8 @@ class Suggestion extends React.Component {
         persen: persen,
         persentaseAir: persentaseAir
       })
-    } 
-    
+    }
+
     else if(!this.state.air - jumlahminum < 0) {
       var persen = this.state.persen
       var air = this.state.air
@@ -283,7 +288,7 @@ class Suggestion extends React.Component {
           </View>
         </Modal>
         <View style={styles.container}>
-          <Text style={styles.textRec}>Today's Drink Target</Text>
+          <Text style={styles.textRec}>Todays Drink Target</Text>
           <TouchableOpacity onPress={() => {this.changeVisiblePersen()}}>
             <AnimatedCircularProgress
               style={{
