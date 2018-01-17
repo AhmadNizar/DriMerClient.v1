@@ -409,7 +409,7 @@ class Profile extends React.Component {
             name='foot'
             type='foundation'
             color='#7DB2B2'
-            size={78}
+            size={88}
             containerStyle={{paddingRight: 150}}
             />
             <Text style={styles.stepText}>{this.props.getUserStatus.totalStep}</Text>
@@ -419,7 +419,7 @@ class Profile extends React.Component {
           <View style={styles.activityStatus}>
             <View style={{flexDirection: 'row', width: null, height: 60, alignItems: 'center', justifyContent: 'flex-start'}}>
             {activityIcon}
-            <Text style={{fontSize: 36, color: '#66FFFF'}}>{this.props.getUserStatus.userStatus.toUpperCase()}</Text>
+            <Text style={{fontSize: 44, color: '#66FFFF'}}>{this.props.getUserStatus.userStatus.toUpperCase()}</Text>
             </View>
           </View>
         </View>
@@ -436,7 +436,7 @@ const styles = StyleSheet.create({
   },
 
   stepText: {
-    fontSize: 64,
+    fontSize: 74,
     color: '#66FFFF'
   },
 
