@@ -13,7 +13,7 @@ import {
 import { connect } from 'react-redux'
 import { AudioRecorder, AudioUtils } from 'react-native-audio';
 import { SensorManager } from 'NativeModules';
-import { Icon, SocialIcon } from 'react-native-elements'
+import { Icon, SocialIcon, Card } from 'react-native-elements'
 import { changeLogout, changeVisible } from '../../actions/userAction'
 import { clearSuggestion } from "../../actions/quisionerAction";
 import {
@@ -334,95 +334,106 @@ class Profile extends React.Component {
 
   render() {
     var activityIcon = null
-    if(this.props.getUserStatus.userStatus == 'walk/run') {
+    if (this.props.getUserStatus.userStatus == 'walk/run') {
       activityIcon =
-      <Icon
-       name='run'
-       type='material-community'
-       color='#7DB2B2'
-       size={36}
-      />
-    } else if(this.props.getUserStatus.userStatus == 'rest/sleep') {
+        <Icon
+          name='run'
+          type='material-community'
+          color='#7DB2B2'
+          size={100}
+        />
+    } else if (this.props.getUserStatus.userStatus == 'rest/sleep') {
       activityIcon =
-      <Icon
-       name='hotel'
-       type='font-awesome'
-       color='#7DB2B2'
-       size={36}
-       containerStyle={{marginLeft: 5, marginRight: 5}}
-      />
-    } else if(this.props.getUserStatus.userStatus == 'rest/sit') {
+        <Icon
+          name='hotel'
+          type='font-awesome'
+          color='#7DB2B2'
+          size={100}
+          containerStyle={{ marginLeft: 5, marginRight: 5 }}
+        />
+    } else if (this.props.getUserStatus.userStatus == 'rest/sit') {
       activityIcon =
-      <Icon
-       name='seat-recline-extra'
-       type='material-community'
-       color='#7DB2B2'
-       size={36}
-      />
+        <Icon
+          name='seat-recline-extra'
+          type='material-community'
+          color='#7DB2B2'
+          size={100}
+        />
     }
     return (
-        // <View style={styles.container}>
-        //   <AnimatedCircularProgress
-        //     style={{
-        //       marginTop: 40
-        //     }}
-        //     size={220}
-        //     width={5}
-        //     fill={0}
-        //     tintColor="#00e0ff"
-        //     backgroundColor="#3d5875">
-        //     {
-        //       (fill) => (
-        //         <View style={{alignItems: 'center'}}>
-        //         <Text style={{fontSize: 46, alignItems: 'center'}}>
-        //           👣 {this.props.getUserStatus.totalStep}
-        //         </Text>
-        //         <Text>
-        //           STEPS TODAY
-        //         </Text>
-        //         </View>
-        //       )
-        //     }
-        //   </AnimatedCircularProgress>
-        //   <View style={styles.activityStatus}>
-        //     <View style={{flexDirection: 'row', width: null, height: 60, alignItems: 'center'}}>
-        //     <Text style={styles.stepText}>Activity Status :</Text>
-        //     {activityIcon}
-        //     <Text style={styles.stepText}>{this.props.getUserStatus.userStatus.toUpperCase()}</Text>
-        //     </View>
-        //   </View>
-        //   <View>
-        //     <SocialIcon
-        //       style={{ backgroundColor: '#06a887' }}
-        //       button
-        //       type="sign-out"
-        //       title="Logout"
-        //       onPress={() => {
-        //         this.logout()
-        //       }}
-        //     />
-        //     </View>
-        // </View>
-        <View style={styles.container}>
+      // <View style={styles.container}>
+      //   <AnimatedCircularProgress
+      //     style={{
+      //       marginTop: 40
+      //     }}
+      //     size={220}
+      //     width={5}
+      //     fill={0}
+      //     tintColor="#00e0ff"
+      //     backgroundColor="#3d5875">
+      //     {
+      //       (fill) => (
+      //         <View style={{alignItems: 'center'}}>
+      //         <Text style={{fontSize: 46, alignItems: 'center'}}>
+      //           👣 {this.props.getUserStatus.totalStep}
+      //         </Text>
+      //         <Text>
+      //           STEPS TODAY
+      //         </Text>
+      //         </View>
+      //       )
+      //     }
+      //   </AnimatedCircularProgress>
+      //   <View style={styles.activityStatus}>
+      //     <View style={{flexDirection: 'row', width: null, height: 60, alignItems: 'center'}}>
+      //     <Text style={styles.stepText}>Activity Status :</Text>
+      //     {activityIcon}
+      //     <Text style={styles.stepText}>{this.props.getUserStatus.userStatus.toUpperCase()}</Text>
+      //     </View>
+      //   </View>
+      //   <View>
+      //     <SocialIcon
+      //       style={{ backgroundColor: '#06a887' }}
+      //       button
+      //       type="sign-out"
+      //       title="Logout"
+      //       onPress={() => {
+      //         this.logout()
+      //       }}
+      //     />
+      //     </View>
+      // </View>
+      <View style={styles.container}>
+        <Card title="Today's Target : 6000 Steps" containerStyle={{ backgroundColor: '#e7fef9' }} titleStyle={{ color: '#7DB2B2', fontSize: 20 }} wrapperStyle={{ backgroundColor: '#e7fef9' }} >
           <View style={styles.footStatus}>
-            <Icon
-            name='foot'
-            type='foundation'
-            color='#7DB2B2'
-            size={88}
-            containerStyle={{paddingRight: 150}}
-            />
-            <Text style={styles.stepText}>{this.props.getUserStatus.totalStep}</Text>
-            <Text style={styles.stepToday}>Steps Today</Text>
+            <View>
+              <Icon
+                name='foot'
+                type='foundation'
+                color='#7DB2B2'
+                size={100}
+              />
+
+            </View>
+            <View style={{ alignItems: 'center' }}>
+
+              <Text style={styles.stepText}>{this.props.getUserStatus.totalStep}</Text>
+              <Text style={styles.stepToday}>Steps</Text>
+            </View>
+
           </View>
-          <Text style={{marginLeft: 20, color: '#7DB2B2', fontSize: 20, marginTop: 80}}>Activity Status</Text>
+        </Card>
+
+        <Card title="Activity Status" titleStyle={{ color: '#7DB2B2', fontSize: 20 }} wrapperStyle={{ backgroundColor: '#e7fef9' }} containerStyle={{ backgroundColor: '#e7fef9' }} >
           <View style={styles.activityStatus}>
-            <View style={{flexDirection: 'row', width: null, height: 60, alignItems: 'center', justifyContent: 'flex-start'}}>
-            {activityIcon}
-            <Text style={{fontSize: 44, color: '#66FFFF'}}>{this.props.getUserStatus.userStatus.toUpperCase()}</Text>
+            <View style={{ width: null, height: 60, alignItems: 'center', justifyContent: 'flex-start' }}>
+              {activityIcon}
+              <Text style={{ fontSize: 40, color: '#66FFFF' }}>{this.props.getUserStatus.userStatus.toUpperCase()}</Text>
             </View>
           </View>
-        </View>
+        </Card>
+      </View>
+
     )
   }
 }
@@ -430,8 +441,6 @@ class Profile extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start',
     backgroundColor: '#296666'
   },
 
@@ -441,22 +450,21 @@ const styles = StyleSheet.create({
   },
 
   activityStatus: {
-    justifyContent:'flex-start',
-    flexDirection: 'row',
+    // justifyContent: 'flex-start',
     height: 60,
     alignItems: 'center',
     marginBottom: 70,
-    marginLeft: 20
   },
 
   stepToday: {
     fontSize: 20,
-    color: '#7DB2B2'
+    color: '#7DB2B2',
   },
 
   footStatus: {
-    marginLeft: 20,
-    paddingTop: 24
+    paddingTop: 15,
+    flexDirection: 'row',
+    justifyContent: 'space-between'
   }
 })
 

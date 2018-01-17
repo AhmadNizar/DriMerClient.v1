@@ -71,7 +71,8 @@ class Suggestion extends React.Component {
       message: `A glass of water can help you stay to healthy.`, // (required)
       date: new Date(Date.now()), // in 60 secs
       repeatType: 'time',
-      repeatTime: 600000
+      repeatTime: 3600000,
+      soundName: 'watersound.mp3'
     })
   }
 
