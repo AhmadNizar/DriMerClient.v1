@@ -404,7 +404,7 @@ class Profile extends React.Component {
       //     </View>
       // </View>
       <View style={styles.container}>
-        <Card title="Today's Target : 6000 Steps" titleStyle={{ color: '#7DB2B2', fontSize: 20 }}>
+        <Card title="Today's Target : 6000 Steps" containerStyle={{ backgroundColor: '#e7fef9' }} titleStyle={{ color: '#7DB2B2', fontSize: 20 }} wrapperStyle={{ backgroundColor: '#e7fef9' }} >
           <View style={styles.footStatus}>
             <View>
               <Icon
@@ -424,7 +424,7 @@ class Profile extends React.Component {
           </View>
         </Card>
 
-        <Card title="Activity Status" titleStyle={{ color: '#7DB2B2', fontSize: 20 }} >
+        <Card title="Activity Status" titleStyle={{ color: '#7DB2B2', fontSize: 20 }} wrapperStyle={{ backgroundColor: '#e7fef9' }} containerStyle={{ backgroundColor: '#e7fef9' }} >
           <View style={styles.activityStatus}>
             <View style={{ width: null, height: 60, alignItems: 'center', justifyContent: 'flex-start' }}>
               {activityIcon}
