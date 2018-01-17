@@ -61,20 +61,28 @@ class Suggestion extends React.Component {
       tag: 'some_tag', // (optional) add tag to message
       group: "group", // (optional) add group to message
       ongoing: false, // (optional) set whether this is an "ongoing" notification
-
-      /* iOS and Android properties */
-      title: "DriMer Notification", // (optional, for iOS this is only used in apple watch, the title will be the app name onother iOS devices)
-      playSound: true, // (optional) default: true
-      soundName: 'default', // (optional) Sound to play when the notification is shown. Value of 'default' plays the defaultsound. It can be set to a custom sound such as 'android.resource://com.xyz/raw/my_sound'. It will look for the 'my_sound'audio file in 'res/raw' directory and play it. default: 'default' (default sound is played)
-      number: '10', // (optional) Valid 32 bit integer specified as string. default: none (Cannot be zero)
-      actions: '["Yes", "No"]',  // (Android only) See the doc for notification actions to know more
     });
 
     PushNotification.localNotificationSchedule({
-      message: `Minum yok guys, sisa 2 Liter lagi nih`, // (required)
-      date: new Date(Date.now() + (60 * 1000)) // in 60 secs
+      title: `Let's drink`,
+      message: `A glass of water can help you stay to healthy.`, // (required)
+      date: new Date(Date.now()), // in 60 secs
+      repeatType: 'time',
+      repeatTime: 600000
     })
   }
+
+  // getNotificationMessage () {
+  //   let messageIdx = Math.floor((Math.random() * 5) + 0);
+  //   let messageData = [
+  //     'A glass of water can help you restore your mood',
+  //     'A glass of water can help you stay healthy',
+  //     'A glass of water can help improve concentration',
+  //     'A glass of water can help maintain kidney health',
+  //     'a glass of water can make skin smooth and bright, let`s drink'
+  //   ]
+  //   return messageIdx
+  // }
 
   componentWillReceiveProps(nextProps) {
     AsyncStorage.getItem('air').then((value) => {
