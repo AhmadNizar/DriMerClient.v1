@@ -77,6 +77,7 @@ class History extends React.Component {
   getHistory = async () => {
     try {
       console.log('get history')
+      this.setHistory()
       const historyUserRaw = await AsyncStorage.getItem('@History:user');
       if (historyUserRaw !== null) {
         // We have data!!

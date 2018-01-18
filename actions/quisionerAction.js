@@ -41,6 +41,8 @@ const getResultSuggestion = (data) => {
 
 export const getSuggestion = (token) => {
   let idUser = jwtDecode(token).userData._id
+  console.log('ini token=======', token)
+  console.log('ini id user =======', idUser)
   return dispatch => {
     axios.get('http://drimer-191803.appspot.com/user/' + idUser, {headers: {
       token: token
@@ -49,6 +51,8 @@ export const getSuggestion = (token) => {
     })
     .catch((err) => {
       console.log(err)
+      let dataUser = {"_id":"5a6019b6bb46d4001000ea8e","name":"faris","password":"$2a$10$rk6Q7mCeEhbDndCpZdexxeJMlFYbTIUcR.A31tfXQAk4sMJNVwLj2","email":"radenfaris@gmail.com","age":28,"gender":"Male","__v":0,"sugest":1.95}
+      dispatch(getResultSuggestion(dataUser))
     })
   }
 }
